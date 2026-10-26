@@ -1,0 +1,5 @@
+fold 2024-10-01..2024-12-01: keys=40370 got=40370 elapsed=522s
+fold 2024-12-01..2025-02-01: keys=62636 got=62636 elapsed=947s
+fold 2025-02-01..2025-04-01: keys=63209 got=63209 elapsed=1304s
+fold 2025-04-01..2025-09-01: keys=30636 got=30636 elapsed=1667s
+saved 196851

@@ -1,0 +1,41 @@
+team-games 15572 games with any listing 0.968
+
+ABSENT tonight but played last game: n=23228; minutes-weighted
+                  n     min_sum  share_n  share_min
+status_dec                                         
+Available       207    2499.495    0.009      0.007
+Doubtful        334    8426.971    0.014      0.023
+Out            7234  168655.062    0.311      0.455
+Probable        104    2124.178    0.004      0.006
+Questionable   1581   39823.137    0.068      0.107
+not listed    13768  148959.309    0.593      0.402
+
+... restricted to min_r10>=20 (rotation players): n=7526
+                 n  share
+status_dec               
+Available       21  0.003
+Doubtful       255  0.034
+Out           4832  0.642
+Probable        52  0.007
+Questionable  1173  0.156
+not listed    1193  0.159
+
+final (<=tip) status of those absentees not Out/Doubtful at tip-60:
+{'Out': 0.465, 'not listed': 0.419, 'Questionable': 0.096, 'Available': 0.014, 'Probable': 0.006, 'Doubtful': 0.0}
+
+listed Out at tip-60: n=21624, played anyway 0.001
+Doubtful at tip-60: n=731, played 0.019
+Questionable at tip-60: n=6136, played 0.539
+Probable at tip-60: n=2367, played 0.927
+not listed & played last game: n=144781, played 0.905
+
+by season, rotation absentees (min_r10>=20, played last game): share Out/Doubtful at tip-60, Questionable, other
+status_dec  Available  Doubtful    Out  Probable  Questionable  not listed
+season                                                                    
+2020            0.001     0.049  0.568     0.011         0.185       0.186
+2021            0.004     0.029  0.629     0.008         0.128       0.201
+2022            0.002     0.036  0.645     0.005         0.183       0.129
+2023            0.003     0.027  0.620     0.007         0.180       0.162
+2024            0.004     0.027  0.659     0.008         0.183       0.119
+2025            0.003     0.039  0.726     0.003         0.102       0.127
+2026            0.000     0.012  0.125     0.025         0.025       0.812

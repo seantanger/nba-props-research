@@ -1,0 +1,12 @@
+/Users/seantang/git/nba-ai/workspace/src/features.py:149: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df["month"] = df.GAME_DATE.dt.month
+(274307, 336) 2016-10-25 00:00:00 2026-10-23 00:00:00
+parsed rows 12907571 events 7697 2021-01-06 00:00:00 2026-10-24 00:00:00
+result
+loss         6160165
+win          6154780
+void          563407
+push           21517
+unmatched       7702
+Name: count, dtype: int64
+unmatched games: 3 of 7697

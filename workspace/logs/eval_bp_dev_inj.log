@@ -1,0 +1,6 @@
+rows 2706849 settled 2706708
+log-loss vs book implied:
+  p_over_imp n=2706708 ll=0.6854
+  p_proj     n=2706708 ll=0.6952
+  p_anc_c    n=2625256 ll=0.6847
+  p_anc_fd   n=1601419 ll=0.6854

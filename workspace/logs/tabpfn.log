@@ -1,0 +1,4 @@
+2022-12-01 PTS: train=8000 test=1531 elapsed=523s
+2022-12-01 REB: train=8000 test=1362 elapsed=937s
+2022-12-01 AST: train=8000 test=1034 elapsed=1334s
+2022-12-01 FG3M: train=8000 test=999 elapsed=1727s

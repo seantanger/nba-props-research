@@ -1,0 +1,77 @@
+fold 2022-12-01..2023-01-01: n=6528 train_pairs=3336 elapsed=125s
+fold 2023-01-01..2023-02-01: n=7489 train_pairs=9864 elapsed=253s
+fold 2023-02-01..2023-03-13: n=7967 train_pairs=17353 elapsed=385s
+
+Log-loss / Brier of P(over) (lower is better), dev out-of-fold:
+  p_over_imp   n=24872 logloss=0.6887 brier=0.2478
+  p_proj       n=21569 logloss=0.6964 brier=0.2512
+  p_eb         n=21569 logloss=0.7046 brier=0.2549
+  p_clf        n=21569 logloss=0.7010 brier=0.2536
+
+Strategy grid (dev, flat stakes):
+   p_proj w=1.0 thr=0.02: n=10067 ROI=+0.96% units=+97.1 CI95=[-1.2%, +3.1%] hit=53.5% be=53.0% avg_odds=1.901 P(ROI<=0)=0.17
+   p_proj w=1.0 thr=0.04: n=7239 ROI=+1.44% units=+104.5 CI95=[-1.3%, +4.0%] hit=53.7% be=52.9% avg_odds=1.902 P(ROI<=0)=0.12
+       side=over: n=1565 ROI=-0.45% units=-7.1 CI95=[-6.0%, +4.6%] hit=51.6% be=51.9% avg_odds=1.945 P(ROI<=0)=0.54
+       side=under: n=5674 ROI=+1.97% units=+111.6 CI95=[-0.9%, +4.8%] hit=54.2% be=53.2% avg_odds=1.890 P(ROI<=0)=0.08
+       mk=PTS: n=1963 ROI=-1.03% units=-20.2 CI95=[-4.4%, +3.0%] hit=52.5% be=53.0% avg_odds=1.889 P(ROI<=0)=0.69
+       mk=REB: n=1477 ROI=+2.82% units=+41.7 CI95=[-2.6%, +7.4%] hit=54.3% be=52.9% avg_odds=1.905 P(ROI<=0)=0.18
+       mk=AST: n=1225 ROI=+3.18% units=+38.9 CI95=[-1.7%, +8.4%] hit=54.4% be=52.8% avg_odds=1.915 P(ROI<=0)=0.12
+       mk=FG3M: n=761 ROI=+3.69% units=+28.1 CI95=[-3.7%, +10.3%] hit=55.3% be=53.1% avg_odds=1.923 P(ROI<=0)=0.18
+       mk=PRA: n=1813 ROI=+0.88% units=+16.0 CI95=[-3.0%, +5.4%] hit=53.3% be=52.8% avg_odds=1.894 P(ROI<=0)=0.29
+   p_proj w=1.0 thr=0.06: n=4982 ROI=+3.22% units=+160.5 CI95=[+0.1%, +6.2%] hit=54.6% be=52.9% avg_odds=1.902 P(ROI<=0)=0.02
+   p_proj w=1.0 thr=0.08: n=3360 ROI=+1.90% units=+63.9 CI95=[-2.0%, +5.3%] hit=53.8% be=52.8% avg_odds=1.902 P(ROI<=0)=0.16
+   p_proj w=0.5 thr=0.02: n=4157 ROI=+2.71% units=+112.6 CI95=[-0.8%, +6.1%] hit=54.1% be=52.6% avg_odds=1.911 P(ROI<=0)=0.05
+   p_proj w=0.5 thr=0.04: n=1910 ROI=+2.82% units=+53.9 CI95=[-1.7%, +7.3%] hit=54.0% be=52.6% avg_odds=1.908 P(ROI<=0)=0.10
+       side=over: n=246 ROI=+10.46% units=+25.7 CI95=[-1.4%, +24.7%] hit=56.5% be=51.7% avg_odds=1.950 P(ROI<=0)=0.05
+       side=under: n=1664 ROI=+1.69% units=+28.2 CI95=[-3.6%, +7.0%] hit=53.7% be=52.8% avg_odds=1.902 P(ROI<=0)=0.21
+       mk=PTS: n=580 ROI=-4.82% units=-27.9 CI95=[-11.5%, +2.6%] hit=50.3% be=52.9% avg_odds=1.894 P(ROI<=0)=0.88
+       mk=REB: n=339 ROI=+3.72% units=+12.6 CI95=[-4.8%, +12.2%] hit=54.6% be=52.5% avg_odds=1.917 P(ROI<=0)=0.19
+       mk=AST: n=324 ROI=+9.93% units=+32.2 CI95=[+0.8%, +19.6%] hit=57.1% be=52.3% avg_odds=1.931 P(ROI<=0)=0.02
+       mk=FG3M: n=93 ROI=+8.53% units=+7.9 CI95=[-8.9%, +25.2%] hit=55.9% be=52.1% avg_odds=1.958 P(ROI<=0)=0.17
+       mk=PRA: n=574 ROI=+5.08% units=+29.1 CI95=[-2.4%, +13.1%] hit=55.4% be=52.8% avg_odds=1.897 P(ROI<=0)=0.09
+   p_proj w=0.5 thr=0.06: n=822 ROI=+2.36% units=+19.4 CI95=[-4.2%, +9.4%] hit=53.6% be=52.5% avg_odds=1.910 P(ROI<=0)=0.23
+   p_proj w=0.5 thr=0.08: n=379 ROI=+1.53% units=+5.8 CI95=[-9.1%, +11.9%] hit=53.0% be=52.4% avg_odds=1.914 P(ROI<=0)=0.36
+   p_eb w=1.0 thr=0.02: n=11231 ROI=-1.34% units=-150.3 CI95=[-3.5%, +0.8%] hit=52.2% be=52.9% avg_odds=1.902 P(ROI<=0)=0.87
+   p_eb w=1.0 thr=0.04: n=8533 ROI=-1.70% units=-145.1 CI95=[-3.8%, +0.6%] hit=52.0% be=52.9% avg_odds=1.903 P(ROI<=0)=0.90
+       side=over: n=2034 ROI=-2.79% units=-56.8 CI95=[-7.8%, +2.6%] hit=50.4% be=52.1% avg_odds=1.939 P(ROI<=0)=0.83
+       side=under: n=6499 ROI=-1.36% units=-88.3 CI95=[-3.9%, +1.2%] hit=52.4% be=53.1% avg_odds=1.892 P(ROI<=0)=0.82
+       mk=PTS: n=2314 ROI=-4.78% units=-110.6 CI95=[-8.6%, -1.2%] hit=50.4% be=53.0% avg_odds=1.890 P(ROI<=0)=1.00
+       mk=REB: n=1652 ROI=+1.36% units=+22.5 CI95=[-3.0%, +5.4%] hit=53.8% be=53.0% avg_odds=1.901 P(ROI<=0)=0.31
+       mk=AST: n=1371 ROI=+3.65% units=+50.0 CI95=[-0.7%, +7.4%] hit=54.6% be=52.7% avg_odds=1.918 P(ROI<=0)=0.04
+       mk=FG3M: n=1073 ROI=-1.89% units=-20.3 CI95=[-8.3%, +3.1%] hit=51.5% be=52.8% avg_odds=1.933 P(ROI<=0)=0.77
+       mk=PRA: n=2123 ROI=-4.09% units=-86.7 CI95=[-8.1%, +0.1%] hit=50.7% be=52.8% avg_odds=1.895 P(ROI<=0)=0.97
+   p_eb w=1.0 thr=0.06: n=6345 ROI=-2.81% units=-178.0 CI95=[-5.4%, +0.1%] hit=51.3% be=52.8% avg_odds=1.907 P(ROI<=0)=0.97
+   p_eb w=1.0 thr=0.08: n=4609 ROI=-1.77% units=-81.8 CI95=[-4.9%, +1.1%] hit=51.9% be=52.7% avg_odds=1.907 P(ROI<=0)=0.86
+   p_eb w=0.5 thr=0.02: n=5497 ROI=-2.67% units=-147.0 CI95=[-5.5%, +0.3%] hit=51.1% be=52.5% avg_odds=1.915 P(ROI<=0)=0.96
+   p_eb w=0.5 thr=0.04: n=2783 ROI=-2.10% units=-58.4 CI95=[-5.7%, +2.0%] hit=51.5% be=52.6% avg_odds=1.912 P(ROI<=0)=0.85
+       side=over: n=381 ROI=-6.52% units=-24.8 CI95=[-19.7%, +5.6%] hit=47.8% be=51.1% avg_odds=1.971 P(ROI<=0)=0.86
+       side=under: n=2402 ROI=-1.40% units=-33.5 CI95=[-5.1%, +2.6%] hit=52.1% be=52.8% avg_odds=1.902 P(ROI<=0)=0.70
+       mk=PTS: n=874 ROI=-4.77% units=-41.7 CI95=[-9.7%, +0.1%] hit=50.2% be=52.8% avg_odds=1.896 P(ROI<=0)=0.97
+       mk=REB: n=450 ROI=-1.90% units=-8.6 CI95=[-11.6%, +6.7%] hit=51.8% be=52.5% avg_odds=1.917 P(ROI<=0)=0.67
+       mk=AST: n=439 ROI=+2.22% units=+9.7 CI95=[-8.0%, +11.9%] hit=53.3% be=52.2% avg_odds=1.937 P(ROI<=0)=0.36
+       mk=FG3M: n=216 ROI=-2.63% units=-5.7 CI95=[-15.3%, +9.0%] hit=50.9% be=52.0% avg_odds=1.955 P(ROI<=0)=0.69
+       mk=PRA: n=804 ROI=-1.51% units=-12.1 CI95=[-7.6%, +4.5%] hit=51.9% be=52.7% avg_odds=1.900 P(ROI<=0)=0.68
+   p_eb w=0.5 thr=0.06: n=1381 ROI=+0.54% units=+7.5 CI95=[-4.9%, +6.0%] hit=52.8% be=52.6% avg_odds=1.908 P(ROI<=0)=0.41
+   p_eb w=0.5 thr=0.08: n=703 ROI=+0.74% units=+5.2 CI95=[-6.2%, +7.8%] hit=52.9% be=52.5% avg_odds=1.912 P(ROI<=0)=0.44
+   p_clf w=1.0 thr=0.02: n=10714 ROI=-3.91% units=-418.4 CI95=[-6.4%, -1.6%] hit=50.7% be=52.8% avg_odds=1.910 P(ROI<=0)=1.00
+   p_clf w=1.0 thr=0.04: n=7726 ROI=-3.91% units=-302.1 CI95=[-6.3%, -1.6%] hit=50.7% be=52.8% avg_odds=1.910 P(ROI<=0)=1.00
+       side=over: n=2969 ROI=-8.47% units=-251.4 CI95=[-13.0%, -4.4%] hit=47.9% be=52.3% avg_odds=1.925 P(ROI<=0)=1.00
+       side=under: n=4757 ROI=-1.07% units=-50.8 CI95=[-4.4%, +2.3%] hit=52.4% be=53.0% avg_odds=1.901 P(ROI<=0)=0.76
+       mk=PTS: n=1891 ROI=-1.26% units=-23.8 CI95=[-4.8%, +2.1%] hit=52.3% be=52.9% avg_odds=1.891 P(ROI<=0)=0.74
+       mk=REB: n=1717 ROI=-0.48% units=-8.2 CI95=[-4.3%, +3.3%] hit=52.9% be=53.2% avg_odds=1.895 P(ROI<=0)=0.61
+       mk=AST: n=1138 ROI=-9.20% units=-104.7 CI95=[-15.3%, -3.2%] hit=48.3% be=53.0% avg_odds=1.909 P(ROI<=0)=1.00
+       mk=FG3M: n=1232 ROI=-8.46% units=-104.2 CI95=[-13.8%, -3.5%] hit=46.8% be=51.4% avg_odds=1.991 P(ROI<=0)=1.00
+       mk=PRA: n=1748 ROI=-3.51% units=-61.3 CI95=[-7.0%, -0.1%] hit=51.1% be=53.0% avg_odds=1.890 P(ROI<=0)=0.98
+   p_clf w=1.0 thr=0.06: n=5369 ROI=-3.81% units=-204.8 CI95=[-6.8%, -1.1%] hit=50.8% be=52.7% avg_odds=1.910 P(ROI<=0)=1.00
+   p_clf w=1.0 thr=0.08: n=3591 ROI=-2.38% units=-85.3 CI95=[-5.9%, +1.7%] hit=51.4% be=52.7% avg_odds=1.913 P(ROI<=0)=0.91
+   p_clf w=0.5 thr=0.02: n=4465 ROI=-3.51% units=-156.7 CI95=[-6.7%, -0.6%] hit=50.6% be=52.4% avg_odds=1.923 P(ROI<=0)=0.99
+   p_clf w=0.5 thr=0.04: n=1835 ROI=-1.26% units=-23.2 CI95=[-6.6%, +3.8%] hit=51.5% be=52.2% avg_odds=1.931 P(ROI<=0)=0.64
+       side=over: n=523 ROI=-4.88% units=-25.5 CI95=[-14.1%, +4.0%] hit=49.5% be=52.1% avg_odds=1.933 P(ROI<=0)=0.84
+       side=under: n=1312 ROI=+0.18% units=+2.4 CI95=[-5.6%, +6.0%] hit=52.3% be=52.2% avg_odds=1.930 P(ROI<=0)=0.46
+       mk=PTS: n=486 ROI=+1.02% units=+5.0 CI95=[-6.8%, +9.0%] hit=53.5% be=52.9% avg_odds=1.893 P(ROI<=0)=0.40
+       mk=REB: n=389 ROI=+8.23% units=+32.0 CI95=[-1.4%, +16.6%] hit=56.6% be=52.1% avg_odds=1.934 P(ROI<=0)=0.05
+       mk=AST: n=235 ROI=-4.35% units=-10.2 CI95=[-17.4%, +9.8%] hit=49.8% be=52.5% avg_odds=1.927 P(ROI<=0)=0.74
+       mk=FG3M: n=261 ROI=-13.70% units=-35.8 CI95=[-28.7%, -1.5%] hit=42.1% be=49.4% avg_odds=2.068 P(ROI<=0)=0.98
+       mk=PRA: n=464 ROI=-3.05% units=-14.2 CI95=[-10.9%, +6.1%] hit=51.3% be=52.9% avg_odds=1.893 P(ROI<=0)=0.74
+   p_clf w=0.5 thr=0.06: n=598 ROI=-1.21% units=-7.2 CI95=[-8.0%, +7.8%] hit=51.0% be=51.8% avg_odds=1.945 P(ROI<=0)=0.62
+   p_clf w=0.5 thr=0.08: n=133 ROI=+4.53% units=+6.0 CI95=[-12.1%, +25.2%] hit=52.6% be=51.5% avg_odds=1.954 P(ROI<=0)=0.35

@@ -1,0 +1,24 @@
+Resolved 19 packages in 322ms
+Downloading lightgbm (1.8MiB)
+ Downloaded lightgbm
+Prepared 3 packages in 120ms
+Installed 19 packages in 336ms
+ + certifi==2026.10.19
+ + charset-normalizer==3.5.2
+ + cloudpickle==3.1.2
+ + idna==3.20
+ + joblib==1.6.0
+ + lightgbm==4.7.0
+ + narwhals==2.27.1
+ + nba-api==1.11.4
+ + numpy==2.5.4
+ + pandas==3.0.6
+ + pyarrow==26.0.0
+ + python-dateutil==2.9.0.post0
+ + requests==2.34.2
+ + scikit-learn==1.9.1
+ + scipy==1.18.1
+ + six==1.17.0
+ + threadpoolctl==3.7.0
+ + tqdm==4.70.1
+ + urllib3==2.8.0

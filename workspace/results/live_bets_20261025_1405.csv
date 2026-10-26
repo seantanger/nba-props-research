@@ -1,0 +1,26 @@
+player,market,side,line,price,book,p_model,edge,line_fd,p_fd,mu,sigma,age_book_min,age_fd_min,mins_to_tip,live,kelly_quarter
+Luka Doncic,PTS,under,37.5,-275,bovada,0.809,0.075,31.5,0.504,21.36,6.79,6.113,7.497,184.47,True,0.05
+Rui Hachimura,FG3M,over,1.5,-165,betmgm,0.688,0.066,2.5,0.383,1.621,1.268,6.28,7.297,304.47,True,0.044
+Cade Cunningham,AST,under,11.5,-275,bovada,0.792,0.059,9.5,0.486,5.244,2.572,7.363,6.797,334.47,True,0.05
+Paul Reed Jr,PTS,under,18.5,-260,bovada,0.779,0.057,14.5,0.494,8.106,5.312,7.363,6.797,334.47,True,0.05
+Jared McCain,FG3M,over,1.5,-165,betrivers,0.675,0.053,2.5,0.371,1.284,1.276,6.513,7.297,304.47,True,0.035
+Domantas Sabonis,AST,over,5.5,-250,bovada,0.762,0.048,7.5,0.428,3.683,2.239,6.18,7.113,414.47,True,0.042
+Paul Reed Jr,PRA,under,28.5,-135,bovada,0.622,0.047,26.5,0.476,14.056,7.994,7.363,6.797,334.47,True,0.028
+Karl-Anthony Towns,PTS,over,16.5,-200,bovada,0.714,0.047,19.5,0.506,12.591,5.462,8.363,6.913,294.47,True,0.035
+Shai Gilgeous-Alexander,PTS,under,33.5,-280,bovada,0.782,0.045,28.5,0.49,20.968,6.631,6.297,7.297,304.47,True,0.043
+Keyonte George,FG3M,over,1.5,-180,bovada,0.688,0.045,2.5,0.396,1.595,1.329,6.113,7.497,184.47,True,0.031
+Luka Doncic,FG3M,under,4.5,-215,bovada,0.727,0.045,3.5,0.529,2.65,1.477,6.113,7.497,184.47,True,0.035
+Darius Acuff Jr.,PTS,under,23.5,-230,bovada,0.741,0.044,19.5,0.5,16.253,6.201,6.18,7.113,414.47,True,0.036
+Domantas Sabonis,PRA,under,41.5,-135,bovada,0.614,0.04,38.5,0.519,27.744,8.861,6.18,7.113,414.47,True,0.023
+Franz Wagner,PTS,under,26.5,-275,bovada,0.772,0.039,21.5,0.528,15.646,6.115,8.363,6.913,294.47,True,0.037
+Desmond Bane,AST,under,4.5,-230,bovada,0.735,0.038,3.5,0.506,1.67,1.555,8.363,6.913,294.47,True,0.031
+Tyrese Maxey,AST,under,6.5,-165,bovada,0.66,0.037,5.5,0.519,3.762,2.17,7.363,6.797,334.47,True,0.025
+VJ Edgecombe,FG3M,under,2.5,-195,betrivers,0.698,0.037,1.5,0.608,1.198,1.263,6.113,6.797,334.47,True,0.027
+Terrence Shannon Jr.,PTS,under,6.5,185,bovada,0.386,0.036,8.5,0.476,7.287,5.728,7.797,6.797,304.47,True,0.014
+Josh Hart,PTS,over,10.5,-150,bovada,0.635,0.035,12.5,0.481,8.528,5.075,8.363,6.913,294.47,True,0.022
+Domantas Sabonis,REB,under,13.5,120,bovada,0.49,0.035,13.5,0.51,8.507,4.048,6.18,7.113,414.47,True,0.016
+Darryn Peterson,PTS,under,13.5,-106,draftkings,0.547,0.033,12.5,0.533,7.428,4.942,7.163,7.497,184.47,True,0.017
+Luka Doncic,PRA,under,50.5,-145,bovada,0.624,0.032,47.5,0.5,34.616,9.474,6.113,7.497,184.47,True,0.02
+Cason Wallace,PRA,under,11.5,165,bovada,0.409,0.032,13.5,0.468,11.704,6.437,6.297,7.297,304.47,True,0.013
+Jalen Suggs,AST,under,6.5,-200,bovada,0.697,0.031,5.5,0.481,3.414,2.132,8.363,6.913,294.47,True,0.023
+Rudy Gobert,PTS,under,11.5,-260,bovada,0.753,0.03,8.5,0.506,6.344,4.3,7.797,6.797,304.47,True,0.027

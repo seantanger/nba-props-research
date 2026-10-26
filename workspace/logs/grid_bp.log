@@ -1,0 +1,202 @@
+stack 2021-22: coefs=[-0.004  0.208  0.278  0.484] n_train=182801
+stack 2022-23: coefs=[ 0.211  0.15  -0.283  0.88 ] n_train=401419
+stack 2023-24: coefs=[ 0.139  0.143 -0.113  0.815] n_train=812868
+stack 2024-25: coefs=[0.07  0.135 0.035 0.788] n_train=1756899
+
+==== p_anc_c ====
+ thr=0.02
+    all       all-books: n=51084 ROI=+6.28% units=+3206.4 CI95=[+5.3%, +7.1%] hit=57.1% be=53.8% avg_odds=1.881 P(ROI<=0)=0.00
+    all       one/sel : n=51084 ROI=+6.28% units=+3206.4 CI95=[+5.3%, +7.1%] hit=57.1% be=53.8% avg_odds=1.881 P(ROI<=0)=0.00
+    fresh60   all-books: n=26157 ROI=+2.83% units=+741.4 CI95=[+1.2%, +4.3%] hit=55.1% be=53.6% avg_odds=1.890 P(ROI<=0)=0.00
+    fresh60   one/sel : n=26157 ROI=+2.83% units=+741.4 CI95=[+1.2%, +4.3%] hit=55.1% be=53.6% avg_odds=1.890 P(ROI<=0)=0.00
+    after_fd  all-books: n=7059 ROI=+2.09% units=+147.5 CI95=[-0.1%, +4.9%] hit=54.8% be=53.7% avg_odds=1.889 P(ROI<=0)=0.03
+    after_fd  one/sel : n=7059 ROI=+2.09% units=+147.5 CI95=[-0.1%, +4.9%] hit=54.8% be=53.7% avg_odds=1.889 P(ROI<=0)=0.03
+    both15    all-books: n=7235 ROI=+1.70% units=+122.9 CI95=[-0.8%, +4.0%] hit=54.6% be=53.7% avg_odds=1.884 P(ROI<=0)=0.07
+    both15    one/sel : n=7235 ROI=+1.70% units=+122.9 CI95=[-0.8%, +4.0%] hit=54.6% be=53.7% avg_odds=1.884 P(ROI<=0)=0.07
+ thr=0.04
+    all       all-books: n=28383 ROI=+9.61% units=+2728.0 CI95=[+8.3%, +10.8%] hit=59.3% be=54.2% avg_odds=1.862 P(ROI<=0)=0.00
+    all       one/sel : n=28383 ROI=+9.61% units=+2728.0 CI95=[+8.3%, +10.8%] hit=59.3% be=54.2% avg_odds=1.862 P(ROI<=0)=0.00
+    fresh60   all-books: n=13615 ROI=+4.97% units=+676.9 CI95=[+2.8%, +6.9%] hit=56.8% be=54.3% avg_odds=1.865 P(ROI<=0)=0.00
+    fresh60   one/sel : n=13615 ROI=+4.97% units=+676.9 CI95=[+2.8%, +6.9%] hit=56.8% be=54.3% avg_odds=1.865 P(ROI<=0)=0.00
+    after_fd  all-books: n=3576 ROI=+4.67% units=+166.9 CI95=[+0.5%, +8.4%] hit=56.8% be=54.4% avg_odds=1.862 P(ROI<=0)=0.01
+    after_fd  one/sel : n=3576 ROI=+4.67% units=+166.9 CI95=[+0.5%, +8.4%] hit=56.8% be=54.4% avg_odds=1.862 P(ROI<=0)=0.01
+    both15    all-books: n=3315 ROI=+2.21% units=+73.1 CI95=[-2.0%, +6.0%] hit=55.5% be=54.4% avg_odds=1.859 P(ROI<=0)=0.15
+    both15    one/sel : n=3315 ROI=+2.21% units=+73.1 CI95=[-2.0%, +6.0%] hit=55.5% be=54.4% avg_odds=1.859 P(ROI<=0)=0.15
+    by season (after_fd tier, one/sel):
+       2020-21: n=304 ROI=+2.44% units=+7.4 CI95=[-8.3%, +12.8%] hit=53.0% be=52.1% avg_odds=1.958 P(ROI<=0)=0.29
+       2021-22: n=501 ROI=+8.68% units=+43.5 CI95=[-3.6%, +18.8%] hit=58.7% be=53.9% avg_odds=1.888 P(ROI<=0)=0.07
+       2022-23: n=115 ROI=+12.50% units=+14.4 CI95=[-1.3%, +26.3%] hit=61.7% be=54.8% avg_odds=1.847 P(ROI<=0)=0.04
+       2023-24: n=495 ROI=-0.18% units=-0.9 CI95=[-8.7%, +8.9%] hit=53.0% be=53.4% avg_odds=1.895 P(ROI<=0)=0.55
+       2024-25: n=2161 ROI=+4.74% units=+102.5 CI95=[-0.5%, +9.2%] hit=57.5% be=55.1% avg_odds=1.836 P(ROI<=0)=0.04
+    by season (all rows, one/sel):
+       2020-21: n=1103 ROI=+5.62% units=+62.0 CI95=[+0.6%, +9.6%] hit=56.6% be=53.9% avg_odds=1.884 P(ROI<=0)=0.01
+       2021-22: n=1931 ROI=+10.98% units=+211.9 CI95=[+6.5%, +16.2%] hit=59.4% be=53.8% avg_odds=1.888 P(ROI<=0)=0.00
+       2022-23: n=3169 ROI=+4.99% units=+158.1 CI95=[+1.4%, +8.1%] hit=56.8% be=54.2% avg_odds=1.862 P(ROI<=0)=0.00
+       2023-24: n=8412 ROI=+9.72% units=+817.5 CI95=[+7.6%, +11.9%] hit=59.1% be=54.0% avg_odds=1.871 P(ROI<=0)=0.00
+       2024-25: n=13768 ROI=+10.74% units=+1478.4 CI95=[+8.6%, +12.5%] hit=60.2% be=54.5% avg_odds=1.852 P(ROI<=0)=0.00
+ thr=0.06
+    all       all-books: n=17591 ROI=+12.51% units=+2200.3 CI95=[+10.9%, +14.1%] hit=60.6% be=54.1% avg_odds=1.867 P(ROI<=0)=0.00
+    all       one/sel : n=17591 ROI=+12.51% units=+2200.3 CI95=[+10.9%, +14.1%] hit=60.6% be=54.1% avg_odds=1.867 P(ROI<=0)=0.00
+    fresh60   all-books: n=8345 ROI=+6.72% units=+560.4 CI95=[+3.8%, +9.0%] hit=57.6% be=54.1% avg_odds=1.868 P(ROI<=0)=0.00
+    fresh60   one/sel : n=8345 ROI=+6.72% units=+560.4 CI95=[+3.8%, +9.0%] hit=57.6% be=54.1% avg_odds=1.868 P(ROI<=0)=0.00
+    after_fd  all-books: n=2090 ROI=+6.30% units=+131.6 CI95=[+0.8%, +12.5%] hit=57.5% be=54.2% avg_odds=1.868 P(ROI<=0)=0.01
+    after_fd  one/sel : n=2090 ROI=+6.30% units=+131.6 CI95=[+0.8%, +12.5%] hit=57.5% be=54.2% avg_odds=1.868 P(ROI<=0)=0.01
+    both15    all-books: n=1853 ROI=+1.63% units=+30.2 CI95=[-2.6%, +6.7%] hit=55.0% be=54.2% avg_odds=1.861 P(ROI<=0)=0.27
+    both15    one/sel : n=1853 ROI=+1.63% units=+30.2 CI95=[-2.6%, +6.7%] hit=55.0% be=54.2% avg_odds=1.861 P(ROI<=0)=0.27
+ thr=0.08
+    all       all-books: n=11548 ROI=+14.67% units=+1694.1 CI95=[+12.7%, +16.8%] hit=61.5% be=53.8% avg_odds=1.875 P(ROI<=0)=0.00
+    all       one/sel : n=11548 ROI=+14.67% units=+1694.1 CI95=[+12.7%, +16.8%] hit=61.5% be=53.8% avg_odds=1.875 P(ROI<=0)=0.00
+    fresh60   all-books: n=5479 ROI=+7.45% units=+408.3 CI95=[+4.3%, +10.2%] hit=57.7% be=53.8% avg_odds=1.876 P(ROI<=0)=0.00
+    fresh60   one/sel : n=5479 ROI=+7.45% units=+408.3 CI95=[+4.3%, +10.2%] hit=57.7% be=53.8% avg_odds=1.876 P(ROI<=0)=0.00
+    after_fd  all-books: n=1333 ROI=+8.11% units=+108.1 CI95=[+2.6%, +14.0%] hit=58.1% be=53.8% avg_odds=1.879 P(ROI<=0)=0.01
+    after_fd  one/sel : n=1333 ROI=+8.11% units=+108.1 CI95=[+2.6%, +14.0%] hit=58.1% be=53.8% avg_odds=1.879 P(ROI<=0)=0.01
+    both15    all-books: n=1157 ROI=-0.08% units=-1.0 CI95=[-5.5%, +5.1%] hit=53.8% be=53.8% avg_odds=1.870 P(ROI<=0)=0.51
+    both15    one/sel : n=1157 ROI=-0.08% units=-1.0 CI95=[-5.5%, +5.1%] hit=53.8% be=53.8% avg_odds=1.870 P(ROI<=0)=0.51
+
+==== p_anc_fd ====
+ thr=0.02
+    all       all-books: n=63605 ROI=+8.67% units=+5513.6 CI95=[+7.6%, +9.5%] hit=58.0% be=53.4% avg_odds=1.892 P(ROI<=0)=0.00
+    all       one/sel : n=63605 ROI=+8.67% units=+5513.6 CI95=[+7.6%, +9.5%] hit=58.0% be=53.4% avg_odds=1.892 P(ROI<=0)=0.00
+    fresh60   all-books: n=31117 ROI=+6.89% units=+2144.1 CI95=[+5.6%, +8.2%] hit=56.8% be=53.2% avg_odds=1.905 P(ROI<=0)=0.00
+    fresh60   one/sel : n=31117 ROI=+6.89% units=+2144.1 CI95=[+5.6%, +8.2%] hit=56.8% be=53.2% avg_odds=1.905 P(ROI<=0)=0.00
+    after_fd  all-books: n=12962 ROI=+7.24% units=+937.9 CI95=[+5.3%, +9.4%] hit=56.7% be=53.0% avg_odds=1.918 P(ROI<=0)=0.00
+    after_fd  one/sel : n=12962 ROI=+7.24% units=+937.9 CI95=[+5.3%, +9.4%] hit=56.7% be=53.0% avg_odds=1.918 P(ROI<=0)=0.00
+    both15    all-books: n=11453 ROI=+6.54% units=+748.8 CI95=[+4.8%, +8.3%] hit=56.6% be=53.2% avg_odds=1.905 P(ROI<=0)=0.00
+    both15    one/sel : n=11453 ROI=+6.54% units=+748.8 CI95=[+4.8%, +8.3%] hit=56.6% be=53.2% avg_odds=1.905 P(ROI<=0)=0.00
+ thr=0.04
+    all       all-books: n=32321 ROI=+13.41% units=+4334.2 CI95=[+12.0%, +15.1%] hit=61.0% be=53.9% avg_odds=1.871 P(ROI<=0)=0.00
+    all       one/sel : n=32321 ROI=+13.41% units=+4334.2 CI95=[+12.0%, +15.1%] hit=61.0% be=53.9% avg_odds=1.871 P(ROI<=0)=0.00
+    fresh60   all-books: n=13488 ROI=+11.24% units=+1516.0 CI95=[+9.2%, +13.1%] hit=59.9% be=54.0% avg_odds=1.874 P(ROI<=0)=0.00
+    fresh60   one/sel : n=13488 ROI=+11.24% units=+1516.0 CI95=[+9.2%, +13.1%] hit=59.9% be=54.0% avg_odds=1.874 P(ROI<=0)=0.00
+    after_fd  all-books: n=6762 ROI=+10.43% units=+705.3 CI95=[+7.1%, +13.4%] hit=58.8% be=53.5% avg_odds=1.899 P(ROI<=0)=0.00
+    after_fd  one/sel : n=6762 ROI=+10.43% units=+705.3 CI95=[+7.1%, +13.4%] hit=58.8% be=53.5% avg_odds=1.899 P(ROI<=0)=0.00
+    both15    all-books: n=4157 ROI=+10.33% units=+429.6 CI95=[+6.7%, +13.0%] hit=59.7% be=54.3% avg_odds=1.867 P(ROI<=0)=0.00
+    both15    one/sel : n=4157 ROI=+10.33% units=+429.6 CI95=[+6.7%, +13.0%] hit=59.7% be=54.3% avg_odds=1.867 P(ROI<=0)=0.00
+    by season (after_fd tier, one/sel):
+       2020-21: n=641 ROI=-0.30% units=-1.9 CI95=[-10.5%, +8.7%] hit=51.8% be=52.1% avg_odds=1.950 P(ROI<=0)=0.47
+       2021-22: n=2280 ROI=+24.89% units=+567.4 CI95=[+21.5%, +28.3%] hit=65.2% be=52.4% avg_odds=1.936 P(ROI<=0)=0.00
+       2022-23: n=150 ROI=+18.15% units=+27.2 CI95=[+4.4%, +32.3%] hit=63.3% be=53.4% avg_odds=1.902 P(ROI<=0)=0.02
+       2023-24: n=738 ROI=+1.30% units=+9.6 CI95=[-5.2%, +8.3%] hit=54.5% be=53.6% avg_odds=1.902 P(ROI<=0)=0.31
+       2024-25: n=2953 ROI=+3.49% units=+102.9 CI95=[-1.1%, +6.7%] hit=56.3% be=54.6% avg_odds=1.858 P(ROI<=0)=0.09
+    by season (all rows, one/sel):
+       2020-21: n=2152 ROI=+7.62% units=+163.9 CI95=[+3.2%, +11.8%] hit=57.3% be=53.5% avg_odds=1.896 P(ROI<=0)=0.00
+       2021-22: n=3878 ROI=+20.02% units=+776.4 CI95=[+16.2%, +23.0%] hit=63.1% be=52.9% avg_odds=1.916 P(ROI<=0)=0.00
+       2022-23: n=2546 ROI=+11.85% units=+301.8 CI95=[+9.2%, +14.5%] hit=60.7% be=54.3% avg_odds=1.854 P(ROI<=0)=0.00
+       2023-24: n=9186 ROI=+14.12% units=+1297.0 CI95=[+11.2%, +17.1%] hit=61.4% be=54.0% avg_odds=1.866 P(ROI<=0)=0.00
+       2024-25: n=14559 ROI=+12.33% units=+1795.2 CI95=[+9.9%, +14.6%] hit=60.7% be=54.1% avg_odds=1.862 P(ROI<=0)=0.00
+ thr=0.06
+    all       all-books: n=19232 ROI=+17.92% units=+3446.8 CI95=[+16.2%, +19.4%] hit=63.3% be=53.9% avg_odds=1.870 P(ROI<=0)=0.00
+    all       one/sel : n=19232 ROI=+17.92% units=+3446.8 CI95=[+16.2%, +19.4%] hit=63.3% be=53.9% avg_odds=1.870 P(ROI<=0)=0.00
+    fresh60   all-books: n=7231 ROI=+15.65% units=+1131.6 CI95=[+12.7%, +18.0%] hit=62.3% be=54.1% avg_odds=1.867 P(ROI<=0)=0.00
+    fresh60   one/sel : n=7231 ROI=+15.65% units=+1131.6 CI95=[+12.7%, +18.0%] hit=62.3% be=54.1% avg_odds=1.867 P(ROI<=0)=0.00
+    after_fd  all-books: n=4161 ROI=+15.94% units=+663.4 CI95=[+11.2%, +20.0%] hit=61.6% be=53.5% avg_odds=1.897 P(ROI<=0)=0.00
+    after_fd  one/sel : n=4161 ROI=+15.94% units=+663.4 CI95=[+11.2%, +20.0%] hit=61.6% be=53.5% avg_odds=1.897 P(ROI<=0)=0.00
+    both15    all-books: n=1925 ROI=+11.98% units=+230.5 CI95=[+7.9%, +16.2%] hit=60.9% be=54.8% avg_odds=1.847 P(ROI<=0)=0.00
+    both15    one/sel : n=1925 ROI=+11.98% units=+230.5 CI95=[+7.9%, +16.2%] hit=60.9% be=54.8% avg_odds=1.847 P(ROI<=0)=0.00
+ thr=0.08
+    all       all-books: n=12356 ROI=+22.12% units=+2732.8 CI95=[+19.9%, +24.3%] hit=65.2% be=53.6% avg_odds=1.881 P(ROI<=0)=0.00
+    all       one/sel : n=12356 ROI=+22.12% units=+2732.8 CI95=[+19.9%, +24.3%] hit=65.2% be=53.6% avg_odds=1.881 P(ROI<=0)=0.00
+    fresh60   all-books: n=4440 ROI=+19.68% units=+873.7 CI95=[+16.3%, +23.3%] hit=64.1% be=53.7% avg_odds=1.881 P(ROI<=0)=0.00
+    fresh60   one/sel : n=4440 ROI=+19.68% units=+873.7 CI95=[+16.3%, +23.3%] hit=64.1% be=53.7% avg_odds=1.881 P(ROI<=0)=0.00
+    after_fd  all-books: n=2820 ROI=+22.58% units=+636.7 CI95=[+17.1%, +27.8%] hit=64.5% be=52.9% avg_odds=1.916 P(ROI<=0)=0.00
+    after_fd  one/sel : n=2820 ROI=+22.58% units=+636.7 CI95=[+17.1%, +27.8%] hit=64.5% be=52.9% avg_odds=1.916 P(ROI<=0)=0.00
+    both15    all-books: n=1036 ROI=+12.22% units=+126.6 CI95=[+6.5%, +19.2%] hit=60.9% be=54.6% avg_odds=1.854 P(ROI<=0)=0.00
+    both15    one/sel : n=1036 ROI=+12.22% units=+126.6 CI95=[+6.5%, +19.2%] hit=60.9% be=54.6% avg_odds=1.854 P(ROI<=0)=0.00
+
+==== p_stack ====
+ thr=0.02
+    all       all-books: n=77236 ROI=+7.83% units=+6049.8 CI95=[+7.0%, +8.7%] hit=57.0% be=52.9% avg_odds=1.909 P(ROI<=0)=0.00
+    all       one/sel : n=77236 ROI=+7.83% units=+6049.8 CI95=[+7.0%, +8.7%] hit=57.0% be=52.9% avg_odds=1.909 P(ROI<=0)=0.00
+    fresh60   all-books: n=44132 ROI=+5.88% units=+2596.7 CI95=[+4.8%, +7.0%] hit=55.8% be=52.7% avg_odds=1.915 P(ROI<=0)=0.00
+    fresh60   one/sel : n=44132 ROI=+5.88% units=+2596.7 CI95=[+4.8%, +7.0%] hit=55.8% be=52.7% avg_odds=1.915 P(ROI<=0)=0.00
+    after_fd  all-books: n=15201 ROI=+6.63% units=+1008.0 CI95=[+4.8%, +8.8%] hit=56.2% be=52.8% avg_odds=1.918 P(ROI<=0)=0.00
+    after_fd  one/sel : n=15201 ROI=+6.63% units=+1008.0 CI95=[+4.8%, +8.8%] hit=56.2% be=52.8% avg_odds=1.918 P(ROI<=0)=0.00
+    both15    all-books: n=18178 ROI=+4.50% units=+818.4 CI95=[+2.8%, +6.1%] hit=55.1% be=52.7% avg_odds=1.914 P(ROI<=0)=0.00
+    both15    one/sel : n=18178 ROI=+4.50% units=+818.4 CI95=[+2.8%, +6.1%] hit=55.1% be=52.7% avg_odds=1.914 P(ROI<=0)=0.00
+ thr=0.04
+    all       all-books: n=34870 ROI=+13.09% units=+4564.4 CI95=[+11.6%, +14.4%] hit=60.2% be=53.3% avg_odds=1.891 P(ROI<=0)=0.00
+    all       one/sel : n=34870 ROI=+13.09% units=+4564.4 CI95=[+11.6%, +14.4%] hit=60.2% be=53.3% avg_odds=1.891 P(ROI<=0)=0.00
+    fresh60   all-books: n=18028 ROI=+11.23% units=+2025.3 CI95=[+9.4%, +13.0%] hit=59.0% be=53.1% avg_odds=1.899 P(ROI<=0)=0.00
+    fresh60   one/sel : n=18028 ROI=+11.23% units=+2025.3 CI95=[+9.4%, +13.0%] hit=59.0% be=53.1% avg_odds=1.899 P(ROI<=0)=0.00
+    after_fd  all-books: n=6776 ROI=+12.03% units=+815.0 CI95=[+8.2%, +15.0%] hit=59.3% be=53.0% avg_odds=1.908 P(ROI<=0)=0.00
+    after_fd  one/sel : n=6776 ROI=+12.03% units=+815.0 CI95=[+8.2%, +15.0%] hit=59.3% be=53.0% avg_odds=1.908 P(ROI<=0)=0.00
+    both15    all-books: n=6755 ROI=+9.81% units=+662.9 CI95=[+7.1%, +12.2%] hit=58.2% be=53.1% avg_odds=1.900 P(ROI<=0)=0.00
+    both15    one/sel : n=6755 ROI=+9.81% units=+662.9 CI95=[+7.1%, +12.2%] hit=58.2% be=53.1% avg_odds=1.900 P(ROI<=0)=0.00
+    by season (after_fd tier, one/sel):
+       2021-22: n=2059 ROI=+24.90% units=+512.8 CI95=[+20.7%, +29.9%] hit=64.7% be=52.0% avg_odds=1.946 P(ROI<=0)=0.00
+       2022-23: n=227 ROI=+9.94% units=+22.6 CI95=[-0.9%, +22.5%] hit=57.3% be=52.0% avg_odds=1.947 P(ROI<=0)=0.04
+       2023-24: n=1097 ROI=+1.74% units=+19.1 CI95=[-4.4%, +10.0%] hit=53.2% be=52.3% avg_odds=1.936 P(ROI<=0)=0.27
+       2024-25: n=3393 ROI=+7.68% units=+260.6 CI95=[+2.3%, +12.3%] hit=58.1% be=53.9% avg_odds=1.874 P(ROI<=0)=0.00
+    by season (all rows, one/sel):
+       2021-22: n=4311 ROI=+18.81% units=+810.8 CI95=[+15.3%, +21.6%] hit=61.6% be=52.1% avg_odds=1.940 P(ROI<=0)=0.00
+       2022-23: n=3275 ROI=+12.21% units=+400.0 CI95=[+9.5%, +14.9%] hit=59.0% be=52.6% avg_odds=1.916 P(ROI<=0)=0.00
+       2023-24: n=11170 ROI=+13.37% units=+1492.9 CI95=[+11.4%, +15.5%] hit=60.1% be=53.0% avg_odds=1.900 P(ROI<=0)=0.00
+       2024-25: n=16114 ROI=+11.55% units=+1860.7 CI95=[+8.9%, +13.6%] hit=60.1% be=53.9% avg_odds=1.866 P(ROI<=0)=0.00
+ thr=0.06
+    all       all-books: n=16815 ROI=+18.02% units=+3030.0 CI95=[+16.1%, +20.1%] hit=63.0% be=53.5% avg_odds=1.882 P(ROI<=0)=0.00
+    all       one/sel : n=16815 ROI=+18.02% units=+3030.0 CI95=[+16.1%, +20.1%] hit=63.0% be=53.5% avg_odds=1.882 P(ROI<=0)=0.00
+    fresh60   all-books: n=7655 ROI=+15.53% units=+1189.0 CI95=[+12.9%, +18.3%] hit=61.7% be=53.4% avg_odds=1.886 P(ROI<=0)=0.00
+    fresh60   one/sel : n=7655 ROI=+15.53% units=+1189.0 CI95=[+12.9%, +18.3%] hit=61.7% be=53.4% avg_odds=1.886 P(ROI<=0)=0.00
+    after_fd  all-books: n=3404 ROI=+17.22% units=+586.1 CI95=[+11.8%, +22.5%] hit=62.0% be=53.1% avg_odds=1.907 P(ROI<=0)=0.00
+    after_fd  one/sel : n=3404 ROI=+17.22% units=+586.1 CI95=[+11.8%, +22.5%] hit=62.0% be=53.1% avg_odds=1.907 P(ROI<=0)=0.00
+    both15    all-books: n=2562 ROI=+11.60% units=+297.1 CI95=[+7.2%, +15.4%] hit=59.8% be=53.6% avg_odds=1.882 P(ROI<=0)=0.00
+    both15    one/sel : n=2562 ROI=+11.60% units=+297.1 CI95=[+7.2%, +15.4%] hit=59.8% be=53.6% avg_odds=1.882 P(ROI<=0)=0.00
+ thr=0.08
+    all       all-books: n=9114 ROI=+22.65% units=+2063.9 CI95=[+20.6%, +25.2%] hit=65.3% be=53.5% avg_odds=1.884 P(ROI<=0)=0.00
+    all       one/sel : n=9114 ROI=+22.65% units=+2063.9 CI95=[+20.6%, +25.2%] hit=65.3% be=53.5% avg_odds=1.884 P(ROI<=0)=0.00
+    fresh60   all-books: n=3799 ROI=+19.08% units=+724.7 CI95=[+15.8%, +22.9%] hit=63.5% be=53.5% avg_odds=1.886 P(ROI<=0)=0.00
+    fresh60   one/sel : n=3799 ROI=+19.08% units=+724.7 CI95=[+15.8%, +22.9%] hit=63.5% be=53.5% avg_odds=1.886 P(ROI<=0)=0.00
+    after_fd  all-books: n=1980 ROI=+22.12% units=+438.0 CI95=[+14.9%, +28.4%] hit=64.3% be=53.0% avg_odds=1.909 P(ROI<=0)=0.00
+    after_fd  one/sel : n=1980 ROI=+22.12% units=+438.0 CI95=[+14.9%, +28.4%] hit=64.3% be=53.0% avg_odds=1.909 P(ROI<=0)=0.00
+    both15    all-books: n=1103 ROI=+16.58% units=+182.9 CI95=[+10.4%, +22.2%] hit=62.4% be=53.6% avg_odds=1.881 P(ROI<=0)=0.00
+    both15    one/sel : n=1103 ROI=+16.58% units=+182.9 CI95=[+10.4%, +22.2%] hit=62.4% be=53.6% avg_odds=1.881 P(ROI<=0)=0.00
+
+==== p_proj ====
+ thr=0.02
+    all       all-books: n=379227 ROI=+1.00% units=+3787.2 CI95=[+0.6%, +1.5%] hit=53.1% be=52.6% avg_odds=1.930 P(ROI<=0)=0.00
+    all       one/sel : n=379227 ROI=+1.00% units=+3787.2 CI95=[+0.6%, +1.5%] hit=53.1% be=52.6% avg_odds=1.930 P(ROI<=0)=0.00
+    fresh60   all-books: n=227368 ROI=+0.10% units=+230.9 CI95=[-0.5%, +0.6%] hit=52.6% be=52.6% avg_odds=1.930 P(ROI<=0)=0.39
+    fresh60   one/sel : n=227368 ROI=+0.10% units=+230.9 CI95=[-0.5%, +0.6%] hit=52.6% be=52.6% avg_odds=1.930 P(ROI<=0)=0.39
+    after_fd  all-books: n=39806 ROI=+1.12% units=+445.7 CI95=[-0.1%, +2.4%] hit=53.2% be=52.5% avg_odds=1.925 P(ROI<=0)=0.04
+    after_fd  one/sel : n=39806 ROI=+1.12% units=+445.7 CI95=[-0.1%, +2.4%] hit=53.2% be=52.5% avg_odds=1.925 P(ROI<=0)=0.04
+    both15    all-books: n=50275 ROI=-0.41% units=-204.2 CI95=[-1.4%, +0.6%] hit=52.4% be=52.6% avg_odds=1.918 P(ROI<=0)=0.81
+    both15    one/sel : n=50275 ROI=-0.41% units=-204.2 CI95=[-1.4%, +0.6%] hit=52.4% be=52.6% avg_odds=1.918 P(ROI<=0)=0.81
+ thr=0.04
+    all       all-books: n=291029 ROI=+1.54% units=+4494.4 CI95=[+1.1%, +2.1%] hit=53.4% be=52.6% avg_odds=1.929 P(ROI<=0)=0.00
+    all       one/sel : n=291029 ROI=+1.54% units=+4494.4 CI95=[+1.1%, +2.1%] hit=53.4% be=52.6% avg_odds=1.929 P(ROI<=0)=0.00
+    fresh60   all-books: n=177901 ROI=+0.55% units=+972.2 CI95=[-0.0%, +1.2%] hit=52.8% be=52.6% avg_odds=1.929 P(ROI<=0)=0.03
+    fresh60   one/sel : n=177901 ROI=+0.55% units=+972.2 CI95=[-0.0%, +1.2%] hit=52.8% be=52.6% avg_odds=1.929 P(ROI<=0)=0.03
+    after_fd  all-books: n=30562 ROI=+1.67% units=+510.1 CI95=[+0.6%, +2.8%] hit=53.4% be=52.5% avg_odds=1.926 P(ROI<=0)=0.01
+    after_fd  one/sel : n=30562 ROI=+1.67% units=+510.1 CI95=[+0.6%, +2.8%] hit=53.4% be=52.5% avg_odds=1.926 P(ROI<=0)=0.01
+    both15    all-books: n=39242 ROI=-0.41% units=-161.9 CI95=[-1.5%, +0.7%] hit=52.4% be=52.5% avg_odds=1.919 P(ROI<=0)=0.77
+    both15    one/sel : n=39242 ROI=-0.41% units=-161.9 CI95=[-1.5%, +0.7%] hit=52.4% be=52.5% avg_odds=1.919 P(ROI<=0)=0.77
+    by season (after_fd tier, one/sel):
+       2020-21: n=3048 ROI=+8.58% units=+261.5 CI95=[+5.8%, +11.3%] hit=56.0% be=51.5% avg_odds=1.963 P(ROI<=0)=0.00
+       2021-22: n=5587 ROI=+1.64% units=+91.5 CI95=[-1.2%, +5.3%] hit=53.4% be=52.4% avg_odds=1.928 P(ROI<=0)=0.19
+       2022-23: n=1383 ROI=+1.38% units=+19.0 CI95=[-3.0%, +5.8%] hit=53.5% be=52.5% avg_odds=1.926 P(ROI<=0)=0.28
+       2023-24: n=6334 ROI=+1.56% units=+98.7 CI95=[-0.9%, +4.2%] hit=53.5% be=52.6% avg_odds=1.922 P(ROI<=0)=0.14
+       2024-25: n=14210 ROI=+0.28% units=+39.3 CI95=[-2.0%, +2.2%] hit=52.8% be=52.6% avg_odds=1.920 P(ROI<=0)=0.41
+    by season (all rows, one/sel):
+       2020-21: n=31540 ROI=+4.37% units=+1378.4 CI95=[+3.1%, +5.5%] hit=54.4% be=52.2% avg_odds=1.956 P(ROI<=0)=0.00
+       2021-22: n=33479 ROI=+2.49% units=+833.4 CI95=[+1.5%, +4.0%] hit=53.8% be=52.5% avg_odds=1.939 P(ROI<=0)=0.00
+       2022-23: n=43976 ROI=-0.11% units=-47.1 CI95=[-1.4%, +1.1%] hit=52.6% be=52.7% avg_odds=1.925 P(ROI<=0)=0.57
+       2023-24: n=84376 ROI=+1.98% units=+1667.5 CI95=[+0.8%, +3.1%] hit=53.6% be=52.6% avg_odds=1.926 P(ROI<=0)=0.00
+       2024-25: n=97658 ROI=+0.68% units=+662.2 CI95=[-0.2%, +1.4%] hit=53.0% be=52.7% avg_odds=1.922 P(ROI<=0)=0.08
+ thr=0.06
+    all       all-books: n=218348 ROI=+2.10% units=+4577.7 CI95=[+1.6%, +2.7%] hit=53.6% be=52.5% avg_odds=1.929 P(ROI<=0)=0.00
+    all       one/sel : n=218348 ROI=+2.10% units=+4577.7 CI95=[+1.6%, +2.7%] hit=53.6% be=52.5% avg_odds=1.929 P(ROI<=0)=0.00
+    fresh60   all-books: n=136301 ROI=+1.02% units=+1390.6 CI95=[+0.3%, +1.9%] hit=53.0% be=52.5% avg_odds=1.929 P(ROI<=0)=0.00
+    fresh60   one/sel : n=136301 ROI=+1.02% units=+1390.6 CI95=[+0.3%, +1.9%] hit=53.0% be=52.5% avg_odds=1.929 P(ROI<=0)=0.00
+    after_fd  all-books: n=23132 ROI=+1.76% units=+406.5 CI95=[+0.2%, +3.2%] hit=53.4% be=52.4% avg_odds=1.928 P(ROI<=0)=0.00
+    after_fd  one/sel : n=23132 ROI=+1.76% units=+406.5 CI95=[+0.2%, +3.2%] hit=53.4% be=52.4% avg_odds=1.928 P(ROI<=0)=0.00
+    both15    all-books: n=29807 ROI=-0.19% units=-56.9 CI95=[-1.6%, +1.2%] hit=52.4% be=52.5% avg_odds=1.920 P(ROI<=0)=0.64
+    both15    one/sel : n=29807 ROI=-0.19% units=-56.9 CI95=[-1.6%, +1.2%] hit=52.4% be=52.5% avg_odds=1.920 P(ROI<=0)=0.64
+ thr=0.08
+    all       all-books: n=161440 ROI=+2.18% units=+3518.8 CI95=[+1.5%, +2.8%] hit=53.6% be=52.5% avg_odds=1.930 P(ROI<=0)=0.00
+    all       one/sel : n=161440 ROI=+2.18% units=+3518.8 CI95=[+1.5%, +2.8%] hit=53.6% be=52.5% avg_odds=1.930 P(ROI<=0)=0.00
+    fresh60   all-books: n=103348 ROI=+0.98% units=+1012.9 CI95=[+0.0%, +1.9%] hit=52.9% be=52.4% avg_odds=1.930 P(ROI<=0)=0.03
+    fresh60   one/sel : n=103348 ROI=+0.98% units=+1012.9 CI95=[+0.0%, +1.9%] hit=52.9% be=52.4% avg_odds=1.930 P(ROI<=0)=0.03
+    after_fd  all-books: n=17204 ROI=+1.70% units=+293.1 CI95=[+0.1%, +3.4%] hit=53.2% be=52.3% avg_odds=1.931 P(ROI<=0)=0.01
+    after_fd  one/sel : n=17204 ROI=+1.70% units=+293.1 CI95=[+0.1%, +3.4%] hit=53.2% be=52.3% avg_odds=1.931 P(ROI<=0)=0.01
+    both15    all-books: n=22293 ROI=-0.04% units=-8.3 CI95=[-1.5%, +1.5%] hit=52.4% be=52.4% avg_odds=1.922 P(ROI<=0)=0.52
+    both15    one/sel : n=22293 ROI=-0.04% units=-8.3 CI95=[-1.5%, +1.5%] hit=52.4% be=52.4% avg_odds=1.922 P(ROI<=0)=0.52

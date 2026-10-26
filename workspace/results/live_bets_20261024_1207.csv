@@ -1,0 +1,4 @@
+player,market,side,line,price,book,p_model,edge,line_fd,p_fd,mu,sigma,age_book_min,age_fd_min,mins_to_tip,live,kelly_quarter
+Naz Reid,FG3M,under,3.5,-210,bovada,0.73,0.053,2.5,0.567,1.406,1.277,19.498,12.248,362.719,True,0.041
+Brandon Miller,FG3M,under,4.5,-280,bovada,0.785,0.048,3.5,0.462,1.945,1.444,19.498,12.248,362.719,True,0.045
+Giannis Antetokounmpo,PTS,over,23.5,-275,bovada,0.77,0.037,28.5,0.484,21.084,6.408,19.498,12.248,362.719,True,0.034

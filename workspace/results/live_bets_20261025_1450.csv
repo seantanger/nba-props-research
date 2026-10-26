@@ -1,0 +1,13 @@
+player,market,side,line,price,book,p_model,edge,line_fd,p_fd,mu,sigma,age_book_min,age_fd_min,mins_to_tip,live,kelly_quarter
+Terrence Shannon Jr.,PTS,under,6.5,185,bovada,0.401,0.05,8.5,0.476,9.509,6.412,52.992,51.992,259.275,True,0.019
+Paul Reed Jr,PRA,under,28.5,-135,bovada,0.622,0.048,26.5,0.476,18.112,7.96,52.559,51.992,289.275,True,0.028
+Cade Cunningham,AST,under,11.5,-275,bovada,0.776,0.043,9.5,0.486,7.917,2.768,52.559,51.992,289.275,True,0.04
+Rui Hachimura,FG3M,over,1.5,-165,betmgm,0.66,0.038,2.5,0.383,2.331,1.408,51.475,52.492,259.275,True,0.025
+Domantas Sabonis,REB,under,13.5,120,bovada,0.49,0.035,13.5,0.51,13.044,4.268,51.375,52.309,369.275,True,0.016
+Desmond Bane,AST,under,4.5,-230,bovada,0.731,0.034,3.5,0.506,1.95,1.584,53.559,52.109,249.275,True,0.028
+Domantas Sabonis,PRA,under,41.5,-135,bovada,0.608,0.034,38.5,0.519,37.844,9.291,51.375,52.309,369.275,True,0.02
+Tyrese Maxey,AST,under,6.5,-165,bovada,0.655,0.032,5.5,0.519,5.083,2.24,52.559,51.992,289.275,True,0.021
+Cason Wallace,PRA,under,11.5,165,bovada,0.409,0.031,13.5,0.468,13.673,6.421,51.492,52.492,259.275,True,0.013
+Paul Reed Jr,PTS,under,18.5,-260,bovada,0.754,0.031,14.5,0.494,10.201,5.966,52.559,51.992,289.275,True,0.028
+Luka Doncic,PTS,under,37.5,-275,bovada,0.764,0.03,31.5,0.504,29.676,8.231,51.309,52.692,139.275,True,0.029
+Karl-Anthony Towns,PTS,over,16.5,-200,bovada,0.697,0.03,19.5,0.506,16.003,5.998,53.559,52.109,249.275,True,0.023

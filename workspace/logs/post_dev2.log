@@ -1,0 +1,9 @@
+results/bp_dist_dev2.parquet
+merged 483342 + 196851 = 680193 {'2024-02-01': 54615, '2024-04-01': 28117, '2024-10-01': 40370, '2024-12-01': 62636, '2025-02-01': 63209, '2025-04-01': 30636}
+rows 2706849 settled 2706708
+log-loss vs book implied:
+  p_over_imp n=2706708 ll=0.6854
+  p_proj     n=2706708 ll=0.6987
+  p_anc_c    n=2625256 ll=0.6847
+  p_anc_fd   n=1601419 ll=0.6854
+POST_DEV2_DONE

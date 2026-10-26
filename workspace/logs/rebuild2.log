@@ -1,0 +1,9 @@
+parsed rows 12907571 events 7697 2021-01-06 00:00:00 2026-10-24 00:00:00
+result
+loss         6160165
+win          6154780
+void          563407
+push           21517
+unmatched       7702
+Name: count, dtype: int64
+unmatched games: 3 of 7697

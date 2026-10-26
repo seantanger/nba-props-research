@@ -1,0 +1,81 @@
+PTS: injury features share of gain = 13.925%; top-25 overall:
+   1. PTS_ewm                      56.466%
+   2. PA_ewm                       10.546%
+   3. share_pts                    10.029%  <- injury
+   4. PTS_std_season                2.075%
+   5. FGA_m3                        2.021%
+   6. MIN_last                      1.732%
+   7. PTS_m10                       1.599%
+   8. PTS_m40                       1.309%
+   9. PTS_m20                       1.056%
+  10. FGA_m5                        0.994%
+  11. avail_pts                     0.961%  <- injury
+  12. avail_fga                     0.504%  <- injury
+  13. MIN_m3                        0.490%
+  14. rest_days                     0.431%
+  15. avail_min                     0.394%  <- injury
+  16. PRA_ewm                       0.388%
+  17. ps_PTS                        0.336%
+  18. PA_std_season                 0.300%
+  19. vac_min_samepos               0.236%  <- injury
+  20. PR_std_season                 0.233%
+  21. vac_frac                      0.212%  <- injury
+  22. USG_PCT_m40                   0.212%
+  23. vac_new_pts                   0.171%  <- injury
+  24. playoffs                      0.169%
+  25. opp_allow_PTS_15              0.160%
+  top injury features: vac_min 0.021%, vac_pts 0.095%, vac_fga 0.038%, vac_reb 0.089%, vac_ast 0.039%, vac_fg3a 0.017%, vac_usgmin 0.048%, vac_n 0.003%
+REB: injury features share of gain = 5.050%; top-25 overall:
+   1. REB_ewm                      61.266%
+   2. REB_std_season               11.074%
+   3. REB_m20                       6.289%
+   4. REB_m10                       2.184%
+   5. MIN_last                      2.050%
+   6. REB_m40                       1.355%
+   7. avail_min                     0.935%  <- injury
+   8. avail_pts                     0.836%  <- injury
+   9. REB_m5                        0.707%
+  10. ps_REB                        0.696%
+  11. vac_frac                      0.680%  <- injury
+  12. rest_days                     0.622%
+  13. MIN_trend                     0.489%
+  14. height_in                     0.439%
+  15. REB_PCT_m40                   0.397%
+  16. avail_fga                     0.365%  <- injury
+  17. vac_reb                       0.319%  <- injury
+  18. MIN_m3                        0.275%
+  19. opp_allow_REB_15              0.251%
+  20. PR_m3                         0.243%
+  21. share_min                     0.230%  <- injury
+  22. BLK_std_season                0.200%
+  23. vac_min_posC                  0.195%  <- injury
+  24. vac_new_pts                   0.188%  <- injury
+  25. vac_q_min                     0.137%  <- injury
+  top injury features: vac_min 0.022%, vac_pts 0.076%, vac_fga 0.032%, vac_reb 0.319%, vac_ast 0.067%, vac_fg3a 0.037%, vac_usgmin 0.057%, vac_n 0.006%
+AST: injury features share of gain = 4.277%; top-25 overall:
+   1. AST_ewm                      48.527%
+   2. AST_m10                      19.560%
+   3. AST_std_season               11.955%
+   4. AST_m40                       2.114%
+   5. AST_m3                        2.068%
+   6. AST_m20                       1.772%
+   7. MIN_last                      1.332%
+   8. avail_pts                     0.851%  <- injury
+   9. ps_AST                        0.833%
+  10. vac_ast                       0.626%  <- injury
+  11. AST_PCT_m40                   0.459%
+  12. avail_fga                     0.422%  <- injury
+  13. share_min                     0.346%  <- injury
+  14. vac_min_samepos               0.314%  <- injury
+  15. avail_min                     0.304%  <- injury
+  16. AST_m5                        0.286%
+  17. rest_days                     0.244%
+  18. MIN_m3                        0.241%
+  19. opp_allow_AST_15              0.240%
+  20. MIN_trend                     0.232%
+  21. playoffs                      0.228%
+  22. height_in                     0.198%
+  23. vac_frac                      0.157%  <- injury
+  24. share_min_x240                0.144%  <- injury
+  25. vac_q_min                     0.126%  <- injury
+  top injury features: vac_min 0.030%, vac_pts 0.052%, vac_fga 0.021%, vac_reb 0.034%, vac_ast 0.626%, vac_fg3a 0.018%, vac_usgmin 0.046%, vac_n 0.010%

@@ -1,0 +1,18 @@
+player,market,side,line,price,book,p_model,edge,line_fd,p_fd,mu,sigma,age_book_min,age_fd_min,mins_to_tip,live,kelly_quarter
+Jarrett Allen,PTS,under,17.5,-300,bovada,0.81,0.06,12.5,0.538,10.256,5.14,5.485,6.269,363.965,True,0.05
+Naz Reid,FG3M,under,3.5,-210,bovada,0.737,0.059,2.5,0.567,1.388,1.247,108.252,101.002,273.965,True,0.046
+Brandon Miller,FG3M,under,4.5,-280,bovada,0.793,0.056,3.5,0.462,1.95,1.386,108.252,101.002,273.965,True,0.05
+Kyshawn George,PTS,over,13.5,100,betonlineag,0.555,0.055,14.5,0.486,9.545,5.782,5.219,5.552,393.965,True,0.027
+Jamal Murray,FG3M,over,2.5,-165,betmgm,0.676,0.053,3.5,0.396,1.684,1.392,5.635,5.552,453.965,True,0.035
+Tyrese Maxey,REB,under,3.5,120,bovada,0.506,0.052,3.5,0.494,3.292,2.231,9.719,5.935,363.965,True,0.024
+Nikola Jokic,AST,over,9.5,-140,betmgm,0.622,0.039,10.5,0.468,5.418,2.552,5.635,5.552,453.965,True,0.023
+Dylan Harper,AST,under,4.5,-150,betrivers,0.636,0.036,3.5,0.567,2.611,1.933,5.602,5.452,393.965,True,0.023
+Donovan Mitchell,AST,under,5.5,-200,bovada,0.702,0.036,4.5,0.5,2.694,1.882,5.485,6.269,363.965,True,0.027
+James Harden,AST,under,7.5,-155,betmgm,0.642,0.035,6.5,0.542,3.549,2.126,5.969,6.269,363.965,True,0.022
+Matas Buzelis,FG3M,under,2.5,-200,betmgm,0.701,0.034,1.5,0.594,1.489,1.309,6.035,5.552,393.965,True,0.026
+Kevin Durant,FG3M,under,2.5,-210,betmgm,0.711,0.034,1.5,0.61,1.44,1.194,6.002,5.469,423.965,True,0.026
+Yaxel Lendeborg,PTS,under,17.5,-107,draftkings,0.551,0.034,16.5,0.528,9.42,5.053,5.285,5.569,513.965,True,0.018
+Michael Porter Jr,FG3M,over,2.5,-210,bovada,0.709,0.031,3.5,0.437,2.096,1.409,5.485,6.269,363.965,True,0.024
+VJ Edgecombe,AST,under,2.5,165,bovada,0.409,0.031,3.5,0.386,2.424,1.92,9.719,5.935,363.965,True,0.013
+James Harden,REB,under,3.5,165,bovada,0.408,0.031,4.5,0.428,3.843,2.419,5.485,6.269,363.965,True,0.012
+Brandon Miller,PTS,under,26.5,-250,bovada,0.745,0.031,22.5,0.481,14.669,6.554,108.252,101.002,273.965,True,0.027

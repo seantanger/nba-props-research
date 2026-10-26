@@ -1,0 +1,19 @@
+2022-12-01 PTS: train=6000 test=1531 elapsed=514s
+2022-12-01 REB: train=6000 test=1362 elapsed=977s
+2022-12-01 AST: train=6000 test=1034 elapsed=1409s
+2022-12-01 FG3M: train=6000 test=999 elapsed=1829s
+2022-12-01 PRA: train=6000 test=1498 elapsed=2364s
+2023-01-01 PTS: train=6000 test=1778 elapsed=2930s
+2023-01-01 REB: train=6000 test=1583 elapsed=3397s
+2023-01-01 AST: train=6000 test=1136 elapsed=3719s
+2023-01-01 FG3M: train=6000 test=1121 elapsed=3961s
+2023-01-01 PRA: train=6000 test=1714 elapsed=4274s
+2023-02-01 PTS: train=6000 test=1907 elapsed=4605s
+2023-02-01 REB: train=6000 test=1724 elapsed=4855s
+2023-02-01 AST: train=6000 test=1184 elapsed=5097s
+2023-02-01 FG3M: train=6000 test=1191 elapsed=5333s
+2023-02-01 PRA: train=6000 test=1807 elapsed=5652s
+tabpfn logloss 0.707624425006286 market 0.6890651139855593 n 21569
+tabpfn thr=0.02: n=12481 ROI=-3.25% units=-405.4 CI95=[-4.7%, -1.7%] hit=51.8% be=53.5% avg_odds=1.884 P(ROI<=0)=1.00
+tabpfn thr=0.04: n=9858 ROI=-3.65% units=-359.5 CI95=[-5.7%, -1.6%] hit=51.6% be=53.5% avg_odds=1.884 P(ROI<=0)=1.00
+tabpfn thr=0.06: n=7509 ROI=-3.29% units=-247.1 CI95=[-5.6%, -1.2%] hit=51.9% be=53.6% avg_odds=1.883 P(ROI<=0)=1.00

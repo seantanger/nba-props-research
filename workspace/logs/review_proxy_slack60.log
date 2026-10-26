@@ -1,0 +1,36 @@
+events: {'out': 69118, 'q': 15841, 'up': 7333, 'ret': 1171}
+
+=== tier clean120 (rule p_anc_fd thr 0.03): n=6424
+    all candidates: n=6424 ROI=+6.10% units=+392.2 CI95=[+3.1%, +9.0%] hit=57.1% be=53.9% avg_odds=1.880 P(ROI<=0)=0.00
+    kept (not explained): n=5853 ROI=+6.31% units=+369.2 CI95=[+3.4%, +8.9%] hit=57.0% be=53.8% avg_odds=1.886 P(ROI<=0)=0.00
+    VETOED (news explains gap): n=571 ROI=+4.02% units=+22.9 CI95=[-6.4%, +14.5%] hit=57.8% be=55.4% avg_odds=1.814 P(ROI<=0)=0.22
+      of which gap up / bet under: n=568 ROI=+3.94% units=+22.4 CI95=[-6.7%, +15.3%] hit=57.7% be=55.4% avg_odds=1.815 P(ROI<=0)=0.26
+    news AGAINST the gap (book stale): n=568 ROI=+10.93% units=+62.1 CI95=[+1.6%, +20.8%] hit=61.6% be=55.9% avg_odds=1.804 P(ROI<=0)=0.02
+    no news at all: n=4936 ROI=+5.82% units=+287.2 CI95=[+2.9%, +8.4%] hit=57.0% be=54.0% avg_odds=1.878 P(ROI<=0)=0.00
+    gap == 0 (price-only edge): n=1601 ROI=+5.95% units=+95.3 CI95=[+0.7%, +10.8%] hit=50.7% be=47.7% avg_odds=2.122 P(ROI<=0)=0.01
+    bet WITH the book at FanDuel's stale line (unverifiable availability):
+      2020-21: n=6
+      2021-22: n=28
+      2022-23: n=20
+      2023-24: n=94
+      2024-25: n=423
+    WITH-the-book alternative at FanDuel: news side at FD: n=571 ROI=+10.60% units=+60.6 CI95=[-12.2%, +42.5%] hit=53.3% be=54.7% avg_odds=1.964 P(ROI<=0)=0.26
+      ... restricted to starter out (>=25 min) or |gap|>=1.5: : n=434 ROI=+18.12% units=+78.6 CI95=[-11.9%, +57.9%] hit=55.1% be=54.7% avg_odds=2.005 P(ROI<=0)=0.22
+
+=== tier all (rule p_anc_fd thr 0.03): n=44233
+    all candidates: n=44233 ROI=+11.04% units=+4882.1 CI95=[+9.7%, +12.2%] hit=59.6% be=53.8% avg_odds=1.878 P(ROI<=0)=0.00
+    kept (not explained): n=41873 ROI=+10.85% units=+4541.4 CI95=[+9.6%, +12.1%] hit=59.4% be=53.7% avg_odds=1.881 P(ROI<=0)=0.00
+    VETOED (news explains gap): n=2360 ROI=+14.44% units=+340.8 CI95=[+9.4%, +19.6%] hit=62.9% be=55.2% avg_odds=1.825 P(ROI<=0)=0.00
+      of which gap up / bet under: n=2268 ROI=+14.05% units=+318.7 CI95=[+8.7%, +18.8%] hit=62.7% be=55.2% avg_odds=1.823 P(ROI<=0)=0.00
+      of which gap down / bet over: n=92 ROI=+23.98% units=+22.1 CI95=[+7.3%, +41.5%] hit=67.4% be=54.4% avg_odds=1.851 P(ROI<=0)=0.01
+    news AGAINST the gap (book stale): n=1914 ROI=+14.32% units=+274.1 CI95=[+9.0%, +20.0%] hit=62.5% be=55.1% avg_odds=1.832 P(ROI<=0)=0.00
+    no news at all: n=38601 ROI=+10.76% units=+4151.9 CI95=[+9.4%, +12.1%] hit=59.5% be=53.8% avg_odds=1.874 P(ROI<=0)=0.00
+    gap == 0 (price-only edge): n=7913 ROI=+7.51% units=+594.3 CI95=[+5.0%, +9.8%] hit=51.4% be=47.8% avg_odds=2.117 P(ROI<=0)=0.00
+    bet WITH the book at FanDuel's stale line (unverifiable availability):
+      2020-21: n=30
+      2021-22: n=698
+      2022-23: n=94
+      2023-24: n=416
+      2024-25: n=1122
+    WITH-the-book alternative at FanDuel: news side at FD: n=2360 ROI=-1.11% units=-26.1 CI95=[-8.9%, +10.8%] hit=51.5% be=54.5% avg_odds=1.888 P(ROI<=0)=0.63
+      ... restricted to starter out (>=25 min) or |gap|>=1.5: : n=1980 ROI=+1.12% units=+22.2 CI95=[-8.1%, +14.6%] hit=52.2% be=54.4% avg_odds=1.899 P(ROI<=0)=0.46

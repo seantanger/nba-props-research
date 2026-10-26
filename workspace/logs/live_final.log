@@ -1,0 +1,34 @@
+/Users/seantang/git/nba-ai/workspace/src/features.py:155: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df["month"] = df.GAME_DATE.dt.month
+rule: {'name': 'FanDuel-anchored over/under with model dispersion, clean-availability tier', 'prob_col': 'p_anc_fd', 'thr': 0.03, 'tier': 'clean120', 'min_odds': 1.3, 'max_odds': 3.0, 'max_age_min': 120, 'staking': 'flat 1 unit, one bet per player/game/market (largest edge)', 'frozen_at': '2026-10-24T12:00 EDT, before any holdout row was evaluated'}
+13 events listed, 8 within 30h
+  fetched Brooklyn Nets @ Cleveland Cavaliers: cost 5, remaining 438
+  fetched Milwaukee Bucks @ Philadelphia 76ers: cost 5, remaining 433
+  fetched Washington Wizards @ Chicago Bulls: cost 5, remaining 428
+  fetched San Antonio Spurs @ Dallas Mavericks: cost 5, remaining 423
+  fetched Houston Rockets @ Atlanta Hawks: cost 5, remaining 418
+  fetched New Orleans Pelicans @ Denver Nuggets: cost 5, remaining 413
+  fetched Golden State Warriors @ Phoenix Suns: cost 5, remaining 408
+4432 outcome rows, 6 books, 8 games, FanDuel present: True
+(274384, 336) 2016-10-25 00:00:00 2026-10-24 00:00:00
+
+1807 priced selections vs FanDuel; 17 bets at thr=0.03 (17 with both markets live within 120 min)
+           player market  side  line  price        book  p_model  edge  line_fd  p_fd     mu  sigma  age_book_min  age_fd_min  mins_to_tip  live  kelly_quarter
+    Jarrett Allen    PTS under  17.5   -300      bovada    0.810 0.060     12.5 0.538 10.256  5.140         5.485       6.269      363.965  True          0.050
+         Naz Reid   FG3M under   3.5   -210      bovada    0.737 0.059      2.5 0.567  1.388  1.247       108.252     101.002      273.965  True          0.046
+   Brandon Miller   FG3M under   4.5   -280      bovada    0.793 0.056      3.5 0.462  1.950  1.386       108.252     101.002      273.965  True          0.050
+   Kyshawn George    PTS  over  13.5    100 betonlineag    0.555 0.055     14.5 0.486  9.545  5.782         5.219       5.552      393.965  True          0.027
+     Jamal Murray   FG3M  over   2.5   -165      betmgm    0.676 0.053      3.5 0.396  1.684  1.392         5.635       5.552      453.965  True          0.035
+     Tyrese Maxey    REB under   3.5    120      bovada    0.506 0.052      3.5 0.494  3.292  2.231         9.719       5.935      363.965  True          0.024
+     Nikola Jokic    AST  over   9.5   -140      betmgm    0.622 0.039     10.5 0.468  5.418  2.552         5.635       5.552      453.965  True          0.023
+     Dylan Harper    AST under   4.5   -150   betrivers    0.636 0.036      3.5 0.567  2.611  1.933         5.602       5.452      393.965  True          0.023
+ Donovan Mitchell    AST under   5.5   -200      bovada    0.702 0.036      4.5 0.500  2.694  1.882         5.485       6.269      363.965  True          0.027
+     James Harden    AST under   7.5   -155      betmgm    0.642 0.035      6.5 0.542  3.549  2.126         5.969       6.269      363.965  True          0.022
+    Matas Buzelis   FG3M under   2.5   -200      betmgm    0.701 0.034      1.5 0.594  1.489  1.309         6.035       5.552      393.965  True          0.026
+     Kevin Durant   FG3M under   2.5   -210      betmgm    0.711 0.034      1.5 0.610  1.440  1.194         6.002       5.469      423.965  True          0.026
+  Yaxel Lendeborg    PTS under  17.5   -107  draftkings    0.551 0.034     16.5 0.528  9.420  5.053         5.285       5.569      513.965  True          0.018
+Michael Porter Jr   FG3M  over   2.5   -210      bovada    0.709 0.031      3.5 0.437  2.096  1.409         5.485       6.269      363.965  True          0.024
+     VJ Edgecombe    AST under   2.5    165      bovada    0.409 0.031      3.5 0.386  2.424  1.920         9.719       5.935      363.965  True          0.013
+     James Harden    REB under   3.5    165      bovada    0.408 0.031      4.5 0.428  3.843  2.419         5.485       6.269      363.965  True          0.012
+   Brandon Miller    PTS under  26.5   -250      bovada    0.745 0.031     22.5 0.481 14.669  6.554       108.252     101.002      273.965  True          0.027
+saved results/live_bets_20261024_1336.csv

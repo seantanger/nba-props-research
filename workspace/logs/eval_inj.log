@@ -1,0 +1,108 @@
+aligned rows: new 4,105,678 old 4,105,678; dev dates 2021-01-06..2025-06-22
+
+(a) accuracy vs FanDuel's line (FanDuel rows, settled, one per player/game/market)
+ model market      n  miss_model  miss_fd_line  side_model  side_fd  ll_proj  ll_fd  ll_anc  bias_model  bias_fd
+injury    ALL 292919       3.483         3.432      0.5288   0.5014   0.7000 0.6867  0.6867      -0.101   -0.086
+phase1    ALL 292919       3.503         3.432      0.5274   0.5014   0.7035 0.6867  0.6867      -0.138   -0.086
+injury    AST  36309       1.837         1.823      0.5338   0.5253   0.7013 0.6867  0.6867      -0.018   -0.130
+phase1    AST  36309       1.844         1.823      0.5307   0.5253   0.7051 0.6867  0.6867      -0.042   -0.130
+injury    BLK   5797       0.929         0.969      0.5689   0.5881   0.6784 0.6654  0.6654      -0.050   -0.111
+phase1    BLK   5797       0.929         0.969      0.5701   0.5881   0.6786 0.6654  0.6654      -0.054   -0.111
+injury   FG3M  43514       1.205         1.238      0.5609   0.5632   0.6812 0.6774  0.6774      -0.012   -0.081
+phase1   FG3M  43514       1.206         1.238      0.5598   0.5632   0.6820 0.6774  0.6774      -0.014   -0.081
+injury     PA  17327       6.140         5.974      0.5027   0.4529   0.7151 0.6926  0.6926      -0.113   -0.041
+phase1     PA  17327       6.189         5.974      0.5022   0.4529   0.7214 0.6926  0.6926      -0.203   -0.041
+injury     PR  27690       6.171         6.037      0.5098   0.4457   0.7113 0.6929  0.6929      -0.178   -0.083
+phase1     PR  27690       6.214         6.037      0.5089   0.4457   0.7168 0.6929  0.6929      -0.261   -0.083
+injury    PRA  16810       7.006         6.817      0.5049   0.4430   0.7150 0.6927  0.6927      -0.216    0.100
+phase1    PRA  16810       7.057         6.817      0.5011   0.4430   0.7206 0.6927  0.6927      -0.303    0.100
+injury    PTS  61780       5.208         5.110      0.5081   0.4611   0.7091 0.6922  0.6922      -0.200   -0.154
+phase1    PTS  61780       5.242         5.110      0.5073   0.4611   0.7139 0.6922  0.6922      -0.256   -0.154
+injury     RA  16580       3.069         3.024      0.5185   0.4971   0.7054 0.6904  0.6904      -0.062   -0.104
+phase1     RA  16580       3.081         3.024      0.5137   0.4971   0.7092 0.6904  0.6904      -0.090   -0.104
+injury    REB  55285       2.129         2.125      0.5333   0.5129   0.6962 0.6879  0.6879      -0.066   -0.063
+phase1    REB  55285       2.136         2.125      0.5331   0.5129   0.6985 0.6879  0.6879      -0.079   -0.063
+injury    STL  11827       0.866         0.922      0.5944   0.6052   0.6687 0.6593  0.6593      -0.035   -0.032
+phase1    STL  11827       0.867         0.922      0.5930   0.6052   0.6690 0.6593  0.6593      -0.034   -0.032
+
+(b) model-only ROI (p_proj vs the book's price), flat 1u, odds 1.3-3.0
+phase1 model-only @FanDuel all thr=0.03: n=135901 ROI=-1.29% units=-1751.5 CI95=[-2.0%, -0.6%] hit=52.0% be=52.7% avg_odds=1.916 P(ROI<=0)=1.00  offers=274,692 bet_frac=0.495 under_frac=0.74
+phase1 model-only @FanDuel clean120 thr=0.03: n=123094 ROI=-1.34% units=-1647.5 CI95=[-2.1%, -0.5%] hit=52.0% be=52.7% avg_odds=1.912 P(ROI<=0)=1.00  offers=249,067 bet_frac=0.494 under_frac=0.74
+phase1 model-only @Ontario(DK/MGM/BR) all thr=0.03: n=273437 ROI=+0.25% units=+694.8 CI95=[-0.3%, +0.8%] hit=53.1% be=53.0% avg_odds=1.916 P(ROI<=0)=0.18  offers=1,056,450 bet_frac=0.259 under_frac=0.74
+phase1 model-only @Ontario(DK/MGM/BR) clean120 thr=0.03: n=34566 ROI=-0.02% units=-7.0 CI95=[-1.2%, +1.2%] hit=53.0% be=53.0% avg_odds=1.902 P(ROI<=0)=0.52  offers=96,860 bet_frac=0.357 under_frac=0.76
+phase1 model-only @DraftKings all thr=0.03: n=160840 ROI=-0.81% units=-1301.6 CI95=[-1.5%, -0.1%] hit=52.6% be=53.1% avg_odds=1.909 P(ROI<=0)=0.99  offers=349,512 bet_frac=0.460 under_frac=0.75
+phase1 model-only @DraftKings clean120 thr=0.03: n=13820 ROI=-2.23% units=-308.5 CI95=[-4.1%, -0.3%] hit=51.9% be=53.1% avg_odds=1.899 P(ROI<=0)=0.99  offers=28,533 bet_frac=0.484 under_frac=0.74
+phase1 model-only @BetMGM all thr=0.03: n=221023 ROI=-1.10% units=-2420.7 CI95=[-1.7%, -0.5%] hit=52.7% be=53.3% avg_odds=1.903 P(ROI<=0)=1.00  offers=522,750 bet_frac=0.423 under_frac=0.75
+phase1 model-only @BetMGM clean120 thr=0.03: n=13692 ROI=+0.19% units=+26.3 CI95=[-1.6%, +2.2%] hit=53.3% be=53.2% avg_odds=1.896 P(ROI<=0)=0.40  offers=29,131 bet_frac=0.470 under_frac=0.77
+phase1 model-only @BetRivers all thr=0.03: n=80096 ROI=-0.21% units=-167.8 CI95=[-1.0%, +0.5%] hit=52.8% be=53.0% avg_odds=1.907 P(ROI<=0)=0.70  offers=184,188 bet_frac=0.435 under_frac=0.77
+phase1 model-only @BetRivers clean120 thr=0.03: n=16462 ROI=-0.40% units=-66.2 CI95=[-2.1%, +1.4%] hit=52.9% be=53.1% avg_odds=1.900 P(ROI<=0)=0.67  offers=39,196 bet_frac=0.420 under_frac=0.76
+injury model-only @FanDuel all thr=0.03: n=132098 ROI=-0.87% units=-1152.5 CI95=[-1.6%, -0.2%] hit=52.2% be=52.7% avg_odds=1.916 P(ROI<=0)=0.99  offers=274,692 bet_frac=0.481 under_frac=0.74
+injury model-only @FanDuel clean120 thr=0.03: n=119323 ROI=-0.92% units=-1092.4 CI95=[-1.7%, -0.2%] hit=52.3% be=52.7% avg_odds=1.912 P(ROI<=0)=0.99  offers=249,067 bet_frac=0.479 under_frac=0.75
+injury model-only @Ontario(DK/MGM/BR) all thr=0.03: n=268715 ROI=+0.91% units=+2458.1 CI95=[+0.4%, +1.4%] hit=53.5% be=53.0% avg_odds=1.916 P(ROI<=0)=0.00  offers=1,056,450 bet_frac=0.254 under_frac=0.75
+injury model-only @Ontario(DK/MGM/BR) clean120 thr=0.03: n=33679 ROI=+0.07% units=+23.0 CI95=[-1.2%, +1.3%] hit=53.1% be=53.0% avg_odds=1.902 P(ROI<=0)=0.48  offers=96,860 bet_frac=0.348 under_frac=0.75
+injury model-only @DraftKings all thr=0.03: n=156852 ROI=-0.07% units=-110.5 CI95=[-0.7%, +0.6%] hit=53.0% be=53.1% avg_odds=1.908 P(ROI<=0)=0.57  offers=349,512 bet_frac=0.449 under_frac=0.76
+injury model-only @DraftKings clean120 thr=0.03: n=13255 ROI=-2.01% units=-265.8 CI95=[-4.1%, +0.1%] hit=52.0% be=53.1% avg_odds=1.899 P(ROI<=0)=0.97  offers=28,533 bet_frac=0.465 under_frac=0.73
+injury model-only @BetMGM all thr=0.03: n=216053 ROI=-0.37% units=-803.2 CI95=[-1.0%, +0.2%] hit=53.1% be=53.3% avg_odds=1.903 P(ROI<=0)=0.91  offers=522,750 bet_frac=0.413 under_frac=0.76
+injury model-only @BetMGM clean120 thr=0.03: n=13257 ROI=+0.24% units=+31.4 CI95=[-1.7%, +2.3%] hit=53.3% be=53.2% avg_odds=1.897 P(ROI<=0)=0.41  offers=29,131 bet_frac=0.455 under_frac=0.77
+injury model-only @BetRivers all thr=0.03: n=79210 ROI=+0.47% units=+372.2 CI95=[-0.3%, +1.2%] hit=53.2% be=53.0% avg_odds=1.905 P(ROI<=0)=0.11  offers=184,188 bet_frac=0.430 under_frac=0.77
+injury model-only @BetRivers clean120 thr=0.03: n=16251 ROI=+0.37% units=+59.5 CI95=[-1.3%, +2.1%] hit=53.4% be=53.1% avg_odds=1.899 P(ROI<=0)=0.32  offers=39,196 bet_frac=0.415 under_frac=0.76
+phase1 model-only @FanDuel all thr=0.05: n=100842 ROI=-0.85% units=-858.5 CI95=[-1.6%, -0.0%] hit=52.2% be=52.6% avg_odds=1.916 P(ROI<=0)=0.98  offers=274,692 bet_frac=0.367 under_frac=0.77
+phase1 model-only @FanDuel clean120 thr=0.05: n=91159 ROI=-0.93% units=-851.2 CI95=[-1.8%, -0.1%] hit=52.2% be=52.7% avg_odds=1.912 P(ROI<=0)=0.98  offers=249,067 bet_frac=0.366 under_frac=0.78
+phase1 model-only @Ontario(DK/MGM/BR) all thr=0.05: n=202627 ROI=+0.65% units=+1313.3 CI95=[+0.0%, +1.2%] hit=53.2% be=52.9% avg_odds=1.917 P(ROI<=0)=0.02  offers=1,056,450 bet_frac=0.192 under_frac=0.77
+phase1 model-only @Ontario(DK/MGM/BR) clean120 thr=0.05: n=25754 ROI=+0.05% units=+13.0 CI95=[-1.4%, +1.4%] hit=53.0% be=53.0% avg_odds=1.902 P(ROI<=0)=0.47  offers=96,860 bet_frac=0.266 under_frac=0.79
+phase1 model-only @DraftKings all thr=0.05: n=118787 ROI=-0.63% units=-746.8 CI95=[-1.4%, +0.2%] hit=52.7% be=53.0% avg_odds=1.909 P(ROI<=0)=0.93  offers=349,512 bet_frac=0.340 under_frac=0.78
+phase1 model-only @DraftKings clean120 thr=0.05: n=10395 ROI=-2.06% units=-213.7 CI95=[-4.0%, +0.1%] hit=52.0% be=53.1% avg_odds=1.898 P(ROI<=0)=0.97  offers=28,533 bet_frac=0.364 under_frac=0.78
+phase1 model-only @BetMGM all thr=0.05: n=161875 ROI=-0.65% units=-1054.9 CI95=[-1.3%, -0.0%] hit=52.9% be=53.2% avg_odds=1.903 P(ROI<=0)=0.98  offers=522,750 bet_frac=0.310 under_frac=0.78
+phase1 model-only @BetMGM clean120 thr=0.05: n=10284 ROI=+0.87% units=+89.5 CI95=[-1.3%, +3.1%] hit=53.6% be=53.1% avg_odds=1.897 P(ROI<=0)=0.21  offers=29,131 bet_frac=0.353 under_frac=0.80
+phase1 model-only @BetRivers all thr=0.05: n=57556 ROI=+0.34% units=+196.8 CI95=[-0.6%, +1.2%] hit=53.1% be=52.9% avg_odds=1.906 P(ROI<=0)=0.23  offers=184,188 bet_frac=0.312 under_frac=0.81
+phase1 model-only @BetRivers clean120 thr=0.05: n=11836 ROI=-0.65% units=-76.9 CI95=[-2.6%, +1.4%] hit=52.7% be=53.0% avg_odds=1.901 P(ROI<=0)=0.73  offers=39,196 bet_frac=0.302 under_frac=0.80
+injury model-only @FanDuel all thr=0.05: n=96100 ROI=-0.53% units=-506.8 CI95=[-1.3%, +0.3%] hit=52.4% be=52.7% avg_odds=1.916 P(ROI<=0)=0.89  offers=274,692 bet_frac=0.350 under_frac=0.77
+injury model-only @FanDuel clean120 thr=0.05: n=86434 ROI=-0.62% units=-534.2 CI95=[-1.5%, +0.2%] hit=52.4% be=52.7% avg_odds=1.912 P(ROI<=0)=0.92  offers=249,067 bet_frac=0.347 under_frac=0.78
+injury model-only @Ontario(DK/MGM/BR) all thr=0.05: n=196142 ROI=+1.59% units=+3123.6 CI95=[+1.0%, +2.2%] hit=53.7% be=52.9% avg_odds=1.916 P(ROI<=0)=0.00  offers=1,056,450 bet_frac=0.186 under_frac=0.77
+injury model-only @Ontario(DK/MGM/BR) clean120 thr=0.05: n=24512 ROI=+0.85% units=+207.8 CI95=[-0.6%, +2.2%] hit=53.4% be=53.0% avg_odds=1.903 P(ROI<=0)=0.13  offers=96,860 bet_frac=0.253 under_frac=0.78
+injury model-only @DraftKings all thr=0.05: n=113520 ROI=+0.52% units=+592.7 CI95=[-0.3%, +1.3%] hit=53.3% be=53.0% avg_odds=1.909 P(ROI<=0)=0.10  offers=349,512 bet_frac=0.325 under_frac=0.78
+injury model-only @DraftKings clean120 thr=0.05: n=9709 ROI=-1.57% units=-152.4 CI95=[-3.9%, +0.8%] hit=52.1% be=53.0% avg_odds=1.901 P(ROI<=0)=0.90  offers=28,533 bet_frac=0.340 under_frac=0.76
+injury model-only @BetMGM all thr=0.05: n=155380 ROI=+0.28% units=+429.0 CI95=[-0.4%, +0.9%] hit=53.4% be=53.2% avg_odds=1.903 P(ROI<=0)=0.22  offers=522,750 bet_frac=0.297 under_frac=0.78
+injury model-only @BetMGM clean120 thr=0.05: n=9691 ROI=+1.39% units=+134.8 CI95=[-0.8%, +3.4%] hit=53.8% be=53.1% avg_odds=1.898 P(ROI<=0)=0.10  offers=29,131 bet_frac=0.333 under_frac=0.80
+injury model-only @BetRivers all thr=0.05: n=55892 ROI=+1.26% units=+707.0 CI95=[+0.4%, +2.2%] hit=53.6% be=52.9% avg_odds=1.906 P(ROI<=0)=0.00  offers=184,188 bet_frac=0.303 under_frac=0.79
+injury model-only @BetRivers clean120 thr=0.05: n=11461 ROI=+0.80% units=+91.3 CI95=[-1.2%, +2.8%] hit=53.5% be=53.0% avg_odds=1.900 P(ROI<=0)=0.21  offers=39,196 bet_frac=0.292 under_frac=0.79
+phase1 model-only @FanDuel all thr=0.08: n=63180 ROI=-0.96% units=-605.7 CI95=[-2.0%, +0.1%] hit=52.1% be=52.6% avg_odds=1.916 P(ROI<=0)=0.97  offers=274,692 bet_frac=0.230 under_frac=0.81
+phase1 model-only @FanDuel clean120 thr=0.08: n=56928 ROI=-0.91% units=-518.5 CI95=[-2.0%, +0.2%] hit=52.2% be=52.7% avg_odds=1.911 P(ROI<=0)=0.95  offers=249,067 bet_frac=0.229 under_frac=0.82
+phase1 model-only @Ontario(DK/MGM/BR) all thr=0.08: n=125695 ROI=+1.29% units=+1625.3 CI95=[+0.5%, +2.1%] hit=53.4% be=52.7% avg_odds=1.918 P(ROI<=0)=0.00  offers=1,056,450 bet_frac=0.119 under_frac=0.81
+phase1 model-only @Ontario(DK/MGM/BR) clean120 thr=0.08: n=16067 ROI=+0.40% units=+63.5 CI95=[-1.4%, +2.2%] hit=53.1% be=52.9% avg_odds=1.904 P(ROI<=0)=0.34  offers=96,860 bet_frac=0.166 under_frac=0.84
+phase1 model-only @DraftKings all thr=0.08: n=73408 ROI=-0.10% units=-70.9 CI95=[-1.1%, +0.9%] hit=52.9% be=52.9% avg_odds=1.910 P(ROI<=0)=0.57  offers=349,512 bet_frac=0.210 under_frac=0.82
+phase1 model-only @DraftKings clean120 thr=0.08: n=6593 ROI=-2.33% units=-153.3 CI95=[-4.9%, +0.4%] hit=51.7% be=53.0% avg_odds=1.901 P(ROI<=0)=0.96  offers=28,533 bet_frac=0.231 under_frac=0.82
+phase1 model-only @BetMGM all thr=0.08: n=98880 ROI=+0.07% units=+64.5 CI95=[-0.7%, +0.9%] hit=53.1% be=53.1% avg_odds=1.904 P(ROI<=0)=0.45  offers=522,750 bet_frac=0.189 under_frac=0.81
+phase1 model-only @BetMGM clean120 thr=0.08: n=6550 ROI=+0.58% units=+38.3 CI95=[-2.2%, +3.4%] hit=53.4% be=53.2% avg_odds=1.895 P(ROI<=0)=0.35  offers=29,131 bet_frac=0.225 under_frac=0.85
+phase1 model-only @BetRivers all thr=0.08: n=33514 ROI=+0.81% units=+273.0 CI95=[-0.3%, +2.0%] hit=53.3% be=52.9% avg_odds=1.905 P(ROI<=0)=0.09  offers=184,188 bet_frac=0.182 under_frac=0.85
+phase1 model-only @BetRivers clean120 thr=0.08: n=6979 ROI=+0.78% units=+54.4 CI95=[-1.6%, +3.3%] hit=53.4% be=53.0% avg_odds=1.901 P(ROI<=0)=0.25  offers=39,196 bet_frac=0.178 under_frac=0.85
+injury model-only @FanDuel all thr=0.08: n=57454 ROI=-0.40% units=-231.4 CI95=[-1.5%, +0.7%] hit=52.3% be=52.6% avg_odds=1.918 P(ROI<=0)=0.76  offers=274,692 bet_frac=0.209 under_frac=0.80
+injury model-only @FanDuel clean120 thr=0.08: n=51306 ROI=-0.41% units=-211.1 CI95=[-1.6%, +0.8%] hit=52.4% be=52.6% avg_odds=1.912 P(ROI<=0)=0.73  offers=249,067 bet_frac=0.206 under_frac=0.81
+injury model-only @Ontario(DK/MGM/BR) all thr=0.08: n=116867 ROI=+2.10% units=+2451.0 CI95=[+1.3%, +2.8%] hit=53.8% be=52.7% avg_odds=1.919 P(ROI<=0)=0.00  offers=1,056,450 bet_frac=0.111 under_frac=0.80
+injury model-only @Ontario(DK/MGM/BR) clean120 thr=0.08: n=14608 ROI=+1.17% units=+171.4 CI95=[-0.7%, +3.0%] hit=53.5% be=52.9% avg_odds=1.905 P(ROI<=0)=0.10  offers=96,860 bet_frac=0.151 under_frac=0.82
+injury model-only @DraftKings all thr=0.08: n=67143 ROI=+1.24% units=+829.6 CI95=[+0.2%, +2.2%] hit=53.5% be=52.9% avg_odds=1.911 P(ROI<=0)=0.01  offers=349,512 bet_frac=0.192 under_frac=0.81
+injury model-only @DraftKings clean120 thr=0.08: n=5937 ROI=-1.25% units=-74.1 CI95=[-4.1%, +1.6%] hit=52.2% be=52.9% avg_odds=1.902 P(ROI<=0)=0.81  offers=28,533 bet_frac=0.208 under_frac=0.79
+injury model-only @BetMGM all thr=0.08: n=90790 ROI=+0.72% units=+649.6 CI95=[-0.2%, +1.5%] hit=53.5% be=53.1% avg_odds=1.905 P(ROI<=0)=0.06  offers=522,750 bet_frac=0.174 under_frac=0.81
+injury model-only @BetMGM clean120 thr=0.08: n=5859 ROI=+1.31% units=+76.5 CI95=[-1.6%, +4.2%] hit=53.7% be=53.1% avg_odds=1.899 P(ROI<=0)=0.20  offers=29,131 bet_frac=0.201 under_frac=0.83
+injury model-only @BetRivers all thr=0.08: n=31254 ROI=+1.45% units=+454.5 CI95=[+0.2%, +2.7%] hit=53.6% be=52.9% avg_odds=1.905 P(ROI<=0)=0.01  offers=184,188 bet_frac=0.170 under_frac=0.83
+injury model-only @BetRivers clean120 thr=0.08: n=6402 ROI=+1.31% units=+83.8 CI95=[-1.2%, +4.1%] hit=53.6% be=53.0% avg_odds=1.901 P(ROI<=0)=0.15  offers=39,196 bet_frac=0.163 under_frac=0.84
+
+(c) chosen FanDuel-anchored rule with each model's dispersion
+phase1 anchored p_anc_fd clean120 thr=.03 (sportsbooks): n=6651 ROI=+6.07% units=+403.9 CI95=[+3.1%, +8.8%] hit=57.1% be=53.9% avg_odds=1.879 P(ROI<=0)=0.00
+phase1 anchored p_anc_fd all thr=.03 (sportsbooks): n=44276 ROI=+11.04% units=+4888.2 CI95=[+9.8%, +12.2%] hit=59.5% be=53.8% avg_odds=1.878 P(ROI<=0)=0.00
+injury anchored p_anc_fd clean120 thr=.03 (sportsbooks): n=6743 ROI=+6.54% units=+440.9 CI95=[+3.6%, +9.4%] hit=57.4% be=54.0% avg_odds=1.877 P(ROI<=0)=0.00
+injury anchored p_anc_fd all thr=.03 (sportsbooks): n=44729 ROI=+11.20% units=+5009.7 CI95=[+10.0%, +12.4%] hit=59.7% be=53.8% avg_odds=1.877 P(ROI<=0)=0.00
+
+(d) rows where injury context exists (vac_min >= 20 on the player's team) — model-only at FanDuel, thr .05
+phase1 FD model-only vac_min>=20: n=59713 ROI=-0.73% units=-434.0 CI95=[-1.9%, +0.3%] hit=52.4% be=52.8% avg_odds=1.910 P(ROI<=0)=0.91
+    acc vac_min>=20: n=140,091 miss_model=3.536 miss_fd=3.448 side_model=0.5291 side_fd=0.5002 bias_model=-0.349 bias_fd=-0.087
+phase1 FD model-only vac_min<20: n=41129 ROI=-1.03% units=-424.5 CI95=[-2.3%, +0.2%] hit=51.9% be=52.5% avg_odds=1.924 P(ROI<=0)=0.95
+    acc vac_min<20: n=134,601 miss_model=3.402 miss_fd=3.356 side_model=0.5271 side_fd=0.5032 bias_model=+0.079 bias_fd=-0.077
+phase1 FD model-only self Q/D: n=2953 ROI=-0.33% units=-9.7 CI95=[-5.1%, +4.6%] hit=52.5% be=52.7% avg_odds=1.914 P(ROI<=0)=0.55
+    acc self Q/D: n=8,016 miss_model=3.869 miss_fd=3.767 side_model=0.5266 side_fd=0.4901 bias_model=+0.112 bias_fd=+0.118
+injury FD model-only vac_min>=20: n=51295 ROI=-0.45% units=-232.1 CI95=[-1.7%, +0.6%] hit=52.4% be=52.7% avg_odds=1.914 P(ROI<=0)=0.79
+    acc vac_min>=20: n=140,091 miss_model=3.508 miss_fd=3.448 side_model=0.5273 side_fd=0.5002 bias_model=-0.089 bias_fd=-0.087
+injury FD model-only vac_min<20: n=44805 ROI=-0.61% units=-274.7 CI95=[-1.8%, +0.7%] hit=52.3% be=52.6% avg_odds=1.918 P(ROI<=0)=0.82
+    acc vac_min<20: n=134,601 miss_model=3.392 miss_fd=3.356 side_model=0.5310 side_fd=0.5032 bias_model=-0.105 bias_fd=-0.077
+injury FD model-only self Q/D: n=2864 ROI=-0.13% units=-3.9 CI95=[-5.1%, +4.5%] hit=52.6% be=52.7% avg_odds=1.914 P(ROI<=0)=0.51
+    acc self Q/D: n=8,016 miss_model=3.868 miss_fd=3.767 side_model=0.5227 side_fd=0.4901 bias_model=+0.167 bias_fd=+0.118
