@@ -37,9 +37,12 @@ anything yet. Nothing here is betting advice.
 
 ```
 cd workspace
-uv venv --python 3.12 .venv && uv pip install -r requirements.txt
+uv venv --python 3.12
+uv pip install -r requirements.txt
 export ODDS_API_KEY=...        # https://the-odds-api.com, for live prices
 ```
+
+Every command below runs from `workspace/`; `uv run` picks up the `.venv` there.
 
 Raw data is not committed (about 870 MB). Game logs and injury reports can be re-downloaded with the scripts in `workspace/src/`.
 The historical prop prices used for the backtests came from BettingPros and are not included, and neither is a downloader for them.
@@ -47,10 +50,18 @@ The historical prop prices used for the backtests came from BettingPros and are 
 ## Daily run
 
 ```
-.venv/bin/python src/ledger.py settle && .venv/bin/python src/ledger.py report
-.venv/bin/python src/live_odds.py --books fanduel,draftkings,betmgm,betrivers --mode both
-.venv/bin/python src/ledger.py log --picks results/live_bets_<stamp>.csv
+uv run python src/ledger.py settle && uv run python src/ledger.py report
+uv run python src/live_odds.py --books fanduel,draftkings,betmgm,betrivers --mode both
+uv run python src/ledger.py log --picks results/live_bets_<stamp>.csv
 ```
 
 Before the live run, refresh the current season's game logs: `fetch_nba.py` caches each season file and never re-downloads it, so
-delete the current-season files under `data/raw/nba/` first, then rebuild features (see `workspace/JOURNAL.md`, P2-8).
+delete the current-season files under `data/raw/nba/` first, then rebuild features:
+
+```
+rm data/raw/nba/*2026-27*.parquet
+uv run python src/fetch_nba.py 2026-27
+uv run python src/features.py
+```
+
+See `workspace/JOURNAL.md`, P2-8, for the injury-report step in between.

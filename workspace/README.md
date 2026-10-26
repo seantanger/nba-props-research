@@ -1,26 +1,26 @@
 # NBA player-prop edge research
 
-Everything runs from the workspace root with the project virtualenv (`uv venv --python 3.12 .venv && uv pip install -r requirements.txt`).
+Everything runs from the workspace root with the project virtualenv (`uv venv --python 3.12 && uv pip install -r requirements.txt`; commands use `uv run`, which picks up `.venv`).
 Results, decisions and dead ends are in `JOURNAL.md`; the write-up is `REPORT.md`.
 
 ## Pipeline (run in this order)
 
 | Step | Command | Output |
 |---|---|---|
-| 1. Game logs (nba_api, 2016-17 → today) | `.venv/bin/python src/fetch_nba.py` | `data/raw/nba/*.parquet` |
+| 1. Game logs (nba_api, 2016-17 → today) | `uv run python src/fetch_nba.py` | `data/raw/nba/*.parquet` |
 | 2. Historical prop prices (BettingPros, 11 US books, Jan 2021 → today) | not included in this repo: supply your own historical odds as raw JSON in the BettingPros offers format | `data/raw/bettingpros/` |
-| 3. Leak-free pre-game features | `.venv/bin/python src/features.py` | `data/processed/player_games.parquet` |
-| 4. Parse + grade prop lines | `.venv/bin/python src/build_bp.py` then `src/build_pairs.py` | `data/processed/bp_lines.parquet`, `results/bp_pairs_cache.parquet` |
-| 5. Walk-forward projection distributions | `.venv/bin/python src/run_bp.py dev` (and `holdout` once, at the end) | `results/bp_dist_{dev,holdout}.parquet` |
-| 6. Price every book line | `.venv/bin/python src/eval_bp.py dev|holdout|kambi` | `results/bp_eval_*.parquet` |
-| 7. Rule search on dev only | `.venv/bin/python src/grid_bp.py`, `src/select_rule.py` | stdout (logged in JOURNAL) |
-| 8. Final one-shot evaluation of the chosen rule | `.venv/bin/python src/eval_holdout.py holdout` (and `kambi`) | `results/bets_*.parquet`, `results/headline_*.json` |
-| 8b. Post-hoc diagnostics (timestamp regime, "seen at tip" tier; labelled post-hoc in REPORT) | `.venv/bin/python scripts/diag_timestamps.py`, `scripts/posthoc_holdout.py` | `logs/posthoc_holdout.log`, `results/headline_holdout_posthoc_close5.json` |
-| 9. Tonight's bets from live odds | `.venv/bin/python src/live_odds.py --books fanduel,draftkings,betmgm,betrivers --mode both` | `results/live_bets_<stamp>.csv` |
-| 10. Official injury reports (phase 2) | `.venv/bin/python src/fetch_injury.py` then `src/parse_injury.py` then `src/injury_status.py`, then re-run step 3 | `data/raw/injury/pdf/`, `data/processed/injury_{reports,long,status}.parquet` |
-| 11. Injury-aware model on dev / reused holdout | `.venv/bin/python src/run_bp.py dev inj`, `src/eval_bp.py dev inj`, `scripts/eval_inj.py` | `results/bp_{dist,eval}_dev_inj.parquet`, `logs/eval_inj.log` |
-| 12. Review-step proxy (news-explained gaps) | `.venv/bin/python scripts/review_proxy.py` | `logs/review_proxy.log` |
-| 13. Forward paper-trading ledger | `.venv/bin/python src/ledger.py log|settle|close|report` | `data/ledger/ledger.csv` |
+| 3. Leak-free pre-game features | `uv run python src/features.py` | `data/processed/player_games.parquet` |
+| 4. Parse + grade prop lines | `uv run python src/build_bp.py` then `src/build_pairs.py` | `data/processed/bp_lines.parquet`, `results/bp_pairs_cache.parquet` |
+| 5. Walk-forward projection distributions | `uv run python src/run_bp.py dev` (and `holdout` once, at the end) | `results/bp_dist_{dev,holdout}.parquet` |
+| 6. Price every book line | `uv run python src/eval_bp.py dev|holdout|kambi` | `results/bp_eval_*.parquet` |
+| 7. Rule search on dev only | `uv run python src/grid_bp.py`, `src/select_rule.py` | stdout (logged in JOURNAL) |
+| 8. Final one-shot evaluation of the chosen rule | `uv run python src/eval_holdout.py holdout` (and `kambi`) | `results/bets_*.parquet`, `results/headline_*.json` |
+| 8b. Post-hoc diagnostics (timestamp regime, "seen at tip" tier; labelled post-hoc in REPORT) | `uv run python scripts/diag_timestamps.py`, `scripts/posthoc_holdout.py` | `logs/posthoc_holdout.log`, `results/headline_holdout_posthoc_close5.json` |
+| 9. Tonight's bets from live odds | `uv run python src/live_odds.py --books fanduel,draftkings,betmgm,betrivers --mode both` | `results/live_bets_<stamp>.csv` |
+| 10. Official injury reports (phase 2) | `uv run python src/fetch_injury.py` then `src/parse_injury.py` then `src/injury_status.py`, then re-run step 3 | `data/raw/injury/pdf/`, `data/processed/injury_{reports,long,status}.parquet` |
+| 11. Injury-aware model on dev / reused holdout | `uv run python src/run_bp.py dev inj`, `src/eval_bp.py dev inj`, `scripts/eval_inj.py` | `results/bp_{dist,eval}_dev_inj.parquet`, `logs/eval_inj.log` |
+| 12. Review-step proxy (news-explained gaps) | `uv run python scripts/review_proxy.py` | `logs/review_proxy.log` |
+| 13. Forward paper-trading ledger | `uv run python src/ledger.py log|settle|close|report` | `data/ledger/ledger.csv` |
 
 Daily routine (settle, overrides, live run, review, log) is the skill in `.claude/skills/nba-props/SKILL.md`; lineup overrides go in `data/overrides/<date>.csv` (see `data/overrides/README.md`).
 
