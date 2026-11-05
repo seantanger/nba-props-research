@@ -21,8 +21,12 @@ Results, decisions and dead ends are in `JOURNAL.md`; the write-up is `REPORT.md
 | 11. Injury-aware model on dev / reused holdout | `uv run python src/run_bp.py dev inj`, `src/eval_bp.py dev inj`, `scripts/eval_inj.py` | `results/bp_{dist,eval}_dev_inj.parquet`, `logs/eval_inj.log` |
 | 12. Review-step proxy (news-explained gaps) | `uv run python scripts/review_proxy.py` | `logs/review_proxy.log` |
 | 13. Forward paper-trading ledger | `uv run python src/ledger.py log|settle|close|report` | `data/ledger/ledger.csv` |
+| 14. stats.nba.com player tracking + shot charts (P2-10/11; full history via `scripts/run_tracking_backfill.sh`) | `uv run python src/fetch_tracking.py --seasons <seasons>` then `src/fetch_tracking.py --build` | `data/raw/nba/tracking/`, `data/processed/tracking_{player_games,shots}.parquet` |
+| 15. Tracking variants on dev (P2-11) | `uv run python scripts/run_trk2.py <variant> <foldset>`, then `scripts/eval_trk2.py <foldset> <ref> <variant> ...` | `results/bp_{dist,eval}_*_t2*.parquet`, `logs/` |
+| 16. Production assists model check (P2-12) | `uv run python scripts/run_astn.py early|dev2`, then `scripts/eval_trk2.py <foldset> A BN` | `results/bp_dist_*_t2BN.parquet`, `logs/p212/` |
+| 17. Daily data refresh (box scores, injury reports, tracking, features) | `bash scripts/daily_refresh.sh` | `logs/daily_refresh_<date>.log`, ends `REFRESH OK: ...` |
 
-Daily routine (settle, overrides, live run, review, log) is the skill in `.claude/skills/nba-props/SKILL.md`; lineup overrides go in `data/overrides/<date>.csv` (see `data/overrides/README.md`).
+Daily routine (refresh, settle, overrides, live run, review, log) is the skill in `.claude/skills/nba-props/SKILL.md`; lineup overrides go in `data/overrides/<date>.csv` (see `data/overrides/README.md`).
 
 The original Kambi (Polish book) pipeline from the first two days is still runnable: `src/build_offers.py`, `src/run_dev.py`,
 `src/analyze_dev.py`, `src/run_tabpfn.py` (the last one needs `.venv-tabpfn`, see JOURNAL).
@@ -33,7 +37,8 @@ The original Kambi (Polish book) pipeline from the first two days is still runna
 - `src/eval_bp.py` — model-alone, consensus-anchored and FanDuel-anchored probabilities, logistic stack.
 - `src/select_rule.py` — availability tiers (`all`, `clean120`, `clean30`, `both15`) applied before bet selection.
 - `results/chosen_rule.json` — the single rule frozen on dev data before the holdout was evaluated.
-- `src/injury_features.py` — report-based (honest) and box-score-absence (leaky, ceiling only) injury features; `src/live_odds.py` — live run with `--books`, `--mode`, `--injury auto`, `--overrides auto`; `src/ledger.py` — forward ledger.
+- `src/injury_features.py` — report-based (honest) and box-score-absence (leaky, ceiling only) injury features; `src/live_odds.py` — live run with `--books`, `--mode`, `--injury auto`, `--overrides auto`, `--no-trk`; `src/ledger.py` — forward ledger, plus the old-vs-tracking assists comparison from `data/ledger/ast_compare.csv`.
+- `src/fetch_tracking.py` — per-date tracking / shot-chart cache; `src/tracking_live.py` — the assists model's tracking features, each count rescaled by the league's season-to-date rate (stats.nba.com changed definitions in 2024-25 and 2025-26).
 
 ## Honesty rules enforced in code
 - Features use only box scores dated strictly before the game (`shift(1)` everywhere) plus static attributes.

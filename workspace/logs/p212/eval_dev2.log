@@ -1,0 +1,7 @@
+dev2: ref=A FanDuel rows n=99,553  games dates=213  logloss=0.7029 (FD price 0.6877) miss=3.920 side=0.5220
+== BN vs A  paired n=8,669  (positive = BN better)
+  AST  n=  8,669 d_ll=+22.78e-4 [ -1.07,+47.23]  d_miss=+18.30e-3 [+11.15,+25.11] d_side= +3.92e-3 [ -4.70,+12.41]  ll=0.6958 miss=1.882 side=0.5369
+== B vs A  paired n=99,553  (positive = B better)
+  AST  n=  8,669 d_ll= +6.45e-4 [-17.17,+30.29]  d_miss= +5.10e-3 [ -1.32,+11.26] d_side= -1.38e-3 [ -8.93, +6.40]  ll=0.6975 miss=1.896 side=0.5315
+== ALL vs A  paired n=99,553  (positive = ALL better)
+  AST  n=  8,669 d_ll= +6.86e-4 [-18.45,+32.56]  d_miss= +7.34e-3 [ +0.32,+13.92] d_side= -3.23e-3 [-11.47, +4.89]  ll=0.6974 miss=1.893 side=0.5297

@@ -1,0 +1,9 @@
+  2021-01-01 PTS: train=109,166 cols mean=288 disp=288
+fold 2021-01-01..2021-03-01: keys=29701 elapsed=232s
+  2022-02-01 PTS: train=148,966 cols mean=288 disp=288
+fold 2022-02-01..2022-04-01: keys=23143 elapsed=542s
+  2022-12-01 PTS: train=167,732 cols mean=288 disp=288
+fold 2022-12-01..2023-02-01: keys=52932 elapsed=1139s
+  2023-12-01 PTS: train=194,402 cols mean=288 disp=288
+fold 2023-12-01..2024-02-01: keys=58551 elapsed=1820s
+saved 159999 results/bp_dist_screen_t2A.parquet

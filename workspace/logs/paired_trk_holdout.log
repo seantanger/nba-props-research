@@ -1,0 +1,12 @@
+holdout: paired FanDuel rows n=113,250
+  ALL  n=113,250  d_logloss=-1.03e-4 CI[-3.70,+1.62]  d_miss=+4.35e-3 CI[+2.79,+5.94]  (positive = tracking better)
+  AST  n=10,914  d_logloss=+17.77e-4 CI[+5.32,+29.73]  d_miss=+7.59e-3 CI[+4.41,+10.70]  (positive = tracking better)
+  BLK  n= 1,749  d_logloss=+12.11e-4 CI[-6.14,+29.37]  d_miss=+3.58e-3 CI[+0.74,+6.23]  (positive = tracking better)
+  FG3M n=12,838  d_logloss=+0.55e-4 CI[-4.71,+5.69]  d_miss=+1.34e-3 CI[+0.45,+2.22]  (positive = tracking better)
+  PA   n=11,132  d_logloss=-4.58e-4 CI[-10.09,+0.53]  d_miss=+1.80e-3 CI[-3.63,+6.67]  (positive = tracking better)
+  PR   n=16,033  d_logloss=-8.86e-4 CI[-13.17,-4.21]  d_miss=+2.80e-3 CI[-0.94,+6.57]  (positive = tracking better)
+  PRA  n=12,306  d_logloss=-2.01e-4 CI[-7.33,+3.30]  d_miss=+7.84e-3 CI[+2.77,+12.72]  (positive = tracking better)
+  PTS  n=17,608  d_logloss=-7.18e-4 CI[-11.57,-2.43]  d_miss=+3.34e-3 CI[+0.44,+6.52]  (positive = tracking better)
+  RA   n= 9,988  d_logloss=-1.85e-4 CI[-11.09,+7.30]  d_miss=+6.94e-3 CI[+3.19,+10.41]  (positive = tracking better)
+  REB  n=16,397  d_logloss=+0.00e-4 CI[-6.60,+6.68]  d_miss=+6.21e-3 CI[+4.29,+8.12]  (positive = tracking better)
+  STL  n= 4,285  d_logloss=+5.60e-4 CI[-1.42,+12.58]  d_miss=-1.16e-3 CI[-2.16,-0.17]  (positive = tracking better)

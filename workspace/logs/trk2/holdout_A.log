@@ -1,0 +1,11 @@
+  2025-10-01 PTS: train=244,945 cols mean=288 disp=288
+fold 2025-10-01..2025-12-01: keys=49118 elapsed=904s
+  2025-12-01 PTS: train=251,520 cols mean=288 disp=288
+fold 2025-12-01..2026-02-01: keys=71264 elapsed=1741s
+  2026-02-01 PTS: train=260,773 cols mean=288 disp=288
+fold 2026-02-01..2026-04-01: keys=64965 elapsed=2619s
+  2026-04-01 PTS: train=269,533 cols mean=288 disp=288
+fold 2026-04-01..2026-10-01: keys=28319 elapsed=3561s
+  2026-10-01 PTS: train=273,641 cols mean=288 disp=288
+fold 2026-10-01..2027-09-01: keys=4013 elapsed=4484s
+saved 204572 results/bp_dist_holdout_t2A.parquet

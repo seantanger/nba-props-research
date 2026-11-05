@@ -48,8 +48,11 @@ def main():
     ap.add_argument("--since", default="2020-12-01"); ap.add_argument("--until", default="2027-12-31"); ap.add_argument("--workers", type=int, default=3)
     a = ap.parse_args()
     PDF.mkdir(parents=True, exist_ok=True)
-    pg = pd.read_parquet(ROOT / "data" / "processed" / "player_games.parquet", columns=["GAME_DATE"])
-    dates = sorted(d for d in pg.GAME_DATE.drop_duplicates() if a.since <= str(d.date()) <= a.until)
+    # game dates from the raw box-score logs (not player_games.parquet, which may not be rebuilt yet in the daily refresh)
+    raw = ROOT / "data" / "raw" / "nba"
+    gd = pd.concat([pd.read_parquet(f, columns=["GAME_DATE"]) for f in sorted(raw.glob("player_*_Base.parquet"))])
+    gd = pd.to_datetime(gd.GAME_DATE).dt.tz_localize(None).dt.normalize()
+    dates = sorted(d for d in gd.drop_duplicates() if a.since <= str(d.date()) <= a.until)
     missing = set(MISSING.read_text().split()) if MISSING.exists() else set()
     todo = [stem(d, h) for d in dates for h in HOURS]
     todo = [s for s in todo if s not in missing and not (PDF / f"Injury-Report_{s}.pdf").exists()]

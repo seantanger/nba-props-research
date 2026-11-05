@@ -1,7 +1,7 @@
 """Pull tonight's NBA player-prop odds from The Odds API and print the bets the chosen rule would place.
 
 Usage: .venv/bin/python src/live_odds.py [--max-events N] [--hours H] [--dry] [--books b1,b2] [--mode rule|model|both]
-                                        [--overrides auto|none|path.csv] [--injury auto|none|path.pdf] [--model-thr X]
+                                        [--overrides auto|none|path.csv] [--injury auto|none|path.pdf] [--model-thr X] [--no-trk]
   --max-events  cap on games fetched this run (each costs len(MARKETS)=5 credits; the events list costs 1; default 15)
   --hours       only games commencing within H hours from now (default 30)
   --dry         re-use the latest cached run folder for today only; make no API calls
@@ -16,6 +16,12 @@ Usage: .venv/bin/python src/live_odds.py [--max-events N] [--hours H] [--dry] [-
                 use its statuses for tonight's games; none = ignore; or a path to a PDF.
   --model-thr   edge threshold for model-only bets (default 0.08, chosen on dev: the only threshold at which the model-only path is
                 positive at DraftKings/BetMGM/BetRivers in the honest-availability tier; still negative at FanDuel).
+  --no-trk      fall back to the pre-2026-10-29 assists model (no tracking columns), e.g. if the tracking cache is broken.
+
+Assists model (from 2026-10-29, P2-12): the AST mean/dispersion models also see the stats.nba.com tracking columns from
+src/tracking_live.py (potential assists, passes, touches, ... rescaled per season); the other markets are unchanged. The old
+assists model is fitted alongside, and every FanDuel AST line it prices is appended with both models' mu/sigma to
+data/ledger/ast_compare.csv (settled by `ledger.py settle`, compared by `ledger.py report`).
 
 Rule (from results/chosen_rule.json, written by src/choose_rule.py): FanDuel-anchored probability with the projection
 model's dispersion; bet another book's over/under when model prob - breakeven >= thr, decimal odds in [1.3, 3.0],
@@ -33,6 +39,7 @@ from src.models import proj_dist
 from src.build_bp import norm_name
 from src import features as F
 from src.parse_injury import parse_pdf
+from src.tracking_live import add_trk, trk_cols, TRK_MARKETS
 
 API = "https://api.the-odds-api.com/v4"
 SPORT = "basketball_nba"
@@ -45,6 +52,7 @@ INJ_URL = "https://ak-static.cms.nba.com/referee/injury/Injury-Report_{d}_{hh:02
 STATUS_CODE = {"AVAILABLE": 0, "PROBABLE": 1, "QUESTIONABLE": 2, "DOUBTFUL": 3, "OUT": 4}
 TEAM_FIX = {"LA Clippers": "LAC", "Los Angeles Clippers": "LAC", "Los Angeles Lakers": "LAL", "LA Lakers": "LAL"}
 ROTATION_MIN = 15  # a listed teammate counts as news only if he averages this many minutes (10-game mean)
+AST_COMPARE = ROOT / "data" / "ledger" / "ast_compare.csv"
 
 
 def american_to_dec(a):
@@ -302,6 +310,24 @@ def news_for(extra, live_keys):
     return team_news, team_out
 
 
+def log_ast_compare(p, base_ast):
+    """Append every FanDuel AST line with the tracking model's and the old model's mu/sigma to data/ledger/ast_compare.csv."""
+    b = base_ast.rename(columns={"mu": "mu_base"}).assign(sigma_base=lambda x: np.sqrt(x["var"]))[["PLAYER_ID", "GAME_ID", "mu_base", "sigma_base"]]
+    q = p[(p.book == "fanduel") & (p.market == "AST")].merge(b, on=["PLAYER_ID", "GAME_ID"], how="inner")
+    if len(q) == 0:
+        return
+    q = q.assign(run_stamp=datetime.now().strftime("%Y%m%d_%H%M"), player_id=q.PLAYER_ID.astype("int64"), team=q.TEAM_ABBREVIATION,
+                 game_date=q.commence.dt.tz_convert("US/Eastern").dt.strftime("%Y-%m-%d"), p_fd=q.p_over_imp)
+    cols = ["run_stamp", "game_date", "commence", "event_id", "player", "player_id", "team", "line", "price_over", "price_under", "p_fd",
+            "mu", "sigma", "mu_base", "sigma_base", "updated"]
+    q = q[cols].round({c: 4 for c in ["p_fd", "mu", "sigma", "mu_base", "sigma_base"]})
+    AST_COMPARE.parent.mkdir(parents=True, exist_ok=True)
+    q.to_csv(AST_COMPARE, mode="a", header=not AST_COMPARE.exists(), index=False)
+    d = (q.mu - q.mu_base)
+    print(f"AST compare: {len(q)} FanDuel lines logged to {AST_COMPARE}; tracking minus old model mu: "
+          f"mean {d.mean():+.2f}, mean |diff| {d.abs().mean():.2f}, max |diff| {d.abs().max():.2f}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--max-events", type=int, default=15)
@@ -312,6 +338,7 @@ def main():
     ap.add_argument("--overrides", default="auto")
     ap.add_argument("--injury", default="auto")
     ap.add_argument("--model-thr", type=float, default=0.08)
+    ap.add_argument("--no-trk", action="store_true")
     args = ap.parse_args()
     rule = json.loads((RESULTS / "chosen_rule.json").read_text())
     books = [b.strip() for b in args.books.split(",") if b.strip()]
@@ -329,7 +356,21 @@ def main():
     keys = keymap.merge(d[["key", "market"]].drop_duplicates(), left_on="live_key", right_on="key")[["PLAYER_ID", "GAME_ID", "market"]].drop_duplicates()
     cutoff = pd.Timestamp(datetime.now()).normalize() + pd.Timedelta(days=1)
     pg_all["MIN"] = pg_all["MIN"].fillna(0)  # stub rows are excluded from training by MIN > 0
-    dist = proj_dist(pg_all, keys, cutoff, sorted(keys.market.unique()))
+    played = pg_all[~pg_all.GAME_ID.astype(str).str.startswith("LIVE_")]
+    print(f"box scores through {played.GAME_DATE.max().date()}")
+    trk_extra, base_ast = {}, None
+    trk_on = not args.no_trk and bool(set(TRK_MARKETS) & set(keys.market))
+    if trk_on:
+        pg_all = add_trk(pg_all)
+        trk_extra = {mk: trk_cols(pg_all) for mk in TRK_MARKETS}
+        trk_last = pd.read_parquet(ROOT / "data" / "processed" / "tracking_player_games.parquet", columns=["GAME_DATE"]).GAME_DATE.max()
+        stub = pg_all.GAME_ID.astype(str).str.startswith("LIVE_")
+        print(f"tracking ({', '.join(TRK_MARKETS)} model): {len(trk_extra[TRK_MARKETS[0]])} columns, tracking data through {trk_last.date()}, "
+              f"{pg_all.loc[stub, 'trk_pot_ast_m10'].notna().mean():.0%} of tonight's players have tracking history"
+              + ("  <-- WARNING: tracking older than box scores; run scripts/daily_refresh.sh" if trk_last < played.GAME_DATE.max() else ""))
+        # the pre-tracking assists model, for the side-by-side log only
+        base_ast = proj_dist(pg_all, keys[keys.market == "AST"], cutoff, ["AST"], extra={})
+    dist = proj_dist(pg_all, keys, cutoff, sorted(keys.market.unique()), extra=trk_extra)
     dist = dist.merge(keymap, on=["PLAYER_ID", "GAME_ID"])
     dist["sigma"] = np.sqrt(dist["var"])
     team_news, team_out = news_for(extra, keymap)
@@ -343,6 +384,8 @@ def main():
     m = p.line_fd + p.sigma * stats.norm.ppf(np.clip(p.p_fd, 1e-3, 1 - 1e-3))
     p["p_anc_over"] = 1 - stats.norm.cdf((p.line - m) / p.sigma)
     p["p_proj_over"] = 1 - stats.norm.cdf((p.line - p.mu) / p.sigma)
+    if base_ast is not None and len(base_ast):
+        log_ast_compare(p, base_ast)
     now = pd.Timestamp.now(tz="UTC")
     p["age_book_min"] = (now - p.updated).dt.total_seconds() / 60
     p["age_fd_min"] = (now - p.updated_fd).dt.total_seconds() / 60

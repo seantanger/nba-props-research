@@ -12,7 +12,9 @@ Usage: .venv/bin/python src/ledger.py <command> [options]
          (data/raw/odds_api/<date>/<HHMM>/) for the same book, market, player and side.
   report [--since YYYY-MM-DD]
          Summarise settled picks by source (rule vs model_fd vs model_book) x verdict (kept vs vetoed):
-         picks, W/L/P/void, units, ROI with a bootstrap interval, and average closing-line value.
+         picks, W/L/P/void, units, ROI with a bootstrap interval, and average closing-line value. Then the assists-model
+         comparison (data/ledger/ast_compare.csv, written by live_odds.py; `settle` grades it too): tracking AST model vs the
+         old AST model on every FanDuel assists line, last pre-tip run per player-game (log-loss, right side, |miss|, paper ROI).
 Columns: logged_at, run_stamp, game_date, commence, event_id, player, player_id, team, opponent, game, market, side, line, price,
 dec, book, source, p_model, edge, line_fd, p_fd, mu, sigma, news_flag, news, claude_verdict, claude_reason,
 actual, result (open|win|loss|push|void), profit_units, closing_line, closing_price, clv_line.
@@ -23,6 +25,8 @@ import numpy as np, pandas as pd
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 LEDGER = pathlib.Path(os.environ.get("LEDGER_PATH", ROOT / "data" / "ledger" / "ledger.csv"))
+AST_COMPARE = LEDGER.parent / "ast_compare.csv"
+TRK_SWITCH = "2026-10-29"  # first game date priced by the tracking assists model (P2-12)
 DAILY = ROOT / "data" / "raw" / "nba" / "daily"
 ODDS = ROOT / "data" / "raw" / "odds_api"
 sys.path.insert(0, str(ROOT))
@@ -173,6 +177,26 @@ def cmd_settle(args):
         led.loc[m, ["actual", "result", "profit_units"]] = s[["actual", "result", "profit_units"]].values
         print(f"{date}: settled {int(m.sum())} picks: " + ", ".join(f"{k}={v}" for k, v in s.result.value_counts().items()))
     save(led)
+    settle_ast_compare(today)
+
+
+def settle_ast_compare(today):
+    if not AST_COMPARE.exists():
+        return
+    c = pd.read_csv(AST_COMPARE, dtype={"event_id": str, "run_stamp": str})
+    if "actual" not in c:
+        c["actual"] = np.nan; c["played"] = np.nan
+    todo = sorted(d for d in c.loc[c.played.isna(), "game_date"].unique() if d < today)
+    for date in todo:
+        st = box_scores(date)
+        if st.empty:
+            continue
+        st = st[st.MIN.fillna(0) > 0].drop_duplicates("PLAYER_ID").set_index("PLAYER_ID")
+        m = (c.game_date == date) & c.played.isna()
+        c.loc[m, "actual"] = c.loc[m, "player_id"].map(st.AST)
+        c.loc[m, "played"] = c.loc[m, "player_id"].isin(st.index).astype(int)
+        print(f"{date}: AST compare graded {int(m.sum())} lines ({int(c.loc[m, 'played'].sum())} played)")
+    c.to_csv(AST_COMPARE, index=False)
 
 
 def latest_pretip_snapshot(date_et, commence, after=None):
@@ -260,6 +284,56 @@ def cmd_report(args):
     print(pd.DataFrame(rows).to_string(index=False))
     print("ROI = units / settled picks (flat 1 unit; pushes count as settled at 0); ci = 95% bootstrap over game dates; "
           "clv = mean closing-line move in our favour (points), n_clv = picks with a closing snapshot.")
+    a = led[(led.market == "AST") & led.source.isin(["model_fd", "model_book"]) & led.result.isin(["win", "loss", "push"])]
+    if len(a):
+        print("AST model-only picks, old assists model vs tracking assists model (switched " + TRK_SWITCH + "): " + "; ".join(
+            f"{lab} n={len(g)} units {g.profit_units.sum():+.2f} ROI {g.profit_units.sum() / len(g):+.1%}"
+            for lab, g in [("old", a[a.game_date < TRK_SWITCH]), ("tracking", a[a.game_date >= TRK_SWITCH])] if len(g)))
+    report_ast_compare(args.since)
+
+
+def report_ast_compare(since=None, thr=0.08, n_boot=2000):
+    """Tracking AST model vs old AST model on the same FanDuel lines (last pre-tip run per player-game; pushes and DNPs dropped)."""
+    if not AST_COMPARE.exists():
+        return
+    from scipy import stats
+    c = pd.read_csv(AST_COMPARE, dtype={"event_id": str, "run_stamp": str})
+    if "played" not in c:
+        print("\nAST model comparison: nothing graded yet"); return
+    if since:
+        c = c[c.game_date >= since]
+    c = c.sort_values("run_stamp").drop_duplicates(["game_date", "player_id"], keep="last")
+    c = c[(c.played == 1) & c.actual.notna() & (c.actual != c.line)]
+    if c.empty:
+        print("\nAST model comparison: nothing graded yet"); return
+    y = (c.actual > c.line).astype(float).values
+    out = {}
+    for name, mu, sg in [("tracking", c.mu, c.sigma), ("old", c.mu_base, c.sigma_base)]:
+        p = np.clip(1 - stats.norm.cdf((c.line - mu) / sg), 1e-4, 1 - 1e-4)
+        ll = -(y * np.log(p) + (1 - y) * np.log(1 - p))
+        side = ((mu > c.line).values == (y == 1)).astype(float)
+        dec_o, dec_u = c.price_over.map(american_to_dec).values, c.price_under.map(american_to_dec).values
+        e_o, e_u = p - 1 / dec_o, (1 - p) - 1 / dec_u
+        bet_o, bet_u = e_o >= thr, (e_u >= thr) & ~(e_o >= thr)
+        pnl = np.where(bet_o, np.where(y == 1, dec_o - 1, -1.0), 0.0) + np.where(bet_u, np.where(y == 0, dec_u - 1, -1.0), 0.0)
+        out[name] = dict(ll=ll, side=side, miss=np.abs(mu.values - c.actual.values), bets=(bet_o | bet_u), pnl=pnl)
+    pf = np.clip(c.p_fd.values, 1e-4, 1 - 1e-4)
+    ll_fd = -(y * np.log(pf) + (1 - y) * np.log(1 - pf))
+    dates = c.game_date.values
+    d_ll = out["old"]["ll"] - out["tracking"]["ll"]
+    ud = np.unique(dates); idx = {d: np.where(dates == d)[0] for d in ud}
+    rng = np.random.default_rng(0)
+    bs = [d_ll[np.concatenate([idx[d] for d in rng.choice(ud, len(ud))])].mean() for _ in range(n_boot)]
+    lo, hi = np.percentile(bs, [2.5, 97.5])
+    print(f"\nAST model comparison on FanDuel lines ({len(c)} graded player-games, {len(ud)} dates, {c.game_date.min()}..{c.game_date.max()}; "
+          f"last pre-tip run per player-game; no review, paper only)")
+    for name in ["tracking", "old"]:
+        o = out[name]; nb = int(o["bets"].sum())
+        print(f"  {name:8s} log-loss {o['ll'].mean():.4f}  right side {o['side'].mean():.1%}  |miss| {o['miss'].mean():.2f}  "
+              f"edge>={thr:.2f} bets {nb} units {o['pnl'].sum():+.2f} ROI {o['pnl'].sum() / max(nb, 1):+.1%}")
+    print(f"  FanDuel no-vig log-loss {ll_fd.mean():.4f}")
+    print(f"  tracking better by {d_ll.mean() * 1e4:+.1f}e-4 log-loss, 95% CI [{lo * 1e4:+.1f}, {hi * 1e4:+.1f}] (backtest gain on the "
+          f"2025-26 holdout was about +30e-4; hundreds of dates are needed to resolve that)")
 
 
 def main():

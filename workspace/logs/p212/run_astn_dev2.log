@@ -1,0 +1,6 @@
+features built in 58s: base=288 trk=90
+fold 2024-10-01..2024-12-01: keys=4203 train=216,708 elapsed=385s
+fold 2024-12-01..2025-02-01: keys=6654 train=223,090 elapsed=514s
+fold 2025-02-01..2025-04-01: keys=6794 train=232,036 elapsed=641s
+fold 2025-04-01..2025-09-01: keys=3209 train=240,803 elapsed=846s
+saved 19758 results/bp_dist_dev2_t2BN.parquet

@@ -41,7 +41,8 @@ def feature_cols(df):
 
 
 def load_player_games():
-    return pd.read_parquet(PROC / "player_games.parquet")
+    # env PLAYER_GAMES: alternative feature file for experiments (e.g. data/processed/player_games_trk.parquet); default = production
+    return pd.read_parquet(os.environ.get("PLAYER_GAMES") or PROC / "player_games.parquet")
 
 
 def load_pairs(snapshot="last"):

@@ -1,0 +1,117 @@
+HOLDOUT (REUSED HOLDOUT): aligned rows new 1,837,691 old 1,837,691; dates 2025-10-21..2026-10-23
+
+(a) accuracy vs FanDuel's line (FanDuel rows, settled, one per player/game/market)
+   model market      n  miss_model  miss_fd_line  side_model  side_fd  ll_proj  ll_fd  ll_anc  bias_model  bias_fd
+baseline    ALL 113250       3.792         3.726      0.5264   0.4911   0.7005 0.6880  0.6880      -0.001   -0.122
+tracking    ALL 113250       3.792         3.726      0.5260   0.4911   0.7004 0.6880  0.6880      -0.005   -0.122
+baseline    AST  10914       1.762         1.759      0.5323   0.5187   0.6963 0.6859  0.6859       0.018   -0.118
+tracking    AST  10914       1.762         1.759      0.5315   0.5187   0.6965 0.6859  0.6859       0.014   -0.118
+baseline    BLK   1749       1.008         1.069      0.5941   0.5678   0.6711 0.6687  0.6687      -0.070   -0.071
+tracking    BLK   1749       1.004         1.069      0.5963   0.5678   0.6682 0.6687  0.6687      -0.074   -0.071
+baseline   FG3M  12838       1.191         1.223      0.5520   0.5527   0.6808 0.6796  0.6796       0.023   -0.058
+tracking   FG3M  12838       1.191         1.223      0.5518   0.5527   0.6808 0.6796  0.6796       0.023   -0.058
+baseline     PA  11132       5.809         5.670      0.5166   0.4584   0.7097 0.6922  0.6922       0.004   -0.104
+tracking     PA  11132       5.809         5.670      0.5161   0.4584   0.7098 0.6922  0.6922      -0.008   -0.104
+baseline     PR  16033       5.887         5.744      0.5109   0.4523   0.7103 0.6928  0.6928      -0.018   -0.184
+tracking     PR  16033       5.886         5.744      0.5096   0.4523   0.7103 0.6928  0.6928      -0.023   -0.184
+baseline    PRA  12306       6.540         6.362      0.5088   0.4434   0.7113 0.6930  0.6930       0.043    0.001
+tracking    PRA  12306       6.541         6.362      0.5077   0.4434   0.7114 0.6930  0.6930       0.038    0.001
+baseline    PTS  17608       4.943         4.853      0.5141   0.4643   0.7072 0.6924  0.6924      -0.050   -0.272
+tracking    PTS  17608       4.943         4.853      0.5151   0.4643   0.7072 0.6924  0.6924      -0.053   -0.272
+baseline     RA   9988       2.913         2.859      0.5144   0.4986   0.7054 0.6907  0.6907       0.004   -0.149
+tracking     RA   9988       2.913         2.859      0.5134   0.4986   0.7055 0.6907  0.6907       0.002   -0.149
+baseline    REB  16397       2.054         2.043      0.5285   0.5082   0.6988 0.6878  0.6878       0.012   -0.094
+tracking    REB  16397       2.052         2.043      0.5273   0.5082   0.6986 0.6878  0.6878       0.012   -0.094
+baseline    STL   4285       0.896         0.969      0.6110   0.6005   0.6585 0.6598  0.6598      -0.034    0.056
+tracking    STL   4285       0.895         0.969      0.6138   0.6005   0.6577 0.6598  0.6598      -0.033    0.056
+
+(b) model-only ROI (p_proj vs the book's price), flat 1u, odds 1.3-3.0
+baseline model-only @FanDuel all thr=0.08: n=23340 ROI=-0.12% units=-26.9 CI95=[-2.0%, +1.9%] hit=52.6% be=52.7% avg_odds=1.911 P(ROI<=0)=0.54  offers=113,250 bet_frac=0.206 under_frac=0.72
+baseline model-only @FanDuel close5 thr=0.08: n=22033 ROI=-0.11% units=-23.5 CI95=[-2.0%, +1.8%] hit=52.6% be=52.7% avg_odds=1.909 P(ROI<=0)=0.54  offers=106,902 bet_frac=0.206 under_frac=0.72
+baseline model-only @Ontario(DK/MGM/BR) all thr=0.08: n=39235 ROI=+1.87% units=+733.3 CI95=[+0.4%, +3.4%] hit=53.9% be=53.0% avg_odds=1.904 P(ROI<=0)=0.00  offers=318,135 bet_frac=0.123 under_frac=0.76
+baseline model-only @Ontario(DK/MGM/BR) close5 thr=0.08: n=24761 ROI=+1.51% units=+374.0 CI95=[-0.2%, +3.3%] hit=53.7% be=52.9% avg_odds=1.901 P(ROI<=0)=0.04  offers=227,601 bet_frac=0.109 under_frac=0.74
+baseline model-only @DraftKings all thr=0.08: n=27367 ROI=+0.64% units=+175.1 CI95=[-1.0%, +2.3%] hit=53.4% be=53.1% avg_odds=1.895 P(ROI<=0)=0.21  offers=131,436 bet_frac=0.208 under_frac=0.77
+baseline model-only @DraftKings close5 thr=0.08: n=19794 ROI=+0.21% units=+41.0 CI95=[-1.7%, +2.2%] hit=53.2% be=53.1% avg_odds=1.893 P(ROI<=0)=0.42  offers=98,876 bet_frac=0.200 under_frac=0.75
+baseline model-only @BetMGM all thr=0.08: n=27492 ROI=-0.42% units=-116.6 CI95=[-2.2%, +1.3%] hit=53.1% be=53.3% avg_odds=1.891 P(ROI<=0)=0.68  offers=138,828 bet_frac=0.198 under_frac=0.77
+baseline model-only @BetMGM close5 thr=0.08: n=16639 ROI=-1.22% units=-203.3 CI95=[-3.4%, +1.1%] hit=52.6% be=53.3% avg_odds=1.888 P(ROI<=0)=0.85  offers=86,944 bet_frac=0.191 under_frac=0.75
+baseline model-only @BetRivers all thr=0.08: n=7572 ROI=-0.35% units=-26.7 CI95=[-2.7%, +1.9%] hit=53.0% be=53.3% avg_odds=1.894 P(ROI<=0)=0.60  offers=47,871 bet_frac=0.158 under_frac=0.72
+baseline model-only @BetRivers close5 thr=0.08: n=6165 ROI=-0.69% units=-42.3 CI95=[-3.4%, +2.1%] hit=52.7% be=53.2% avg_odds=1.897 P(ROI<=0)=0.67  offers=41,781 bet_frac=0.148 under_frac=0.71
+tracking model-only @FanDuel all thr=0.08: n=23289 ROI=-0.33% units=-76.6 CI95=[-2.2%, +1.7%] hit=52.5% be=52.7% avg_odds=1.910 P(ROI<=0)=0.63  offers=113,250 bet_frac=0.206 under_frac=0.72
+tracking model-only @FanDuel close5 thr=0.08: n=22002 ROI=-0.28% units=-61.4 CI95=[-2.2%, +1.7%] hit=52.6% be=52.8% avg_odds=1.908 P(ROI<=0)=0.61  offers=106,902 bet_frac=0.206 under_frac=0.73
+tracking model-only @Ontario(DK/MGM/BR) all thr=0.08: n=39332 ROI=+1.62% units=+638.1 CI95=[+0.2%, +3.1%] hit=53.8% be=53.0% avg_odds=1.904 P(ROI<=0)=0.01  offers=318,135 bet_frac=0.124 under_frac=0.76
+tracking model-only @Ontario(DK/MGM/BR) close5 thr=0.08: n=24817 ROI=+1.30% units=+322.4 CI95=[-0.4%, +3.1%] hit=53.5% be=52.9% avg_odds=1.902 P(ROI<=0)=0.07  offers=227,601 bet_frac=0.109 under_frac=0.74
+tracking model-only @DraftKings all thr=0.08: n=27419 ROI=+0.31% units=+83.7 CI95=[-1.3%, +1.9%] hit=53.2% be=53.1% avg_odds=1.895 P(ROI<=0)=0.35  offers=131,436 bet_frac=0.209 under_frac=0.77
+tracking model-only @DraftKings close5 thr=0.08: n=19829 ROI=-0.10% units=-19.5 CI95=[-2.0%, +1.9%] hit=53.0% be=53.1% avg_odds=1.893 P(ROI<=0)=0.54  offers=98,876 bet_frac=0.201 under_frac=0.75
+tracking model-only @BetMGM all thr=0.08: n=27554 ROI=-0.54% units=-147.8 CI95=[-2.2%, +1.3%] hit=53.0% be=53.3% avg_odds=1.892 P(ROI<=0)=0.73  offers=138,828 bet_frac=0.198 under_frac=0.77
+tracking model-only @BetMGM close5 thr=0.08: n=16665 ROI=-1.60% units=-267.4 CI95=[-3.9%, +0.6%] hit=52.4% be=53.3% avg_odds=1.888 P(ROI<=0)=0.91  offers=86,944 bet_frac=0.192 under_frac=0.76
+tracking model-only @BetRivers all thr=0.08: n=7623 ROI=-1.25% units=-95.5 CI95=[-3.6%, +1.2%] hit=52.5% be=53.3% avg_odds=1.894 P(ROI<=0)=0.84  offers=47,871 bet_frac=0.159 under_frac=0.73
+tracking model-only @BetRivers close5 thr=0.08: n=6206 ROI=-1.56% units=-97.0 CI95=[-4.3%, +1.2%] hit=52.2% be=53.2% avg_odds=1.897 P(ROI<=0)=0.85  offers=41,781 bet_frac=0.149 under_frac=0.72
+baseline model-only @FanDuel all thr=0.05: n=38369 ROI=-0.56% units=-214.5 CI95=[-2.1%, +1.1%] hit=52.4% be=52.7% avg_odds=1.912 P(ROI<=0)=0.75  offers=113,250 bet_frac=0.339 under_frac=0.69
+baseline model-only @FanDuel close5 thr=0.05: n=36197 ROI=-0.69% units=-250.9 CI95=[-2.3%, +1.0%] hit=52.3% be=52.8% avg_odds=1.910 P(ROI<=0)=0.81  offers=106,902 bet_frac=0.339 under_frac=0.70
+baseline model-only @Ontario(DK/MGM/BR) all thr=0.05: n=63173 ROI=+0.74% units=+465.9 CI95=[-0.4%, +1.8%] hit=53.5% be=53.1% avg_odds=1.901 P(ROI<=0)=0.11  offers=318,135 bet_frac=0.199 under_frac=0.73
+baseline model-only @Ontario(DK/MGM/BR) close5 thr=0.05: n=40722 ROI=+0.68% units=+278.7 CI95=[-0.7%, +2.2%] hit=53.3% be=53.0% avg_odds=1.900 P(ROI<=0)=0.18  offers=227,601 bet_frac=0.179 under_frac=0.71
+baseline model-only @DraftKings all thr=0.05: n=44692 ROI=-0.29% units=-128.7 CI95=[-1.5%, +1.0%] hit=53.0% be=53.2% avg_odds=1.895 P(ROI<=0)=0.67  offers=131,436 bet_frac=0.340 under_frac=0.74
+baseline model-only @DraftKings close5 thr=0.05: n=32819 ROI=-0.53% units=-174.2 CI95=[-2.0%, +1.0%] hit=52.8% be=53.2% avg_odds=1.893 P(ROI<=0)=0.76  offers=98,876 bet_frac=0.332 under_frac=0.72
+baseline model-only @BetMGM all thr=0.05: n=44618 ROI=-1.27% units=-564.5 CI95=[-2.7%, +0.1%] hit=52.7% be=53.4% avg_odds=1.890 P(ROI<=0)=0.96  offers=138,828 bet_frac=0.321 under_frac=0.74
+baseline model-only @BetMGM close5 thr=0.05: n=27563 ROI=-1.83% units=-504.0 CI95=[-3.5%, +0.0%] hit=52.3% be=53.3% avg_odds=1.889 P(ROI<=0)=0.97  offers=86,944 bet_frac=0.317 under_frac=0.72
+baseline model-only @BetRivers all thr=0.05: n=13317 ROI=-1.99% units=-264.6 CI95=[-3.7%, -0.3%] hit=52.1% be=53.3% avg_odds=1.895 P(ROI<=0)=0.99  offers=47,871 bet_frac=0.278 under_frac=0.70
+baseline model-only @BetRivers close5 thr=0.05: n=11113 ROI=-1.93% units=-214.2 CI95=[-3.8%, -0.1%] hit=52.0% be=53.1% avg_odds=1.899 P(ROI<=0)=0.98  offers=41,781 bet_frac=0.266 under_frac=0.69
+tracking model-only @FanDuel all thr=0.05: n=38349 ROI=-0.46% units=-176.0 CI95=[-1.9%, +1.1%] hit=52.4% be=52.7% avg_odds=1.912 P(ROI<=0)=0.72  offers=113,250 bet_frac=0.339 under_frac=0.70
+tracking model-only @FanDuel close5 thr=0.05: n=36199 ROI=-0.54% units=-196.8 CI95=[-2.1%, +1.1%] hit=52.4% be=52.8% avg_odds=1.910 P(ROI<=0)=0.76  offers=106,902 bet_frac=0.339 under_frac=0.70
+tracking model-only @Ontario(DK/MGM/BR) all thr=0.05: n=63210 ROI=+0.80% units=+502.7 CI95=[-0.3%, +2.0%] hit=53.5% be=53.1% avg_odds=1.901 P(ROI<=0)=0.09  offers=318,135 bet_frac=0.199 under_frac=0.73
+tracking model-only @Ontario(DK/MGM/BR) close5 thr=0.05: n=40766 ROI=+0.78% units=+317.4 CI95=[-0.6%, +2.3%] hit=53.4% be=53.0% avg_odds=1.900 P(ROI<=0)=0.15  offers=227,601 bet_frac=0.179 under_frac=0.71
+tracking model-only @DraftKings all thr=0.05: n=44793 ROI=-0.27% units=-121.4 CI95=[-1.6%, +1.1%] hit=53.0% be=53.2% avg_odds=1.895 P(ROI<=0)=0.65  offers=131,436 bet_frac=0.341 under_frac=0.74
+tracking model-only @DraftKings close5 thr=0.05: n=32883 ROI=-0.43% units=-141.6 CI95=[-2.0%, +1.1%] hit=52.9% be=53.2% avg_odds=1.893 P(ROI<=0)=0.70  offers=98,876 bet_frac=0.333 under_frac=0.72
+tracking model-only @BetMGM all thr=0.05: n=44644 ROI=-1.36% units=-607.1 CI95=[-2.7%, +0.1%] hit=52.7% be=53.4% avg_odds=1.890 P(ROI<=0)=0.97  offers=138,828 bet_frac=0.322 under_frac=0.74
+tracking model-only @BetMGM close5 thr=0.05: n=27595 ROI=-1.94% units=-535.6 CI95=[-3.6%, -0.1%] hit=52.2% be=53.3% avg_odds=1.888 P(ROI<=0)=0.98  offers=86,944 bet_frac=0.317 under_frac=0.72
+tracking model-only @BetRivers all thr=0.05: n=13320 ROI=-2.57% units=-341.8 CI95=[-4.3%, -0.8%] hit=51.8% be=53.2% avg_odds=1.896 P(ROI<=0)=1.00  offers=47,871 bet_frac=0.278 under_frac=0.70
+tracking model-only @BetRivers close5 thr=0.05: n=11141 ROI=-2.87% units=-320.2 CI95=[-4.8%, -1.0%] hit=51.5% be=53.1% avg_odds=1.899 P(ROI<=0)=1.00  offers=41,781 bet_frac=0.267 under_frac=0.69
+
+(b2) model-only ROI by market, thr .08, 'all' tier, FanDuel and Ontario
+baseline model-only @FanDuel all thr=0.08 [AST]: n=2324 ROI=+2.26% units=+52.6 CI95=[-1.5%, +5.9%] hit=53.0% be=51.9% avg_odds=1.957 P(ROI<=0)=0.13
+baseline model-only @Ontario(DK/MGM/BR) all thr=0.08 [AST]: n=4480 ROI=+5.37% units=+240.6 CI95=[+2.5%, +8.1%] hit=54.8% be=52.1% avg_odds=1.954 P(ROI<=0)=0.00
+tracking model-only @FanDuel all thr=0.08 [AST]: n=2320 ROI=+1.79% units=+41.5 CI95=[-1.9%, +5.5%] hit=52.8% be=52.0% avg_odds=1.954 P(ROI<=0)=0.17
+tracking model-only @Ontario(DK/MGM/BR) all thr=0.08 [AST]: n=4477 ROI=+4.70% units=+210.6 CI95=[+1.9%, +7.5%] hit=54.4% be=52.1% avg_odds=1.954 P(ROI<=0)=0.00
+baseline model-only @FanDuel all thr=0.08 [REB]: n=2964 ROI=-1.34% units=-39.6 CI95=[-4.6%, +1.8%] hit=51.5% be=52.1% avg_odds=1.942 P(ROI<=0)=0.79
+baseline model-only @Ontario(DK/MGM/BR) all thr=0.08 [REB]: n=4540 ROI=+2.26% units=+102.5 CI95=[-0.3%, +4.7%] hit=53.6% be=52.4% avg_odds=1.927 P(ROI<=0)=0.04
+tracking model-only @FanDuel all thr=0.08 [REB]: n=2922 ROI=-1.88% units=-54.9 CI95=[-5.2%, +1.4%] hit=51.1% be=52.1% avg_odds=1.943 P(ROI<=0)=0.86
+tracking model-only @Ontario(DK/MGM/BR) all thr=0.08 [REB]: n=4532 ROI=+2.55% units=+115.4 CI95=[+0.0%, +5.0%] hit=53.7% be=52.4% avg_odds=1.928 P(ROI<=0)=0.02
+baseline model-only @FanDuel all thr=0.08 [PRA]: n=3149 ROI=-0.85% units=-26.7 CI95=[-4.1%, +2.5%] hit=52.6% be=53.0% avg_odds=1.887 P(ROI<=0)=0.69
+baseline model-only @Ontario(DK/MGM/BR) all thr=0.08 [PRA]: n=6086 ROI=+0.13% units=+7.8 CI95=[-2.3%, +2.6%] hit=53.3% be=53.2% avg_odds=1.881 P(ROI<=0)=0.45
+tracking model-only @FanDuel all thr=0.08 [PRA]: n=3142 ROI=-0.68% units=-21.3 CI95=[-4.2%, +2.7%] hit=52.7% be=53.0% avg_odds=1.887 P(ROI<=0)=0.64
+tracking model-only @Ontario(DK/MGM/BR) all thr=0.08 [PRA]: n=6041 ROI=+0.02% units=+1.0 CI95=[-2.4%, +2.5%] hit=53.2% be=53.2% avg_odds=1.881 P(ROI<=0)=0.47
+baseline model-only @FanDuel all thr=0.08 [PTS]: n=4240 ROI=+0.04% units=+1.7 CI95=[-2.8%, +2.8%] hit=53.1% be=53.1% avg_odds=1.886 P(ROI<=0)=0.48
+baseline model-only @Ontario(DK/MGM/BR) all thr=0.08 [PTS]: n=6227 ROI=+1.49% units=+93.1 CI95=[-0.5%, +3.7%] hit=53.7% be=52.9% avg_odds=1.893 P(ROI<=0)=0.07
+tracking model-only @FanDuel all thr=0.08 [PTS]: n=4275 ROI=+0.35% units=+15.0 CI95=[-2.3%, +3.0%] hit=53.3% be=53.1% avg_odds=1.886 P(ROI<=0)=0.39
+tracking model-only @Ontario(DK/MGM/BR) all thr=0.08 [PTS]: n=6271 ROI=+1.05% units=+65.6 CI95=[-1.0%, +3.1%] hit=53.5% be=52.9% avg_odds=1.893 P(ROI<=0)=0.14
+baseline model-only @FanDuel all thr=0.08 [FG3M]: n=1410 ROI=+4.00% units=+56.4 CI95=[-1.7%, +9.9%] hit=52.7% be=50.9% avg_odds=2.029 P(ROI<=0)=0.09
+baseline model-only @Ontario(DK/MGM/BR) all thr=0.08 [FG3M]: n=2734 ROI=+7.06% units=+193.0 CI95=[+3.1%, +10.9%] hit=56.3% be=52.8% avg_odds=1.954 P(ROI<=0)=0.00
+tracking model-only @FanDuel all thr=0.08 [FG3M]: n=1424 ROI=+4.35% units=+62.0 CI95=[-1.3%, +10.0%] hit=52.7% be=50.9% avg_odds=2.028 P(ROI<=0)=0.07
+tracking model-only @Ontario(DK/MGM/BR) all thr=0.08 [FG3M]: n=2713 ROI=+7.57% units=+205.3 CI95=[+3.3%, +11.7%] hit=56.4% be=52.7% avg_odds=1.959 P(ROI<=0)=0.00
+baseline model-only @FanDuel all thr=0.08 [PA]: n=2734 ROI=-0.32% units=-8.8 CI95=[-3.8%, +3.2%] hit=53.1% be=53.3% avg_odds=1.879 P(ROI<=0)=0.59
+baseline model-only @Ontario(DK/MGM/BR) all thr=0.08 [PA]: n=4626 ROI=-0.03% units=-1.2 CI95=[-2.6%, +2.9%] hit=53.2% be=53.2% avg_odds=1.882 P(ROI<=0)=0.51
+tracking model-only @FanDuel all thr=0.08 [PA]: n=2710 ROI=-1.40% units=-37.9 CI95=[-5.0%, +2.3%] hit=52.6% be=53.3% avg_odds=1.877 P(ROI<=0)=0.78
+tracking model-only @Ontario(DK/MGM/BR) all thr=0.08 [PA]: n=4642 ROI=-0.93% units=-43.2 CI95=[-3.5%, +2.0%] hit=52.7% be=53.2% avg_odds=1.882 P(ROI<=0)=0.75
+baseline model-only @FanDuel all thr=0.08 [PR]: n=3993 ROI=-1.19% units=-47.5 CI95=[-4.2%, +1.6%] hit=52.4% be=53.1% avg_odds=1.886 P(ROI<=0)=0.79
+baseline model-only @Ontario(DK/MGM/BR) all thr=0.08 [PR]: n=5144 ROI=+0.85% units=+43.5 CI95=[-1.8%, +3.6%] hit=53.7% be=53.2% avg_odds=1.881 P(ROI<=0)=0.26
+tracking model-only @FanDuel all thr=0.08 [PR]: n=4010 ROI=-1.48% units=-59.5 CI95=[-4.5%, +1.5%] hit=52.2% be=53.1% avg_odds=1.886 P(ROI<=0)=0.83
+tracking model-only @Ontario(DK/MGM/BR) all thr=0.08 [PR]: n=5185 ROI=+1.10% units=+57.3 CI95=[-1.6%, +3.8%] hit=53.8% be=53.2% avg_odds=1.882 P(ROI<=0)=0.20
+baseline model-only @FanDuel all thr=0.08 [RA]: n=2015 ROI=-3.19% units=-64.3 CI95=[-7.6%, +1.3%] hit=51.0% be=52.8% avg_odds=1.902 P(ROI<=0)=0.92
+baseline model-only @Ontario(DK/MGM/BR) all thr=0.08 [RA]: n=3967 ROI=-0.69% units=-27.6 CI95=[-3.5%, +2.3%] hit=52.7% be=53.1% avg_odds=1.893 P(ROI<=0)=0.69
+tracking model-only @FanDuel all thr=0.08 [RA]: n=1977 ROI=-3.35% units=-66.2 CI95=[-7.7%, +0.9%] hit=51.0% be=52.8% avg_odds=1.901 P(ROI<=0)=0.94
+tracking model-only @Ontario(DK/MGM/BR) all thr=0.08 [RA]: n=3991 ROI=-1.09% units=-43.5 CI95=[-3.9%, +1.8%] hit=52.6% be=53.1% avg_odds=1.892 P(ROI<=0)=0.77
+baseline model-only @FanDuel all thr=0.08 [STL]: n=295 ROI=+11.97% units=+35.3 CI95=[+1.4%, +21.9%] hit=59.3% be=53.1% avg_odds=1.953 P(ROI<=0)=0.02
+baseline model-only @Ontario(DK/MGM/BR) all thr=0.08 [STL]: n=464 ROI=+5.96% units=+27.7 CI95=[-2.5%, +14.5%] hit=55.8% be=53.2% avg_odds=1.951 P(ROI<=0)=0.09
+tracking model-only @FanDuel all thr=0.08 [STL]: n=302 ROI=+10.90% units=+32.9 CI95=[+0.7%, +21.4%] hit=58.9% be=53.7% avg_odds=1.932 P(ROI<=0)=0.02
+tracking model-only @Ontario(DK/MGM/BR) all thr=0.08 [STL]: n=464 ROI=+3.22% units=+15.0 CI95=[-5.7%, +12.0%] hit=55.2% be=53.4% avg_odds=1.945 P(ROI<=0)=0.25
+baseline model-only @FanDuel all thr=0.08 [BLK]: n=216 ROI=+6.51% units=+14.1 CI95=[-6.2%, +19.4%] hit=56.9% be=52.7% avg_odds=1.970 P(ROI<=0)=0.17
+baseline model-only @Ontario(DK/MGM/BR) all thr=0.08 [BLK]: n=967 ROI=+5.57% units=+53.9 CI95=[-0.2%, +11.0%] hit=57.9% be=55.7% avg_odds=1.874 P(ROI<=0)=0.03
+tracking model-only @FanDuel all thr=0.08 [BLK]: n=207 ROI=+5.68% units=+11.8 CI95=[-7.0%, +19.2%] hit=57.5% be=53.0% avg_odds=1.961 P(ROI<=0)=0.19
+tracking model-only @Ontario(DK/MGM/BR) all thr=0.08 [BLK]: n=1016 ROI=+5.38% units=+54.7 CI95=[-0.4%, +11.1%] hit=58.4% be=55.7% avg_odds=1.873 P(ROI<=0)=0.04
+
+(c) chosen FanDuel-anchored rule with each model's dispersion
+baseline anchored p_anc_fd close5 (post-hoc) thr=.03 (sportsbooks): n=19693 ROI=+4.40% units=+866.3 CI95=[+2.5%, +6.3%] hit=54.1% be=52.0% avg_odds=1.953 P(ROI<=0)=0.00
+baseline anchored p_anc_fd all thr=.03 (sportsbooks): n=24406 ROI=+5.19% units=+1266.9 CI95=[+3.4%, +7.0%] hit=54.6% be=52.1% avg_odds=1.950 P(ROI<=0)=0.00
+tracking anchored p_anc_fd close5 (post-hoc) thr=.03 (sportsbooks): n=19751 ROI=+4.50% units=+888.6 CI95=[+2.5%, +6.5%] hit=54.2% be=52.1% avg_odds=1.952 P(ROI<=0)=0.00
+tracking anchored p_anc_fd all thr=.03 (sportsbooks): n=24475 ROI=+5.32% units=+1301.7 CI95=[+3.6%, +7.2%] hit=54.7% be=52.1% avg_odds=1.949 P(ROI<=0)=0.00
+ALLDONE

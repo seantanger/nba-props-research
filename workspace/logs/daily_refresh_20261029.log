@@ -1,0 +1,42 @@
+=== src/fetch_nba.py --refresh 2026-27 18:24:45
+2026-27 Regular Season Base (1531, 72)
+2026-27 Regular Season Advanced (1531, 82)
+2026-27 Regular Season team Base (136, 57)
+2026-27 Regular Season team Advanced (136, 49)
+2026-27 PlayIn Base (0, 72)
+2026-27 PlayIn Advanced (0, 82)
+2026-27 PlayIn team Base (0, 57)
+2026-27 PlayIn team Advanced (0, 49)
+2026-27 Playoffs Base (0, 72)
+2026-27 Playoffs Advanced (0, 82)
+2026-27 Playoffs team Base (0, 57)
+2026-27 Playoffs team Advanced (0, 49)
+=== src/fetch_injury.py --since 2026-10-26 18:25:10
+3 game dates, 32 files to fetch
+0 {'ok': 1} 1s
+done {'ok': 32}
+=== src/parse_injury.py --since 2026-10-26 18:25:19
+0 33
+rows 964331 reports 12232 notes 0
+=== src/injury_status.py 18:25:37
+report rows 964,331; with GAME_ID 0.945
+player id matched 0.970 (unmatched are mostly two-way/long-term players with no logged games)
+status rows 87,887 games 7,782 dec coverage 0.986
+{'Out': 65325, 'Questionable': 9379, 'Available': 7374, 'Probable': 3334, 'Doubtful': 1241, nan: 1234}
+=== src/fetch_tracking.py --seasons 2026-27 18:26:13
+9 game dates 2026-10-20..2026-10-28; kinds=['passing', 'rebounding', 'possessions', 'drives', 'catchshoot', 'pullup', 'shots']
+21 calls to make
+  [1/21] passing 2026-10-26 (2026-27, 9 games) rows=212 elapsed=3s
+done
+=== src/fetch_tracking.py --build 18:27:16
+passing (274282, 19)
+rebounding (243610, 36)
+possessions (274282, 22)
+drives (274282, 26)
+catchshoot (275196, 17)
+pullup (275196, 17)
+tracking_player_games (275197, 56) 2016-10-25 2026-10-28
+tracking_shots (2272448, 24) 2016-10-25 2026-10-28
+=== src/features.py 18:28:27
+(275196, 390) 2016-10-25 00:00:00 2026-10-28 00:00:00
+REFRESH OK: box scores through 2026-10-28, tracking through 2026-10-28, injury statuses through 2026-10-28

@@ -1,0 +1,49 @@
+637 game dates 2023-10-24..2026-10-25; kinds=['passing', 'rebounding', 'possessions', 'shots']
+2544 calls to make
+  [1/2544] passing 2023-10-24 (2023-24, 2 games) rows=44 elapsed=2s
+  [26/2544] rebounding 2023-10-30 (2023-24, 11 games) rows=205 elapsed=60s
+  [51/2544] possessions 2023-11-05 (2023-24, 5 games) rows=107 elapsed=117s
+  [76/2544] shots 2023-11-12 (2023-24, 11 games) rows=1983 elapsed=174s
+  [101/2544] passing 2023-11-19 (2023-24, 9 games) rows=208 elapsed=231s
+  [126/2544] rebounding 2023-11-26 (2023-24, 8 games) rows=147 elapsed=287s
+  [151/2544] possessions 2023-12-02 (2023-24, 12 games) rows=239 elapsed=347s
+  [176/2544] shots 2023-12-11 (2023-24, 13 games) rows=2326 elapsed=416s
+  [201/2544] passing 2023-12-18 (2023-24, 11 games) rows=231 elapsed=490s
+  [226/2544] rebounding 2023-12-25 (2023-24, 5 games) rows=82 elapsed=562s
+  [251/2544] possessions 2023-12-31 (2023-24, 6 games) rows=135 elapsed=624s
+  [276/2544] shots 2024-01-06 (2023-24, 4 games) rows=697 elapsed=684s
+  [301/2544] passing 2024-01-13 (2023-24, 8 games) rows=164 elapsed=743s
+  [326/2544] rebounding 2024-01-19 (2023-24, 7 games) rows=133 elapsed=800s
+  [351/2544] possessions 2024-01-25 (2023-24, 7 games) rows=158 elapsed=860s
+  [376/2544] shots 2024-01-31 (2023-24, 10 games) rows=1749 elapsed=921s
+  [401/2544] passing 2024-02-07 (2023-24, 7 games) rows=147 elapsed=981s
+  [426/2544] rebounding 2024-02-13 (2023-24, 6 games) rows=124 elapsed=1040s
+  [451/2544] possessions 2024-02-25 (2023-24, 11 games) rows=244 elapsed=1100s
+  [476/2544] shots 2024-03-02 (2023-24, 5 games) rows=887 elapsed=1161s
+  [501/2544] passing 2024-03-09 (2023-24, 7 games) rows=0 elapsed=1231s
+  [502/2544] rebounding 2024-03-09 (2023-24, 7 games) rows=0 elapsed=1234s
+  [503/2544] possessions 2024-03-09 (2023-24, 7 games) rows=0 elapsed=1236s
+  [526/2544] rebounding 2024-03-15 (2023-24, 6 games) rows=105 elapsed=1303s
+  [551/2544] possessions 2024-03-21 (2023-24, 7 games) rows=147 elapsed=1371s
+  [576/2544] shots 2024-03-27 (2023-24, 12 games) rows=2109 elapsed=1442s
+  [601/2544] passing 2024-04-03 (2023-24, 9 games) rows=189 elapsed=1513s
+    retry 1/6 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/6 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/6 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/6 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/6 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/6 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+Traceback (most recent call last):
+  File "/Users/seantang/git/nba-ai/workspace/src/fetch_tracking.py", line 167, in <module>
+    else:
+        ^^
+  File "/Users/seantang/git/nba-ai/workspace/src/fetch_tracking.py", line 99, in run_fetch
+    f.parent.mkdir(parents=True, exist_ok=True)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/seantang/git/nba-ai/workspace/src/fetch_tracking.py", line 64, in fetch_date
+    date_from_nullable=ds, date_to_nullable=ds, timeout=60).get_dict()
+
+  File "/Users/seantang/git/nba-ai/workspace/src/fetch_tracking.py", line 47, in _call
+    delay = min(delay * 2, 300)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: gave up

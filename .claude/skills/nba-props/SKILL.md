@@ -20,6 +20,12 @@ call starts a fresh shell, so chain with `&&`. Read `JOURNAL.md` first if you ar
   starters out, the player's own status, the opponent's absences). On dev they improved every accuracy and ROI
   measure (REPORT.md §10.2) but the model still misses by more than FanDuel's line (3.48 vs 3.43 points on average)
   and under-reacts for the direct replacement of an absent starter, so review those rows with extra care.
+- **Assists model (since 2026-10-29)**: the AST model also uses stats.nba.com player tracking (potential assists, passes,
+  touches, time of possession, rebound chances, shot zones, opponent potential assists allowed), each rescaled by the
+  league's season-to-date rate because stats.nba.com changed its definitions in 2024-25 and 2025-26 (REPORT.md §12-13).
+  In backtests it improved assists accuracy in every window (early dev, 2024-25, 2025-26). Points, rebounds, threes and PRA
+  are unchanged. The old assists model still runs alongside; every FanDuel assists line is logged with both models'
+  projections to `data/ledger/ast_compare.csv`, and `ledger.py report` compares them. No review is needed for that file.
 - The decision-time status is the latest official report (`--injury auto`, PDF from `ak-static.cms.nba.com`, published
   on the half hour from 11 AM ET) **plus** your overrides file. Players listed Out/Doubtful are removed from the team's
   available minutes; Questionable/Probable stay in (historically 54% of Questionables play).
@@ -41,7 +47,18 @@ call starts a fresh shell, so chain with `&&`. Read `JOURNAL.md` first if you ar
 Box scores come from stats.nba.com via `nba_api` (cached under `data/raw/nba/daily/`); run after ~1 AM ET so every
 game has final stats. `close` fills closing lines from the latest cached pre-tip odds snapshot, so it only has data
 when the live script was run again near tip the night before. Show the report table (model-only vs kept vs vetoed)
-to the user.
+to the user, plus the last lines of the report: AST model picks before/after the switch and the tracking-vs-old
+assists comparison.
+
+Then refresh the model's data (free: stats.nba.com and NBA injury PDFs, no Odds API credits; ~10 minutes):
+
+```
+bash scripts/daily_refresh.sh
+```
+It re-downloads the current season's box scores (cached files never update by themselves), pulls and parses the last
+3 days of injury reports, fetches tracking for new game dates (7 calls each), and rebuilds the feature file. It must end
+with `REFRESH OK: box scores through <last night> ...`. If it fails, show the error; do not run the live script on
+stale data without telling the user (the live script prints `box scores through ...` and warns if tracking is behind).
 
 ## 2. Feed tonight's injury and lineup news to the model
 
@@ -64,7 +81,8 @@ Orlando Magic,Anthony Black,AVAILABLE,confirmed starting per team PR
 ```
 .venv/bin/python src/live_odds.py --books fanduel,draftkings,betmgm,betrivers --mode both
 ```
-Options: `--books fanduel` for a FanDuel-only slate (then only `model_fd` rows appear; the `rule` needs a second
+Options: `--no-trk` to fall back to the old assists model (only if the tracking data is broken; say so in the report),
+`--books fanduel` for a FanDuel-only slate (then only `model_fd` rows appear; the `rule` needs a second
 book), `--mode rule` or `--mode model`, `--hours 8` to restrict to tonight, `--max-events N`, `--dry` to replay the
 latest cached run folder with no API calls, `--injury none|<pdf>` and `--overrides none|<csv>` to override the
 defaults (`auto`).

@@ -1,0 +1,7 @@
+train rows 240803 features 378
+AST: tracking gain share 0.005 (90 cols); top tracking: trk_ast_per_pot_r10=0.001(#23), trk_ast_per_pot_r20=0.000(#36), trk_passes_m5=0.000(#58), trk_poss_time_m5=0.000(#72), trk_touches_m5=0.000(#107)
+   top5 overall: AST_ewm=0.706, AST_std_season=0.140, AST_m10=0.040, AST_m20=0.017, MIN_last=0.012
+REB: tracking gain share 0.002 (90 cols); top tracking: trk_reb_per_ch_r10=0.000(#56), trk_reb_per_ch_r20=0.000(#67), opp_trk_rim_fga_15=0.000(#183), trk_passes_m5=0.000(#204), trk_poss_time_m10=0.000(#241)
+   top5 overall: REB_ewm=0.628, REB_std_season=0.157, REB_m10=0.053, REB_m20=0.023, MIN_last=0.017
+PTS: tracking gain share 0.001 (90 cols); top tracking: trk_fga_c3_m5=0.000(#168), trk_fga_all_m10=0.000(#179), trk_fga_all_m20=0.000(#200), trk_fga_ab3_m20=0.000(#219), opp_trk_reb_ch_15=0.000(#228)
+   top5 overall: PTS_ewm=0.615, PA_ewm=0.138, PTS_std_season=0.070, FGA_m5=0.021, MIN_last=0.019

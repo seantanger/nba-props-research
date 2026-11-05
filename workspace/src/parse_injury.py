@@ -1,7 +1,8 @@
 """Parse the cached official injury-report PDFs into one table:
 report_ts (ET), game_date, game_time, matchup, team, player, status, reason.
 Column assignment uses word x-positions against the header row, so it survives the 2023+ layout where the text layer drops spaces.
-Output: data/processed/injury_reports.parquet. Usage: .venv/bin/python src/parse_injury.py [--workers 8]
+Output: data/processed/injury_reports.parquet. Usage: .venv/bin/python src/parse_injury.py [--workers 8] [--since YYYY-MM-DD]
+  --since  incremental: parse only PDFs dated >= since and replace those dates' rows in the existing table (a full parse takes ~40 min).
 """
 import argparse, pathlib, re, sys
 from concurrent.futures import ProcessPoolExecutor
@@ -101,8 +102,11 @@ def parse_pdf(path):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--workers", type=int, default=8); ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--since", default=None)
     a = ap.parse_args()
     files = sorted(PDF.glob("Injury-Report_*.pdf"))
+    if a.since:
+        files = [f for f in files if f.name[len("Injury-Report_"):][:10] >= a.since]
     if a.limit:
         files = files[: a.limit]
     out, notes = [], []
@@ -114,7 +118,10 @@ def main():
                 notes.append(note)
             if i % 1000 == 0:
                 print(i, len(files), flush=True)
-    res = pd.concat(out, ignore_index=True)
+    res = pd.concat(out, ignore_index=True) if out else pd.DataFrame()
+    if a.since and OUT.exists():
+        old = pd.read_parquet(OUT)
+        res = pd.concat([old[old.file_ts < pd.Timestamp(a.since)], res], ignore_index=True)
     res.to_parquet(OUT, index=False)
     print("rows", len(res), "reports", res.report_ts.nunique(), "notes", len(notes))
     (ROOT / "logs" / "parse_injury_notes.txt").write_text("\n".join(notes))

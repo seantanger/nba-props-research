@@ -51,13 +51,14 @@ def load_team_logs():
 
 
 def lagged_roll(g, col, w, fn="mean", min_periods=1):
-    s = g[col].shift(1)
+    # shift AND roll within the group; rolling the shifted series directly would carry the previous group's last games
+    # into the first w-1 games of each player/team
     if fn == "mean":
-        return s.rolling(w, min_periods=min_periods).mean()
+        return g[col].transform(lambda s: s.shift(1).rolling(w, min_periods=min_periods).mean())
     if fn == "std":
-        return s.rolling(w, min_periods=2).std()
+        return g[col].transform(lambda s: s.shift(1).rolling(w, min_periods=2).std())
     if fn == "sum":
-        return s.rolling(w, min_periods=min_periods).sum()
+        return g[col].transform(lambda s: s.shift(1).rolling(w, min_periods=min_periods).sum())
     raise ValueError(fn)
 
 

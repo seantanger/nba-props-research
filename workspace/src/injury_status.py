@@ -33,7 +33,9 @@ def last_first_to_first_last(s):
 
 def build(dec_min=DEC_MIN):
     rep = pd.read_parquet(PROC / "injury_reports.parquet")
-    pg = pd.read_parquet(PROC / "player_games.parquet", columns=["PLAYER_ID", "PLAYER_NAME", "TEAM_ABBREVIATION", "TEAM_NAME", "GAME_ID", "GAME_DATE", "MATCHUP", "season"])
+    # games straight from the raw box-score logs, so this can run before features.py rebuilds player_games.parquet
+    from features import load_player_logs
+    pg = load_player_logs()[["PLAYER_ID", "PLAYER_NAME", "TEAM_ABBREVIATION", "TEAM_NAME", "GAME_ID", "GAME_DATE", "MATCHUP", "season"]]
     # --- team name -> abbreviation (from the logs themselves, plus fixes)
     tmap = pg.drop_duplicates(["TEAM_NAME", "TEAM_ABBREVIATION"]).set_index("TEAM_NAME").TEAM_ABBREVIATION.to_dict()
     tmap.update(TEAM_FIX)

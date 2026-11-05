@@ -1,0 +1,82 @@
+-- calling BoxScorePlayerTrackV3 {'game_id': '0022600116'}
+
+### BoxScorePlayerTrackV3 2026-27 game
+  [homeTeam.players] rows=17
+    ['personId', 'firstName', 'familyName', 'nameI', 'playerSlug', 'position', 'comment', 'jerseyNum', 'statistics', 'statistics.minutes', 'statistics.speed', 'statistics.distance', 'statistics.reboundChancesOffensive', 'statistics.reboundChancesDefensive', 'statistics.reboundChancesTotal', 'statistics.touches', 'statistics.secondaryAssists', 'statistics.freeThrowAssists', 'statistics.passes', 'statistics.assists', 'statistics.contestedFieldGoalsMade', 'statistics.contestedFieldGoalsAttempted', 'statistics.contestedFieldGoalPercentage', 'statistics.uncontestedFieldGoalsMade', 'statistics.uncontestedFieldGoalsAttempted', 'statistics.uncontestedFieldGoalsPercentage', 'statistics.fieldGoalPercentage', 'statistics.defendedAtRimFieldGoalsMade', 'statistics.defendedAtRimFieldGoalsAttempted', 'statistics.defendedAtRimFieldGoalPercentage']
+    keyword hits: ['rebound_chance', 'reboundchance', 'touch', 'pass', 'secondary', 'freethrowassist', 'contested', 'uncontested', 'speed', 'distance']
+  [awayTeam.players] rows=18
+    ['personId', 'firstName', 'familyName', 'nameI', 'playerSlug', 'position', 'comment', 'jerseyNum', 'statistics', 'statistics.minutes', 'statistics.speed', 'statistics.distance', 'statistics.reboundChancesOffensive', 'statistics.reboundChancesDefensive', 'statistics.reboundChancesTotal', 'statistics.touches', 'statistics.secondaryAssists', 'statistics.freeThrowAssists', 'statistics.passes', 'statistics.assists', 'statistics.contestedFieldGoalsMade', 'statistics.contestedFieldGoalsAttempted', 'statistics.contestedFieldGoalPercentage', 'statistics.uncontestedFieldGoalsMade', 'statistics.uncontestedFieldGoalsAttempted', 'statistics.uncontestedFieldGoalsPercentage', 'statistics.fieldGoalPercentage', 'statistics.defendedAtRimFieldGoalsMade', 'statistics.defendedAtRimFieldGoalsAttempted', 'statistics.defendedAtRimFieldGoalPercentage']
+    keyword hits: ['rebound_chance', 'reboundchance', 'touch', 'pass', 'secondary', 'freethrowassist', 'contested', 'uncontested', 'speed', 'distance']
+-- calling BoxScorePlayerTrackV3 {'game_id': '0021600001'}
+
+### BoxScorePlayerTrackV3 2016-17 game
+  [homeTeam.players] rows=13
+    ['personId', 'firstName', 'familyName', 'nameI', 'playerSlug', 'position', 'comment', 'jerseyNum', 'statistics', 'statistics.minutes', 'statistics.speed', 'statistics.distance', 'statistics.reboundChancesOffensive', 'statistics.reboundChancesDefensive', 'statistics.reboundChancesTotal', 'statistics.touches', 'statistics.secondaryAssists', 'statistics.freeThrowAssists', 'statistics.passes', 'statistics.assists', 'statistics.contestedFieldGoalsMade', 'statistics.contestedFieldGoalsAttempted', 'statistics.contestedFieldGoalPercentage', 'statistics.uncontestedFieldGoalsMade', 'statistics.uncontestedFieldGoalsAttempted', 'statistics.uncontestedFieldGoalsPercentage', 'statistics.fieldGoalPercentage', 'statistics.defendedAtRimFieldGoalsMade', 'statistics.defendedAtRimFieldGoalsAttempted', 'statistics.defendedAtRimFieldGoalPercentage']
+    keyword hits: ['rebound_chance', 'reboundchance', 'touch', 'pass', 'secondary', 'freethrowassist', 'contested', 'uncontested', 'speed', 'distance']
+  [awayTeam.players] rows=13
+    ['personId', 'firstName', 'familyName', 'nameI', 'playerSlug', 'position', 'comment', 'jerseyNum', 'statistics', 'statistics.minutes', 'statistics.speed', 'statistics.distance', 'statistics.reboundChancesOffensive', 'statistics.reboundChancesDefensive', 'statistics.reboundChancesTotal', 'statistics.touches', 'statistics.secondaryAssists', 'statistics.freeThrowAssists', 'statistics.passes', 'statistics.assists', 'statistics.contestedFieldGoalsMade', 'statistics.contestedFieldGoalsAttempted', 'statistics.contestedFieldGoalPercentage', 'statistics.uncontestedFieldGoalsMade', 'statistics.uncontestedFieldGoalsAttempted', 'statistics.uncontestedFieldGoalsPercentage', 'statistics.fieldGoalPercentage', 'statistics.defendedAtRimFieldGoalsMade', 'statistics.defendedAtRimFieldGoalsAttempted', 'statistics.defendedAtRimFieldGoalPercentage']
+    keyword hits: ['rebound_chance', 'reboundchance', 'touch', 'pass', 'secondary', 'freethrowassist', 'contested', 'uncontested', 'speed', 'distance']
+-- calling LeagueDashPtStats {'pt_measure_type': 'Passing', 'player_or_team': 'Player', 'season': '2016-17', 'date_from_nullable': '10/25/2016', 'date_to_nullable': '10/25/2016'}
+
+### LeagueDashPtStats Passing, date range 2016-10-25..2016-10-25
+  [LeagueDashPtStats] rows=72
+    ['PLAYER_ID', 'PLAYER_NAME', 'TEAM_ID', 'TEAM_ABBREVIATION', 'GP', 'W', 'L', 'MIN', 'PASSES_MADE', 'PASSES_RECEIVED', 'AST', 'FT_AST', 'SECONDARY_AST', 'POTENTIAL_AST', 'AST_PTS_CREATED', 'AST_ADJ', 'AST_TO_PASS_PCT', 'AST_TO_PASS_PCT_ADJ']
+    keyword hits: ['potential', 'pass', 'secondary', 'ft_ast']
+-- calling LeagueDashPtStats {'pt_measure_type': 'Rebounding', 'player_or_team': 'Player', 'season': '2026-27', 'date_from_nullable': '10/25/2026', 'date_to_nullable': '10/25/2026'}
+
+### LeagueDashPtStats Rebounding, date range 2026-10-25
+  [LeagueDashPtStats] rows=146
+    ['PLAYER_ID', 'PLAYER_NAME', 'TEAM_ID', 'TEAM_ABBREVIATION', 'GP', 'W', 'L', 'MIN', 'OREB', 'OREB_CONTEST', 'OREB_UNCONTEST', 'OREB_CONTEST_PCT', 'OREB_CHANCES', 'OREB_CHANCE_PCT', 'OREB_CHANCE_DEFER', 'OREB_CHANCE_PCT_ADJ', 'AVG_OREB_DIST', 'DREB', 'DREB_CONTEST', 'DREB_UNCONTEST', 'DREB_CONTEST_PCT', 'DREB_CHANCES', 'DREB_CHANCE_PCT', 'DREB_CHANCE_DEFER', 'DREB_CHANCE_PCT_ADJ', 'AVG_DREB_DIST', 'REB', 'REB_CONTEST', 'REB_UNCONTEST', 'REB_CONTEST_PCT', 'REB_CHANCES', 'REB_CHANCE_PCT', 'REB_CHANCE_DEFER', 'REB_CHANCE_PCT_ADJ', 'AVG_REB_DIST']
+-- calling LeagueDashPtStats {'pt_measure_type': 'Possessions', 'player_or_team': 'Player', 'season': '2026-27', 'date_from_nullable': '10/25/2026', 'date_to_nullable': '10/25/2026'}
+
+### LeagueDashPtStats Possessions (touches), date range 2026-10-25
+  [LeagueDashPtStats] rows=157
+    ['PLAYER_ID', 'PLAYER_NAME', 'TEAM_ID', 'TEAM_ABBREVIATION', 'GP', 'W', 'L', 'MIN', 'POINTS', 'TOUCHES', 'FRONT_CT_TOUCHES', 'TIME_OF_POSS', 'AVG_SEC_PER_TOUCH', 'AVG_DRIB_PER_TOUCH', 'PTS_PER_TOUCH', 'ELBOW_TOUCHES', 'POST_TOUCHES', 'PAINT_TOUCHES', 'PTS_PER_ELBOW_TOUCH', 'PTS_PER_POST_TOUCH', 'PTS_PER_PAINT_TOUCH']
+    keyword hits: ['touch']
+-- calling PlayerDashPtPass {'player_id': 1628983, 'team_id': 1610612760, 'season': '2026-27'}
+
+### PlayerDashPtPass SGA 2026-27 season
+  [PassesMade] rows=11
+    ['PLAYER_ID', 'PLAYER_NAME_LAST_FIRST', 'TEAM_NAME', 'TEAM_ID', 'TEAM_ABBREVIATION', 'PASS_TYPE', 'G', 'PASS_TO', 'PASS_TEAMMATE_PLAYER_ID', 'FREQUENCY', 'PASS', 'AST', 'FGM', 'FGA', 'FG_PCT', 'FG2M', 'FG2A', 'FG2_PCT', 'FG3M', 'FG3A', 'FG3_PCT']
+    keyword hits: ['pass']
+  [PassesReceived] rows=11
+    ['PLAYER_ID', 'PLAYER_NAME_LAST_FIRST', 'TEAM_NAME', 'TEAM_ID', 'TEAM_ABBREVIATION', 'PASS_TYPE', 'G', 'PASS_FROM', 'PASS_TEAMMATE_PLAYER_ID', 'FREQUENCY', 'PASS', 'AST', 'FGM', 'FGA', 'FG_PCT', 'FG2M', 'FG2A', 'FG2_PCT', 'FG3M', 'FG3A', 'FG3_PCT']
+    keyword hits: ['pass']
+-- calling ShotChartDetail {'player_id': 2544, 'team_id': 0, 'season_nullable': '2016-17', 'context_measure_simple': 'FGA'}
+
+### ShotChartDetail LeBron 2016-17 season (all games)
+  [Shot_Chart_Detail] rows=1344
+    ['GRID_TYPE', 'GAME_ID', 'GAME_EVENT_ID', 'PLAYER_ID', 'PLAYER_NAME', 'TEAM_ID', 'TEAM_NAME', 'PERIOD', 'MINUTES_REMAINING', 'SECONDS_REMAINING', 'EVENT_TYPE', 'ACTION_TYPE', 'SHOT_TYPE', 'SHOT_ZONE_BASIC', 'SHOT_ZONE_AREA', 'SHOT_ZONE_RANGE', 'SHOT_DISTANCE', 'LOC_X', 'LOC_Y', 'SHOT_ATTEMPTED_FLAG', 'SHOT_MADE_FLAG', 'GAME_DATE', 'HTM', 'VTM']
+    keyword hits: ['distance']
+  [LeagueAverages] rows=21
+    ['GRID_TYPE', 'SHOT_ZONE_BASIC', 'SHOT_ZONE_AREA', 'SHOT_ZONE_RANGE', 'FGA', 'FGM', 'FG_PCT']
+-- calling ShotChartDetail {'player_id': 1628983, 'team_id': 0, 'season_nullable': '2026-27', 'game_id_nullable': '0022600116', 'context_measure_simple': 'FGA'}
+
+### ShotChartDetail SGA 2026-27 single game
+  [Shot_Chart_Detail] rows=26
+    ['GRID_TYPE', 'GAME_ID', 'GAME_EVENT_ID', 'PLAYER_ID', 'PLAYER_NAME', 'TEAM_ID', 'TEAM_NAME', 'PERIOD', 'MINUTES_REMAINING', 'SECONDS_REMAINING', 'EVENT_TYPE', 'ACTION_TYPE', 'SHOT_TYPE', 'SHOT_ZONE_BASIC', 'SHOT_ZONE_AREA', 'SHOT_ZONE_RANGE', 'SHOT_DISTANCE', 'LOC_X', 'LOC_Y', 'SHOT_ATTEMPTED_FLAG', 'SHOT_MADE_FLAG', 'GAME_DATE', 'HTM', 'VTM']
+    keyword hits: ['distance']
+  [LeagueAverages] rows=19
+    ['GRID_TYPE', 'SHOT_ZONE_BASIC', 'SHOT_ZONE_AREA', 'SHOT_ZONE_RANGE', 'FGA', 'FGM', 'FG_PCT']
+-- calling SynergyPlayTypes {'season': '2026-27', 'player_or_team_abbreviation': 'P', 'type_grouping_nullable': 'offensive'}
+
+### SynergyPlayTypes 2026-27 player offensive
+  [SynergyPlayType] rows=0
+    ['SEASON_ID', 'PLAYER_ID', 'PLAYER_NAME', 'TEAM_ID', 'TEAM_ABBREVIATION', 'TEAM_NAME', 'PLAY_TYPE', 'TYPE_GROUPING', 'PERCENTILE', 'GP', 'POSS_PCT', 'PPP', 'FG_PCT', 'FT_POSS_PCT', 'TOV_POSS_PCT', 'SF_POSS_PCT', 'PLUSONE_POSS_PCT', 'SCORE_POSS_PCT', 'EFG_PCT', 'POSS', 'PTS', 'FGM', 'FGA', 'FGMX']
+-- calling SynergyPlayTypes {'season': '2016-17', 'player_or_team_abbreviation': 'P', 'type_grouping_nullable': 'offensive'}
+
+### SynergyPlayTypes 2016-17 player offensive
+  [SynergyPlayType] rows=0
+    ['SEASON_ID', 'PLAYER_ID', 'PLAYER_NAME', 'TEAM_ID', 'TEAM_ABBREVIATION', 'TEAM_NAME', 'PLAY_TYPE', 'TYPE_GROUPING', 'PERCENTILE', 'GP', 'POSS_PCT', 'PPP', 'FG_PCT', 'FT_POSS_PCT', 'TOV_POSS_PCT', 'SF_POSS_PCT', 'PLUSONE_POSS_PCT', 'SCORE_POSS_PCT', 'EFG_PCT', 'POSS', 'PTS', 'FGM', 'FGA', 'FGMX']
+
+### SynergyPlayTypes 2026-27 Isolation PerGame
+  [SynergyPlayType] rows=18
+    ['SEASON_ID', 'PLAYER_ID', 'PLAYER_NAME', 'TEAM_ID', 'TEAM_ABBREVIATION', 'TEAM_NAME', 'PLAY_TYPE', 'TYPE_GROUPING', 'PERCENTILE', 'GP', 'POSS_PCT', 'PPP', 'FG_PCT', 'FT_POSS_PCT', 'TOV_POSS_PCT', 'SF_POSS_PCT', 'PLUSONE_POSS_PCT', 'SCORE_POSS_PCT', 'EFG_PCT', 'POSS', 'PTS', 'FGM', 'FGA', 'FGMX']
+-- calling ShotChartDetail {'player_id': 0, 'team_id': 0, 'season_nullable': '2016-17', 'date_from_nullable': '10/25/2016', 'date_to_nullable': '10/25/2016', 'context_measure_simple': 'FGA'}
+
+### ShotChartDetail all players (player_id=0), 2016-10-25 only
+  [Shot_Chart_Detail] rows=521
+    ['GRID_TYPE', 'GAME_ID', 'GAME_EVENT_ID', 'PLAYER_ID', 'PLAYER_NAME', 'TEAM_ID', 'TEAM_NAME', 'PERIOD', 'MINUTES_REMAINING', 'SECONDS_REMAINING', 'EVENT_TYPE', 'ACTION_TYPE', 'SHOT_TYPE', 'SHOT_ZONE_BASIC', 'SHOT_ZONE_AREA', 'SHOT_ZONE_RANGE', 'SHOT_DISTANCE', 'LOC_X', 'LOC_Y', 'SHOT_ATTEMPTED_FLAG', 'SHOT_MADE_FLAG', 'GAME_DATE', 'HTM', 'VTM']
+    keyword hits: ['distance']
+  [LeagueAverages] rows=19
+    ['GRID_TYPE', 'SHOT_ZONE_BASIC', 'SHOT_ZONE_AREA', 'SHOT_ZONE_RANGE', 'FGA', 'FGM', 'FG_PCT']

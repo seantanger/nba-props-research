@@ -1,0 +1,797 @@
+=== shots_month attempt 1 2026-10-27 20:49:14
+shots_month: 74 windows for ['2016-17', '2017-18', '2018-19', '2019-20', '2020-21', '2021-22', '2022-23']
+  [1/74] shots 2016-17 Playoffs 2017-04: shots=7353 games=45/45 elapsed=5s
+  [2/74] shots 2016-17 Playoffs 2017-05: shots=4960 games=29/29 elapsed=9s
+  [3/74] shots 2016-17 Playoffs 2017-06: shots=906 games=5/5 elapsed=14s
+  [4/74] shots 2016-17 Regular Season 2016-10: shots=7773 games=45/45 elapsed=18s
+  [5/74] shots 2016-17 Regular Season 2016-11: shots=39138 games=229/229 elapsed=23s
+  [6/74] shots 2016-17 Regular Season 2016-12: shots=39408 games=232/232 elapsed=27s
+  [7/74] shots 2016-17 Regular Season 2017-01: shots=38213 games=223/223 elapsed=31s
+  [8/74] shots 2016-17 Regular Season 2017-02: shots=28154 games=165/165 elapsed=35s
+  [9/74] shots 2016-17 Regular Season 2017-03: shots=41101 games=241/241 elapsed=40s
+  [10/74] shots 2016-17 Regular Season 2017-04: shots=16327 games=95/95 elapsed=45s
+  [11/74] shots 2017-18 Playoffs 2018-04: shots=8009 games=48/48 elapsed=50s
+  [12/74] shots 2017-18 Playoffs 2018-05: shots=5289 games=31/31 elapsed=54s
+  [13/74] shots 2017-18 Playoffs 2018-06: shots=518 games=3/3 elapsed=58s
+  [14/74] shots 2017-18 Regular Season 2017-10: shots=17843 games=104/104 elapsed=64s
+  [15/74] shots 2017-18 Regular Season 2017-11: shots=36235 games=213/213 elapsed=68s
+  [16/74] shots 2017-18 Regular Season 2017-12: shots=38563 games=227/227 elapsed=72s
+  [17/74] shots 2017-18 Regular Season 2018-01: shots=37089 games=216/216 elapsed=77s
+  [18/74] shots 2017-18 Regular Season 2018-02: shots=27948 games=160/160 elapsed=81s
+  [19/74] shots 2017-18 Regular Season 2018-03: shots=38648 games=222/222 elapsed=85s
+  [20/74] shots 2017-18 Regular Season 2018-04: shots=15381 games=88/88 elapsed=90s
+  [21/74] shots 2018-19 Playoffs 2019-04: shots=8309 games=48/48 elapsed=95s
+  [22/74] shots 2018-19 Playoffs 2019-05: shots=5108 games=29/29 elapsed=99s
+  [23/74] shots 2018-19 Playoffs 2019-06: shots=842 games=5/5 elapsed=103s
+  [24/74] shots 2018-19 Regular Season 2018-10: shots=19832 games=110/110 elapsed=109s
+  [25/74] shots 2018-19 Regular Season 2018-11: shots=38706 games=219/219 elapsed=114s
+  [26/74] shots 2018-19 Regular Season 2018-12: shots=38689 games=219/219 elapsed=118s
+  [27/74] shots 2018-19 Regular Season 2019-01: shots=39277 games=221/221 elapsed=123s
+  [28/74] shots 2018-19 Regular Season 2019-02: shots=28370 games=158/158 elapsed=128s
+  [29/74] shots 2018-19 Regular Season 2019-03: shots=40202 games=224/224 elapsed=134s
+  [30/74] shots 2018-19 Regular Season 2019-04: shots=14382 games=79/79 elapsed=139s
+  [31/74] shots 2019-20 PlayIn 2020-08: shots=176 games=1/1 elapsed=146s
+  [32/74] shots 2019-20 Playoffs 2020-08: shots=7305 games=42/42 elapsed=154s
+  [33/74] shots 2019-20 Playoffs 2020-09: shots=5988 games=36/36 elapsed=159s
+  [34/74] shots 2019-20 Playoffs 2020-10: shots=814 games=5/5 elapsed=163s
+  [35/74] shots 2019-20 Regular Season 2019-10: shots=12089 games=68/68 elapsed=168s
+  [36/74] shots 2019-20 Regular Season 2019-11: shots=38174 games=215/215 elapsed=173s
+  [37/74] shots 2019-20 Regular Season 2019-12: shots=39196 games=220/220 elapsed=180s
+  [38/74] shots 2019-20 Regular Season 2020-01: shots=39427 games=222/222 elapsed=185s
+  [39/74] shots 2019-20 Regular Season 2020-02: shots=29900 games=168/168 elapsed=190s
+  [40/74] shots 2019-20 Regular Season 2020-03: shots=13677 games=78/78 elapsed=195s
+  [41/74] shots 2019-20 Regular Season 2020-07: shots=1433 games=8/8 elapsed=199s
+  [42/74] shots 2019-20 Regular Season 2020-08: shots=14220 games=80/80 elapsed=204s
+  [43/74] shots 2020-21 PlayIn 2021-05: shots=1133 games=6/6 elapsed=213s
+  [44/74] shots 2020-21 Playoffs 2021-05: shots=5558 games=32/32 elapsed=217s
+  [45/74] shots 2020-21 Playoffs 2021-06: shots=7800 games=45/45 elapsed=222s
+  [46/74] shots 2020-21 Playoffs 2021-07: shots=1413 games=8/8 elapsed=226s
+  [47/74] shots 2020-21 Regular Season 2020-12: shots=11916 games=67/67 elapsed=232s
+  [48/74] shots 2020-21 Regular Season 2021-01: shots=39213 games=222/222 elapsed=240s
+  [49/74] shots 2020-21 Regular Season 2021-02: shots=37476 games=212/212 elapsed=245s
+  [50/74] shots 2020-21 Regular Season 2021-03: shots=35829 games=204/204 elapsed=249s
+  [51/74] shots 2020-21 Regular Season 2021-04: shots=42433 games=240/240 elapsed=257s
+  [52/74] shots 2020-21 Regular Season 2021-05: shots=24116 games=135/135 elapsed=263s
+  [53/74] shots 2021-22 PlayIn 2022-04: shots=1027 games=6/6 elapsed=267s
+  [54/74] shots 2021-22 Playoffs 2022-04: shots=7136 games=43/43 elapsed=272s
+  [55/74] shots 2021-22 Playoffs 2022-05: shots=6418 games=38/38 elapsed=277s
+  [56/74] shots 2021-22 Playoffs 2022-06: shots=1017 games=6/6 elapsed=281s
+  [57/74] shots 2021-22 Regular Season 2021-10: shots=16707 games=93/93 elapsed=286s
+  [58/74] shots 2021-22 Regular Season 2021-11: shots=39624 games=225/225 elapsed=291s
+  [59/74] shots 2021-22 Regular Season 2021-12: shots=36565 games=209/209 elapsed=295s
+  [60/74] shots 2021-22 Regular Season 2022-01: shots=40576 games=231/231 elapsed=300s
+  [61/74] shots 2021-22 Regular Season 2022-02: shots=28902 games=163/163 elapsed=305s
+  [62/74] shots 2021-22 Regular Season 2022-03: shots=40286 games=229/229 elapsed=310s
+  [63/74] shots 2021-22 Regular Season 2022-04: shots=14062 games=80/80 elapsed=315s
+  [64/74] shots 2022-23 PlayIn 2023-04: shots=1046 games=6/6 elapsed=319s
+  [65/74] shots 2022-23 Playoffs 2023-04: shots=8006 games=45/45 elapsed=324s
+  [66/74] shots 2022-23 Playoffs 2023-05: shots=5808 games=34/34 elapsed=329s
+  [67/74] shots 2022-23 Playoffs 2023-06: shots=837 games=5/5 elapsed=333s
+  [68/74] shots 2022-23 Regular Season 2022-10: shots=18187 games=102/102 elapsed=338s
+  [69/74] shots 2022-23 Regular Season 2022-11: shots=38901 games=222/222 elapsed=343s
+  [70/74] shots 2022-23 Regular Season 2022-12: shots=39086 games=222/222 elapsed=348s
+  [71/74] shots 2022-23 Regular Season 2023-01: shots=39271 games=222/222 elapsed=352s
+  [72/74] shots 2022-23 Regular Season 2023-02: shots=28754 games=163/163 elapsed=357s
+  [73/74] shots 2022-23 Regular Season 2023-03: shots=40384 games=229/229 elapsed=361s
+  [74/74] shots 2022-23 Regular Season 2023-04: shots=12637 games=70/70 elapsed=367s
+done
+=== core_old attempt 1 2026-10-27 20:55:23
+1438 game dates 2016-10-25..2023-06-12; kinds=['passing', 'rebounding', 'possessions']
+4314 calls to make
+  [1/4314] passing 2016-10-25 (2016-17, 3 games) rows=72 elapsed=4s
+  [26/4314] rebounding 2016-11-02 (2016-17, 10 games) rows=193 elapsed=101s
+  [51/4314] possessions 2016-11-10 (2016-17, 4 games) rows=83 elapsed=200s
+  [76/4314] passing 2016-11-19 (2016-17, 9 games) rows=191 elapsed=301s
+  [101/4314] rebounding 2016-11-28 (2016-17, 7 games) rows=132 elapsed=402s
+  [126/4314] possessions 2016-12-06 (2016-17, 6 games) rows=120 elapsed=503s
+  [151/4314] passing 2016-12-15 (2016-17, 5 games) rows=111 elapsed=603s
+  [176/4314] rebounding 2016-12-23 (2016-17, 14 games) rows=266 elapsed=704s
+  [201/4314] possessions 2017-01-01 (2016-17, 5 games) rows=104 elapsed=804s
+  [226/4314] passing 2017-01-10 (2016-17, 9 games) rows=192 elapsed=902s
+  [251/4314] rebounding 2017-01-18 (2016-17, 9 games) rows=177 elapsed=1000s
+  [276/4314] possessions 2017-01-26 (2016-17, 4 games) rows=80 elapsed=1100s
+  [301/4314] passing 2017-02-04 (2016-17, 10 games) rows=216 elapsed=1198s
+  [326/4314] rebounding 2017-02-12 (2016-17, 4 games) rows=67 elapsed=1298s
+  [351/4314] possessions 2017-02-26 (2016-17, 8 games) rows=166 elapsed=1396s
+  [376/4314] passing 2017-03-07 (2016-17, 3 games) rows=67 elapsed=1494s
+  [401/4314] rebounding 2017-03-15 (2016-17, 10 games) rows=192 elapsed=1594s
+  [426/4314] possessions 2017-03-23 (2016-17, 5 games) rows=106 elapsed=1691s
+  [451/4314] passing 2017-04-01 (2016-17, 5 games) rows=99 elapsed=1789s
+  [476/4314] rebounding 2017-04-09 (2016-17, 7 games) rows=131 elapsed=1889s
+  [501/4314] possessions 2017-04-19 (2016-17, 3 games) rows=63 elapsed=1987s
+  [526/4314] passing 2017-04-28 (2016-17, 3 games) rows=65 elapsed=2085s
+  [551/4314] rebounding 2017-05-07 (2016-17, 3 games) rows=57 elapsed=2183s
+  [576/4314] possessions 2017-05-16 (2016-17, 1 games) rows=26 elapsed=2279s
+  [601/4314] passing 2017-06-04 (2016-17, 1 games) rows=26 elapsed=2376s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [626/4314] rebounding 2017-10-21 (2017-18, 11 games) rows=220 elapsed=3806s
+  [651/4314] possessions 2017-10-29 (2017-18, 7 games) rows=154 elapsed=3905s
+  [676/4314] passing 2017-11-07 (2017-18, 10 games) rows=211 elapsed=4005s
+  [701/4314] rebounding 2017-11-15 (2017-18, 11 games) rows=202 elapsed=4107s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 9/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 10/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 11/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 12/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [726/4314] possessions 2017-11-24 (2017-18, 10 games) rows=210 elapsed=7271s
+  [751/4314] passing 2017-12-03 (2017-18, 5 games) rows=107 elapsed=7377s
+  [776/4314] rebounding 2017-12-11 (2017-18, 6 games) rows=120 elapsed=7475s
+  [801/4314] possessions 2017-12-19 (2017-18, 3 games) rows=66 elapsed=7576s
+  [826/4314] passing 2017-12-29 (2017-18, 9 games) rows=184 elapsed=7680s
+  [851/4314] rebounding 2018-01-06 (2017-18, 8 games) rows=153 elapsed=7782s
+  [876/4314] possessions 2018-01-14 (2017-18, 4 games) rows=88 elapsed=7880s
+  [901/4314] passing 2018-01-23 (2017-18, 5 games) rows=110 elapsed=7980s
+  [926/4314] rebounding 2018-01-31 (2017-18, 8 games) rows=151 elapsed=8082s
+  [951/4314] possessions 2018-02-08 (2017-18, 6 games) rows=132 elapsed=8181s
+  [976/4314] passing 2018-02-23 (2017-18, 11 games) rows=238 elapsed=8281s
+  [1001/4314] rebounding 2018-03-03 (2017-18, 7 games) rows=127 elapsed=8381s
+  [1026/4314] possessions 2018-03-11 (2017-18, 9 games) rows=197 elapsed=8481s
+  [1051/4314] passing 2018-03-20 (2017-18, 7 games) rows=147 elapsed=8579s
+  [1076/4314] rebounding 2018-03-28 (2017-18, 8 games) rows=147 elapsed=8681s
+  [1101/4314] possessions 2018-04-06 (2017-18, 10 games) rows=216 elapsed=8779s
+  [1126/4314] passing 2018-04-17 (2017-18, 3 games) rows=66 elapsed=8877s
+  [1151/4314] rebounding 2018-04-25 (2017-18, 4 games) rows=70 elapsed=8975s
+  [1176/4314] possessions 2018-05-03 (2017-18, 2 games) rows=43 elapsed=9071s
+  [1201/4314] passing 2018-05-15 (2017-18, 1 games) rows=22 elapsed=9169s
+  [1226/4314] rebounding 2018-05-25 (2017-18, 1 games) rows=20 elapsed=9268s
+  [1251/4314] possessions 2018-10-16 (2018-19, 2 games) rows=46 elapsed=9364s
+  [1276/4314] passing 2018-10-25 (2018-19, 4 games) rows=81 elapsed=9462s
+  [1301/4314] rebounding 2018-11-02 (2018-19, 8 games) rows=156 elapsed=9565s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [1326/4314] possessions 2018-11-10 (2018-19, 10 games) rows=214 elapsed=10996s
+  [1351/4314] passing 2018-11-19 (2018-19, 9 games) rows=194 elapsed=11098s
+  [1376/4314] rebounding 2018-11-28 (2018-19, 10 games) rows=189 elapsed=11202s
+  [1401/4314] possessions 2018-12-06 (2018-19, 3 games) rows=71 elapsed=11303s
+  [1426/4314] passing 2018-12-15 (2018-19, 7 games) rows=124 elapsed=11402s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 9/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 10/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 11/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 12/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [1451/4314] rebounding 2018-12-23 (2018-19, 11 games) rows=211 elapsed=14555s
+  [1476/4314] possessions 2019-01-01 (2018-19, 5 games) rows=105 elapsed=14657s
+  [1501/4314] passing 2019-01-10 (2018-19, 4 games) rows=90 elapsed=14757s
+  [1526/4314] rebounding 2019-01-18 (2018-19, 7 games) rows=137 elapsed=14858s
+  [1551/4314] possessions 2019-01-26 (2018-19, 5 games) rows=108 elapsed=14959s
+  [1576/4314] passing 2019-02-04 (2018-19, 6 games) rows=126 elapsed=15059s
+  [1601/4314] rebounding 2019-02-12 (2018-19, 5 games) rows=95 elapsed=15162s
+  [1626/4314] possessions 2019-02-26 (2018-19, 3 games) rows=67 elapsed=15260s
+  [1651/4314] passing 2019-03-07 (2018-19, 2 games) rows=45 elapsed=15358s
+  [1676/4314] rebounding 2019-03-15 (2018-19, 8 games) rows=152 elapsed=15458s
+  [1701/4314] possessions 2019-03-23 (2018-19, 8 games) rows=168 elapsed=15556s
+  [1726/4314] passing 2019-04-01 (2018-19, 9 games) rows=187 elapsed=15657s
+  [1751/4314] rebounding 2019-04-10 (2018-19, 11 games) rows=214 elapsed=15759s
+  [1776/4314] possessions 2019-04-20 (2018-19, 4 games) rows=85 elapsed=15857s
+  [1801/4314] passing 2019-04-29 (2018-19, 2 games) rows=38 elapsed=15955s
+  [1826/4314] rebounding 2019-05-07 (2018-19, 2 games) rows=38 elapsed=16054s
+  [1851/4314] possessions 2019-05-17 (2018-19, 1 games) rows=26 elapsed=16150s
+  [1876/4314] passing 2019-06-05 (2018-19, 1 games) rows=24 elapsed=16245s
+  [1901/4314] rebounding 2019-10-26 (2019-20, 10 games) rows=207 elapsed=16343s
+  [1926/4314] possessions 2019-11-03 (2019-20, 6 games) rows=131 elapsed=16441s
+  [1951/4314] passing 2019-11-12 (2019-20, 8 games) rows=166 elapsed=16539s
+  [1976/4314] rebounding 2019-11-20 (2019-20, 11 games) rows=204 elapsed=16638s
+  [2001/4314] possessions 2019-11-29 (2019-20, 13 games) rows=268 elapsed=16737s
+  [2026/4314] passing 2019-12-08 (2019-20, 8 games) rows=171 elapsed=16834s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+  [2051/4314] rebounding 2019-12-16 (2019-20, 7 games) rows=127 elapsed=18187s
+  [2076/4314] possessions 2019-12-25 (2019-20, 5 games) rows=107 elapsed=18292s
+  [2101/4314] passing 2020-01-03 (2019-20, 6 games) rows=120 elapsed=18396s
+  [2126/4314] rebounding 2020-01-11 (2019-20, 7 games) rows=138 elapsed=18500s
+  [2151/4314] possessions 2020-01-19 (2019-20, 2 games) rows=40 elapsed=18602s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 9/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 10/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 11/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 12/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 13/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+  [2176/4314] passing 2020-01-28 (2019-20, 8 games) rows=172 elapsed=21987s
+  [2201/4314] rebounding 2020-02-05 (2019-20, 9 games) rows=165 elapsed=22084s
+  [2226/4314] possessions 2020-02-13 (2019-20, 2 games) rows=42 elapsed=22180s
+  [2251/4314] passing 2020-02-28 (2019-20, 10 games) rows=212 elapsed=22275s
+  [2276/4314] rebounding 2020-03-07 (2019-20, 6 games) rows=105 elapsed=22373s
+  [2301/4314] possessions 2020-08-02 (2019-20, 6 games) rows=123 elapsed=22471s
+  [2326/4314] passing 2020-08-11 (2019-20, 7 games) rows=147 elapsed=22569s
+  [2351/4314] rebounding 2020-08-20 (2019-20, 4 games) rows=73 elapsed=22666s
+  [2376/4314] possessions 2020-08-31 (2019-20, 2 games) rows=37 elapsed=22763s
+  [2401/4314] passing 2020-09-09 (2019-20, 2 games) rows=39 elapsed=22860s
+  [2426/4314] rebounding 2020-09-19 (2019-20, 1 games) rows=18 elapsed=22959s
+  [2451/4314] possessions 2020-09-30 (2019-20, 1 games) rows=23 elapsed=23055s
+  [2476/4314] passing 2020-12-26 (2020-21, 10 games) rows=210 elapsed=23150s
+  [2501/4314] rebounding 2021-01-03 (2020-21, 8 games) rows=150 elapsed=23246s
+  [2526/4314] possessions 2021-01-11 (2020-21, 7 games) rows=146 elapsed=23341s
+  [2551/4314] passing 2021-01-20 (2020-21, 9 games) rows=181 elapsed=23435s
+  [2576/4314] rebounding 2021-01-28 (2020-21, 4 games) rows=79 elapsed=23530s
+  [2601/4314] possessions 2021-02-05 (2020-21, 9 games) rows=185 elapsed=23627s
+  [2626/4314] passing 2021-02-14 (2020-21, 10 games) rows=210 elapsed=23724s
+  [2651/4314] rebounding 2021-02-22 (2020-21, 6 games) rows=112 elapsed=23819s
+  [2676/4314] possessions 2021-03-02 (2020-21, 6 games) rows=127 elapsed=23916s
+  [2701/4314] passing 2021-03-16 (2020-21, 7 games) rows=137 elapsed=24014s
+  [2726/4314] rebounding 2021-03-24 (2020-21, 11 games) rows=210 elapsed=24112s
+  [2751/4314] possessions 2021-04-01 (2020-21, 7 games) rows=150 elapsed=24206s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [2776/4314] passing 2021-04-10 (2020-21, 7 games) rows=160 elapsed=25634s
+  [2801/4314] rebounding 2021-04-18 (2020-21, 8 games) rows=149 elapsed=25736s
+  [2826/4314] possessions 2021-04-26 (2020-21, 11 games) rows=239 elapsed=25834s
+  [2851/4314] passing 2021-05-05 (2020-21, 9 games) rows=216 elapsed=25933s
+  [2876/4314] rebounding 2021-05-13 (2020-21, 9 games) rows=159 elapsed=26033s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 160s
+    retry 6/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 9/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 10/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 11/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 12/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 13/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [2901/4314] possessions 2021-05-22 (2020-21, 4 games) rows=75 elapsed=29544s
+  [2926/4314] passing 2021-05-31 (2020-21, 2 games) rows=41 elapsed=29642s
+  [2951/4314] rebounding 2021-06-08 (2020-21, 2 games) rows=38 elapsed=29743s
+  [2976/4314] possessions 2021-06-16 (2020-21, 2 games) rows=40 elapsed=29840s
+  [3001/4314] passing 2021-06-26 (2020-21, 1 games) rows=19 elapsed=29938s
+  [3026/4314] rebounding 2021-07-08 (2020-21, 1 games) rows=14 elapsed=30037s
+  [3051/4314] possessions 2021-10-22 (2021-22, 10 games) rows=235 elapsed=30125s
+  [3076/4314] passing 2021-10-31 (2021-22, 5 games) rows=109 elapsed=30202s
+  [3101/4314] rebounding 2021-11-08 (2021-22, 8 games) rows=154 elapsed=30279s
+  [3126/4314] possessions 2021-11-16 (2021-22, 3 games) rows=68 elapsed=30355s
+  [3151/4314] passing 2021-11-26 (2021-22, 12 games) rows=269 elapsed=30432s
+  [3176/4314] rebounding 2021-12-04 (2021-22, 7 games) rows=134 elapsed=30510s
+  [3201/4314] possessions 2021-12-12 (2021-22, 6 games) rows=126 elapsed=30592s
+  [3226/4314] passing 2021-12-21 (2021-22, 5 games) rows=105 elapsed=30673s
+  [3251/4314] rebounding 2021-12-30 (2021-22, 3 games) rows=58 elapsed=30754s
+  [3271/4314] passing 2022-01-06 (2021-22, 4 games) rows=0 elapsed=30821s
+  [3272/4314] rebounding 2022-01-06 (2021-22, 4 games) rows=0 elapsed=30824s
+  [3273/4314] possessions 2022-01-06 (2021-22, 4 games) rows=0 elapsed=30827s
+  [3276/4314] possessions 2022-01-07 (2021-22, 9 games) rows=213 elapsed=30837s
+  [3301/4314] passing 2022-01-16 (2021-22, 4 games) rows=90 elapsed=30918s
+  [3326/4314] rebounding 2022-01-24 (2021-22, 4 games) rows=75 elapsed=30999s
+  [3351/4314] possessions 2022-02-01 (2021-22, 7 games) rows=148 elapsed=31081s
+  [3376/4314] passing 2022-02-10 (2021-22, 7 games) rows=143 elapsed=31160s
+  [3401/4314] rebounding 2022-02-24 (2021-22, 7 games) rows=136 elapsed=31238s
+  [3426/4314] possessions 2022-03-04 (2021-22, 9 games) rows=195 elapsed=31316s
+  [3451/4314] passing 2022-03-13 (2021-22, 8 games) rows=157 elapsed=31394s
+  [3476/4314] rebounding 2022-03-21 (2021-22, 9 games) rows=164 elapsed=31473s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [3501/4314] possessions 2022-03-29 (2021-22, 5 games) rows=102 elapsed=33242s
+  [3526/4314] passing 2022-04-08 (2021-22, 9 games) rows=188 elapsed=33319s
+  [3551/4314] rebounding 2022-04-18 (2021-22, 3 games) rows=55 elapsed=33411s
+  [3576/4314] possessions 2022-04-26 (2021-22, 3 games) rows=59 elapsed=33510s
+  [3601/4314] passing 2022-05-07 (2021-22, 2 games) rows=42 elapsed=33609s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 9/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 10/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 11/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 12/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [3626/4314] rebounding 2022-05-17 (2021-22, 1 games) rows=16 elapsed=36800s
+  [3651/4314] possessions 2022-05-25 (2021-22, 1 games) rows=24 elapsed=36897s
+  [3676/4314] passing 2022-06-16 (2021-22, 1 games) rows=22 elapsed=36996s
+  [3701/4314] rebounding 2022-10-25 (2022-23, 4 games) rows=76 elapsed=37075s
+  [3726/4314] possessions 2022-11-02 (2022-23, 11 games) rows=231 elapsed=37151s
+  [3751/4314] passing 2022-11-12 (2022-23, 8 games) rows=169 elapsed=37228s
+  [3776/4314] rebounding 2022-11-20 (2022-23, 8 games) rows=158 elapsed=37306s
+  [3801/4314] possessions 2022-11-29 (2022-23, 3 games) rows=66 elapsed=37385s
+  [3826/4314] passing 2022-12-08 (2022-23, 3 games) rows=61 elapsed=37463s
+  [3851/4314] rebounding 2022-12-16 (2022-23, 10 games) rows=195 elapsed=37542s
+  [3876/4314] possessions 2022-12-25 (2022-23, 5 games) rows=104 elapsed=37621s
+  [3901/4314] passing 2023-01-03 (2022-23, 3 games) rows=66 elapsed=37699s
+  [3926/4314] rebounding 2023-01-11 (2022-23, 8 games) rows=149 elapsed=37776s
+  [3951/4314] possessions 2023-01-19 (2022-23, 5 games) rows=77 elapsed=37854s
+  [3976/4314] passing 2023-01-28 (2022-23, 11 games) rows=222 elapsed=37931s
+  [4001/4314] rebounding 2023-02-05 (2022-23, 6 games) rows=113 elapsed=38008s
+  [4026/4314] possessions 2023-02-13 (2022-23, 11 games) rows=228 elapsed=38085s
+  [4051/4314] passing 2023-02-28 (2022-23, 10 games) rows=216 elapsed=38162s
+  [4076/4314] rebounding 2023-03-08 (2022-23, 7 games) rows=132 elapsed=38239s
+  [4101/4314] possessions 2023-03-16 (2022-23, 5 games) rows=108 elapsed=38317s
+  [4126/4314] passing 2023-03-25 (2022-23, 6 games) rows=138 elapsed=38395s
+  [4151/4314] rebounding 2023-04-02 (2022-23, 13 games) rows=254 elapsed=38474s
+  [4176/4314] possessions 2023-04-12 (2022-23, 2 games) rows=37 elapsed=38556s
+  [4201/4314] passing 2023-04-22 (2022-23, 4 games) rows=84 elapsed=38654s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [4226/4314] rebounding 2023-04-30 (2022-23, 2 games) rows=33 elapsed=40402s
+  [4251/4314] possessions 2023-05-08 (2022-23, 2 games) rows=38 elapsed=40501s
+  [4276/4314] passing 2023-05-19 (2022-23, 1 games) rows=17 elapsed=40599s
+  [4301/4314] rebounding 2023-06-01 (2022-23, 1 games) rows=18 elapsed=40697s
+done
+=== scoring_all attempt 1 2026-10-28 08:14:34
+2075 game dates 2016-10-25..2026-10-25; kinds=['drives', 'catchshoot', 'pullup']
+6225 calls to make
+  [1/6225] drives 2016-10-25 (2016-17, 3 games) rows=72 elapsed=4s
+  [26/6225] catchshoot 2016-11-02 (2016-17, 10 games) rows=215 elapsed=98s
+  [51/6225] pullup 2016-11-10 (2016-17, 4 games) rows=83 elapsed=191s
+  [76/6225] drives 2016-11-19 (2016-17, 9 games) rows=191 elapsed=297s
+  [101/6225] catchshoot 2016-11-28 (2016-17, 7 games) rows=148 elapsed=401s
+  [126/6225] pullup 2016-12-06 (2016-17, 6 games) rows=120 elapsed=498s
+  [151/6225] drives 2016-12-15 (2016-17, 5 games) rows=111 elapsed=593s
+  [176/6225] catchshoot 2016-12-23 (2016-17, 14 games) rows=299 elapsed=684s
+  [201/6225] pullup 2017-01-01 (2016-17, 5 games) rows=104 elapsed=776s
+  [226/6225] drives 2017-01-10 (2016-17, 9 games) rows=192 elapsed=869s
+  [251/6225] catchshoot 2017-01-18 (2016-17, 9 games) rows=197 elapsed=960s
+  [276/6225] pullup 2017-01-26 (2016-17, 4 games) rows=80 elapsed=1052s
+  [301/6225] drives 2017-02-04 (2016-17, 10 games) rows=216 elapsed=1143s
+  [326/6225] catchshoot 2017-02-12 (2016-17, 4 games) rows=77 elapsed=1235s
+  [351/6225] pullup 2017-02-26 (2016-17, 8 games) rows=166 elapsed=1327s
+  [376/6225] drives 2017-03-07 (2016-17, 3 games) rows=67 elapsed=1420s
+  [401/6225] catchshoot 2017-03-15 (2016-17, 10 games) rows=211 elapsed=1512s
+  [426/6225] pullup 2017-03-23 (2016-17, 5 games) rows=106 elapsed=1604s
+  [451/6225] drives 2017-04-01 (2016-17, 5 games) rows=99 elapsed=1696s
+  [476/6225] catchshoot 2017-04-09 (2016-17, 7 games) rows=145 elapsed=1788s
+  [501/6225] pullup 2017-04-19 (2016-17, 3 games) rows=63 elapsed=1878s
+  [526/6225] drives 2017-04-28 (2016-17, 3 games) rows=65 elapsed=1968s
+  [551/6225] catchshoot 2017-05-07 (2016-17, 3 games) rows=69 elapsed=2058s
+  [576/6225] pullup 2017-05-16 (2016-17, 1 games) rows=26 elapsed=2147s
+  [601/6225] drives 2017-06-04 (2016-17, 1 games) rows=26 elapsed=2236s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [626/6225] catchshoot 2017-10-21 (2017-18, 11 games) rows=250 elapsed=3980s
+  [651/6225] pullup 2017-10-29 (2017-18, 7 games) rows=154 elapsed=4073s
+  [676/6225] drives 2017-11-07 (2017-18, 10 games) rows=211 elapsed=4166s
+  [701/6225] catchshoot 2017-11-15 (2017-18, 11 games) rows=222 elapsed=4257s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 9/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 10/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 11/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 12/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+  [726/6225] pullup 2017-11-24 (2017-18, 10 games) rows=210 elapsed=7362s
+  [751/6225] drives 2017-12-03 (2017-18, 5 games) rows=107 elapsed=7459s
+  [776/6225] catchshoot 2017-12-11 (2017-18, 6 games) rows=135 elapsed=7556s
+  [801/6225] pullup 2017-12-19 (2017-18, 3 games) rows=66 elapsed=7651s
+  [826/6225] drives 2017-12-29 (2017-18, 9 games) rows=184 elapsed=7745s
+  [851/6225] catchshoot 2018-01-06 (2017-18, 8 games) rows=161 elapsed=7839s
+  [876/6225] pullup 2018-01-14 (2017-18, 4 games) rows=88 elapsed=7933s
+  [901/6225] drives 2018-01-23 (2017-18, 5 games) rows=110 elapsed=8027s
+  [926/6225] catchshoot 2018-01-31 (2017-18, 8 games) rows=176 elapsed=8120s
+  [951/6225] pullup 2018-02-08 (2017-18, 6 games) rows=132 elapsed=8213s
+  [976/6225] drives 2018-02-23 (2017-18, 11 games) rows=238 elapsed=8306s
+  [1001/6225] catchshoot 2018-03-03 (2017-18, 7 games) rows=139 elapsed=8400s
+  [1026/6225] pullup 2018-03-11 (2017-18, 9 games) rows=197 elapsed=8495s
+  [1051/6225] drives 2018-03-20 (2017-18, 7 games) rows=147 elapsed=8598s
+  [1076/6225] catchshoot 2018-03-28 (2017-18, 8 games) rows=163 elapsed=8703s
+  [1101/6225] pullup 2018-04-06 (2017-18, 10 games) rows=216 elapsed=8800s
+  [1126/6225] drives 2018-04-17 (2017-18, 3 games) rows=66 elapsed=8892s
+  [1151/6225] catchshoot 2018-04-25 (2017-18, 4 games) rows=81 elapsed=8985s
+  [1176/6225] pullup 2018-05-03 (2017-18, 2 games) rows=43 elapsed=9076s
+  [1201/6225] drives 2018-05-15 (2017-18, 1 games) rows=22 elapsed=9168s
+  [1226/6225] catchshoot 2018-05-25 (2017-18, 1 games) rows=21 elapsed=9258s
+  [1251/6225] pullup 2018-10-16 (2018-19, 2 games) rows=46 elapsed=9350s
+  [1276/6225] drives 2018-10-25 (2018-19, 4 games) rows=81 elapsed=9444s
+  [1301/6225] catchshoot 2018-11-02 (2018-19, 8 games) rows=174 elapsed=9536s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [1326/6225] pullup 2018-11-10 (2018-19, 10 games) rows=214 elapsed=10964s
+  [1351/6225] drives 2018-11-19 (2018-19, 9 games) rows=194 elapsed=11060s
+  [1376/6225] catchshoot 2018-11-28 (2018-19, 10 games) rows=219 elapsed=11153s
+  [1401/6225] pullup 2018-12-06 (2018-19, 3 games) rows=71 elapsed=11249s
+  [1426/6225] drives 2018-12-15 (2018-19, 7 games) rows=124 elapsed=11343s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 8/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 9/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 10/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 11/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 12/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 13/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+  [1451/6225] catchshoot 2018-12-23 (2018-19, 11 games) rows=234 elapsed=14809s
+  [1476/6225] pullup 2019-01-01 (2018-19, 5 games) rows=105 elapsed=14902s
+  [1501/6225] drives 2019-01-10 (2018-19, 4 games) rows=90 elapsed=14995s
+  [1526/6225] catchshoot 2019-01-18 (2018-19, 7 games) rows=151 elapsed=15088s
+  [1551/6225] pullup 2019-01-26 (2018-19, 5 games) rows=108 elapsed=15182s
+  [1576/6225] drives 2019-02-04 (2018-19, 6 games) rows=126 elapsed=15275s
+  [1601/6225] catchshoot 2019-02-12 (2018-19, 5 games) rows=101 elapsed=15367s
+  [1626/6225] pullup 2019-02-26 (2018-19, 3 games) rows=67 elapsed=15461s
+  [1651/6225] drives 2019-03-07 (2018-19, 2 games) rows=45 elapsed=15555s
+  [1676/6225] catchshoot 2019-03-15 (2018-19, 8 games) rows=165 elapsed=15648s
+  [1701/6225] pullup 2019-03-23 (2018-19, 8 games) rows=168 elapsed=15741s
+  [1726/6225] drives 2019-04-01 (2018-19, 9 games) rows=187 elapsed=15836s
+  [1751/6225] catchshoot 2019-04-10 (2018-19, 11 games) rows=231 elapsed=15930s
+  [1776/6225] pullup 2019-04-20 (2018-19, 4 games) rows=85 elapsed=16023s
+  [1801/6225] drives 2019-04-29 (2018-19, 2 games) rows=38 elapsed=16115s
+  [1826/6225] catchshoot 2019-05-07 (2018-19, 2 games) rows=50 elapsed=16210s
+  [1851/6225] pullup 2019-05-17 (2018-19, 1 games) rows=26 elapsed=16301s
+  [1876/6225] drives 2019-06-05 (2018-19, 1 games) rows=24 elapsed=16392s
+  [1901/6225] catchshoot 2019-10-26 (2019-20, 10 games) rows=225 elapsed=16483s
+  [1926/6225] pullup 2019-11-03 (2019-20, 6 games) rows=131 elapsed=16578s
+  [1951/6225] drives 2019-11-12 (2019-20, 8 games) rows=166 elapsed=16670s
+  [1976/6225] catchshoot 2019-11-20 (2019-20, 11 games) rows=230 elapsed=16762s
+  [2001/6225] pullup 2019-11-29 (2019-20, 13 games) rows=268 elapsed=16855s
+  [2026/6225] drives 2019-12-08 (2019-20, 8 games) rows=171 elapsed=16947s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 80s
+    retry 5/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [2051/6225] catchshoot 2019-12-16 (2019-20, 7 games) rows=139 elapsed=18607s
+  [2076/6225] pullup 2019-12-25 (2019-20, 5 games) rows=107 elapsed=18699s
+  [2101/6225] drives 2020-01-03 (2019-20, 6 games) rows=120 elapsed=18791s
+  [2126/6225] catchshoot 2020-01-11 (2019-20, 7 games) rows=152 elapsed=18885s
+  [2151/6225] pullup 2020-01-19 (2019-20, 2 games) rows=40 elapsed=18977s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 9/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 10/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 11/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 12/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [2176/6225] drives 2020-01-28 (2019-20, 8 games) rows=172 elapsed=22202s
+  [2201/6225] catchshoot 2020-02-05 (2019-20, 9 games) rows=182 elapsed=22295s
+  [2226/6225] pullup 2020-02-13 (2019-20, 2 games) rows=42 elapsed=22386s
+  [2251/6225] drives 2020-02-28 (2019-20, 10 games) rows=212 elapsed=22479s
+  [2276/6225] catchshoot 2020-03-07 (2019-20, 6 games) rows=120 elapsed=22571s
+  [2301/6225] pullup 2020-08-02 (2019-20, 6 games) rows=123 elapsed=22663s
+  [2326/6225] drives 2020-08-11 (2019-20, 7 games) rows=147 elapsed=22755s
+  [2351/6225] catchshoot 2020-08-20 (2019-20, 4 games) rows=82 elapsed=22847s
+  [2376/6225] pullup 2020-08-31 (2019-20, 2 games) rows=37 elapsed=22938s
+  [2401/6225] drives 2020-09-09 (2019-20, 2 games) rows=39 elapsed=23029s
+  [2426/6225] catchshoot 2020-09-19 (2019-20, 1 games) rows=19 elapsed=23120s
+  [2451/6225] pullup 2020-09-30 (2019-20, 1 games) rows=23 elapsed=23211s
+  [2476/6225] drives 2020-12-26 (2020-21, 10 games) rows=210 elapsed=23304s
+  [2501/6225] catchshoot 2021-01-03 (2020-21, 8 games) rows=177 elapsed=23398s
+  [2526/6225] pullup 2021-01-11 (2020-21, 7 games) rows=146 elapsed=23493s
+  [2551/6225] drives 2021-01-20 (2020-21, 9 games) rows=181 elapsed=23587s
+  [2576/6225] catchshoot 2021-01-28 (2020-21, 4 games) rows=86 elapsed=23682s
+  [2601/6225] pullup 2021-02-05 (2020-21, 9 games) rows=185 elapsed=23775s
+  [2626/6225] drives 2021-02-14 (2020-21, 10 games) rows=210 elapsed=23868s
+  [2651/6225] catchshoot 2021-02-22 (2020-21, 6 games) rows=126 elapsed=23962s
+  [2676/6225] pullup 2021-03-02 (2020-21, 6 games) rows=127 elapsed=24055s
+  [2701/6225] drives 2021-03-16 (2020-21, 7 games) rows=137 elapsed=24150s
+  [2726/6225] catchshoot 2021-03-24 (2020-21, 11 games) rows=245 elapsed=24243s
+  [2751/6225] pullup 2021-04-01 (2020-21, 7 games) rows=150 elapsed=24338s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [2776/6225] drives 2021-04-10 (2020-21, 7 games) rows=160 elapsed=26125s
+  [2801/6225] catchshoot 2021-04-18 (2020-21, 8 games) rows=161 elapsed=26220s
+  [2826/6225] pullup 2021-04-26 (2020-21, 11 games) rows=239 elapsed=26314s
+  [2851/6225] drives 2021-05-05 (2020-21, 9 games) rows=216 elapsed=26408s
+  [2876/6225] catchshoot 2021-05-13 (2020-21, 9 games) rows=189 elapsed=26504s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 9/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 10/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 11/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 12/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [2901/6225] pullup 2021-05-22 (2020-21, 4 games) rows=75 elapsed=29730s
+  [2926/6225] drives 2021-05-31 (2020-21, 2 games) rows=41 elapsed=29823s
+  [2951/6225] catchshoot 2021-06-08 (2020-21, 2 games) rows=45 elapsed=29916s
+  [2976/6225] pullup 2021-06-16 (2020-21, 2 games) rows=40 elapsed=30008s
+  [3001/6225] drives 2021-06-26 (2020-21, 1 games) rows=19 elapsed=30100s
+  [3026/6225] catchshoot 2021-07-08 (2020-21, 1 games) rows=20 elapsed=30191s
+  [3051/6225] pullup 2021-10-22 (2021-22, 10 games) rows=235 elapsed=30281s
+  [3076/6225] drives 2021-10-31 (2021-22, 5 games) rows=109 elapsed=30369s
+  [3101/6225] catchshoot 2021-11-08 (2021-22, 8 games) rows=176 elapsed=30454s
+  [3126/6225] pullup 2021-11-16 (2021-22, 3 games) rows=68 elapsed=30539s
+  [3151/6225] drives 2021-11-26 (2021-22, 12 games) rows=269 elapsed=30623s
+  [3176/6225] catchshoot 2021-12-04 (2021-22, 7 games) rows=144 elapsed=30710s
+  [3201/6225] pullup 2021-12-12 (2021-22, 6 games) rows=126 elapsed=30803s
+  [3226/6225] drives 2021-12-21 (2021-22, 5 games) rows=105 elapsed=30897s
+  [3251/6225] catchshoot 2021-12-30 (2021-22, 3 games) rows=64 elapsed=30991s
+  [3271/6225] drives 2022-01-06 (2021-22, 4 games) rows=0 elapsed=31065s
+  [3276/6225] pullup 2022-01-07 (2021-22, 9 games) rows=213 elapsed=31084s
+  [3301/6225] drives 2022-01-16 (2021-22, 4 games) rows=90 elapsed=31178s
+  [3326/6225] catchshoot 2022-01-24 (2021-22, 4 games) rows=79 elapsed=31271s
+  [3351/6225] pullup 2022-02-01 (2021-22, 7 games) rows=148 elapsed=31365s
+  [3376/6225] drives 2022-02-10 (2021-22, 7 games) rows=143 elapsed=31453s
+  [3401/6225] catchshoot 2022-02-24 (2021-22, 7 games) rows=153 elapsed=31544s
+  [3426/6225] pullup 2022-03-04 (2021-22, 9 games) rows=195 elapsed=31627s
+  [3451/6225] drives 2022-03-13 (2021-22, 8 games) rows=157 elapsed=31708s
+  [3476/6225] catchshoot 2022-03-21 (2021-22, 9 games) rows=181 elapsed=31793s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [3501/6225] pullup 2022-03-29 (2021-22, 5 games) rows=102 elapsed=33563s
+  [3526/6225] drives 2022-04-08 (2021-22, 9 games) rows=188 elapsed=33645s
+  [3551/6225] catchshoot 2022-04-18 (2021-22, 3 games) rows=62 elapsed=33732s
+  [3576/6225] pullup 2022-04-26 (2021-22, 3 games) rows=58 elapsed=33824s
+  [3601/6225] drives 2022-05-07 (2021-22, 2 games) rows=42 elapsed=33916s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 9/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 10/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 11/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 12/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [3626/6225] catchshoot 2022-05-17 (2021-22, 1 games) rows=17 elapsed=37068s
+  [3651/6225] pullup 2022-05-25 (2021-22, 1 games) rows=24 elapsed=37159s
+  [3676/6225] drives 2022-06-16 (2021-22, 1 games) rows=22 elapsed=37250s
+  [3701/6225] catchshoot 2022-10-25 (2022-23, 4 games) rows=87 elapsed=37333s
+  [3726/6225] pullup 2022-11-02 (2022-23, 11 games) rows=231 elapsed=37414s
+  [3751/6225] drives 2022-11-12 (2022-23, 8 games) rows=169 elapsed=37496s
+  [3776/6225] catchshoot 2022-11-20 (2022-23, 8 games) rows=173 elapsed=37577s
+  [3801/6225] pullup 2022-11-29 (2022-23, 3 games) rows=66 elapsed=37659s
+  [3826/6225] drives 2022-12-08 (2022-23, 3 games) rows=61 elapsed=37743s
+  [3851/6225] catchshoot 2022-12-16 (2022-23, 10 games) rows=219 elapsed=37825s
+  [3876/6225] pullup 2022-12-25 (2022-23, 5 games) rows=104 elapsed=37909s
+  [3901/6225] drives 2023-01-03 (2022-23, 3 games) rows=66 elapsed=37994s
+  [3926/6225] catchshoot 2023-01-11 (2022-23, 8 games) rows=169 elapsed=38074s
+  [3951/6225] pullup 2023-01-19 (2022-23, 5 games) rows=100 elapsed=38156s
+  [3976/6225] drives 2023-01-28 (2022-23, 11 games) rows=222 elapsed=38237s
+  [4001/6225] catchshoot 2023-02-05 (2022-23, 6 games) rows=128 elapsed=38317s
+  [4026/6225] pullup 2023-02-13 (2022-23, 11 games) rows=228 elapsed=38397s
+  [4051/6225] drives 2023-02-28 (2022-23, 10 games) rows=216 elapsed=38477s
+  [4076/6225] catchshoot 2023-03-08 (2022-23, 7 games) rows=149 elapsed=38560s
+  [4101/6225] pullup 2023-03-16 (2022-23, 5 games) rows=108 elapsed=38642s
+  [4126/6225] drives 2023-03-25 (2022-23, 6 games) rows=138 elapsed=38724s
+  [4151/6225] catchshoot 2023-04-02 (2022-23, 13 games) rows=285 elapsed=38812s
+  [4176/6225] pullup 2023-04-12 (2022-23, 2 games) rows=37 elapsed=38898s
+  [4201/6225] drives 2023-04-22 (2022-23, 4 games) rows=84 elapsed=38989s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [4226/6225] catchshoot 2023-04-30 (2022-23, 2 games) rows=41 elapsed=40772s
+  [4251/6225] pullup 2023-05-08 (2022-23, 2 games) rows=38 elapsed=40863s
+  [4276/6225] drives 2023-05-19 (2022-23, 1 games) rows=17 elapsed=40953s
+  [4301/6225] catchshoot 2023-06-01 (2022-23, 1 games) rows=19 elapsed=41042s
+  [4326/6225] pullup 2023-10-27 (2023-24, 11 games) rows=216 elapsed=41128s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 9/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 10/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 11/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 12/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [4351/6225] drives 2023-11-05 (2023-24, 5 games) rows=107 elapsed=44301s
+  [4376/6225] catchshoot 2023-11-14 (2023-24, 10 games) rows=222 elapsed=44380s
+  [4401/6225] pullup 2023-11-22 (2023-24, 14 games) rows=294 elapsed=44458s
+  [4426/6225] drives 2023-12-02 (2023-24, 12 games) rows=239 elapsed=44536s
+  [4451/6225] catchshoot 2023-12-13 (2023-24, 9 games) rows=191 elapsed=44614s
+  [4476/6225] pullup 2023-12-21 (2023-24, 8 games) rows=163 elapsed=44694s
+  [4501/6225] drives 2023-12-31 (2023-24, 6 games) rows=135 elapsed=44772s
+  [4526/6225] catchshoot 2024-01-08 (2023-24, 6 games) rows=125 elapsed=44853s
+  [4551/6225] pullup 2024-01-16 (2023-24, 3 games) rows=57 elapsed=44932s
+  [4576/6225] drives 2024-01-25 (2023-24, 7 games) rows=158 elapsed=45010s
+  [4601/6225] catchshoot 2024-02-02 (2023-24, 10 games) rows=216 elapsed=45088s
+  [4626/6225] pullup 2024-02-10 (2023-24, 11 games) rows=228 elapsed=45166s
+  [4651/6225] drives 2024-02-25 (2023-24, 11 games) rows=244 elapsed=45244s
+  [4676/6225] catchshoot 2024-03-04 (2023-24, 6 games) rows=122 elapsed=45323s
+  [4690/6225] drives 2024-03-09 (2023-24, 7 games) rows=0 elapsed=45367s
+  [4701/6225] pullup 2024-03-12 (2023-24, 7 games) rows=159 elapsed=45401s
+  [4726/6225] drives 2024-03-21 (2023-24, 7 games) rows=147 elapsed=45479s
+  [4751/6225] catchshoot 2024-03-29 (2023-24, 12 games) rows=258 elapsed=45557s
+  [4776/6225] pullup 2024-04-06 (2023-24, 4 games) rows=89 elapsed=45637s
+  [4801/6225] drives 2024-04-19 (2023-24, 2 games) rows=40 elapsed=45719s
+  [4826/6225] catchshoot 2024-04-27 (2023-24, 4 games) rows=90 elapsed=45811s
+  [4851/6225] pullup 2024-05-05 (2023-24, 1 games) rows=20 elapsed=45902s
+  [4876/6225] drives 2024-05-14 (2023-24, 2 games) rows=42 elapsed=45994s
+  [4901/6225] catchshoot 2024-05-23 (2023-24, 1 games) rows=24 elapsed=46086s
+  [4926/6225] pullup 2024-06-09 (2023-24, 1 games) rows=18 elapsed=46177s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [4951/6225] drives 2024-10-27 (2024-25, 5 games) rows=119 elapsed=47955s
+  [4976/6225] catchshoot 2024-11-04 (2024-25, 15 games) rows=312 elapsed=48034s
+  [5001/6225] pullup 2024-11-13 (2024-25, 11 games) rows=225 elapsed=48113s
+  [5026/6225] drives 2024-11-22 (2024-25, 8 games) rows=174 elapsed=48191s
+  [5051/6225] catchshoot 2024-12-01 (2024-25, 10 games) rows=207 elapsed=48269s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 7/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 9/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 10/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 11/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 12/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 13/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 1/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 10s
+    retry 2/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 20s
+    retry 1/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 10s
+    retry 2/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 20s
+    retry 3/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 40s
+    retry 4/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 80s
+  [5076/6225] pullup 2024-12-09 (2024-25, 1 games) rows=17 elapsed=51936s
+  [5101/6225] drives 2024-12-20 (2024-25, 3 games) rows=67 elapsed=52014s
+    retry 1/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 10s
+    retry 2/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 20s
+    retry 3/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 40s
+  [5126/6225] catchshoot 2024-12-29 (2024-25, 6 games) rows=130 elapsed=52194s
+  [5151/6225] pullup 2025-01-06 (2024-25, 9 games) rows=188 elapsed=52272s
+  [5176/6225] drives 2025-01-15 (2024-25, 11 games) rows=231 elapsed=52350s
+  [5201/6225] catchshoot 2025-01-23 (2024-25, 9 games) rows=212 elapsed=52428s
+  [5226/6225] pullup 2025-01-31 (2024-25, 7 games) rows=155 elapsed=52506s
+  [5251/6225] drives 2025-02-09 (2024-25, 3 games) rows=59 elapsed=52584s
+  [5276/6225] catchshoot 2025-02-22 (2024-25, 5 games) rows=108 elapsed=52661s
+  [5301/6225] pullup 2025-03-02 (2024-25, 9 games) rows=193 elapsed=52739s
+  [5326/6225] drives 2025-03-11 (2024-25, 4 games) rows=81 elapsed=52817s
+  [5351/6225] catchshoot 2025-03-19 (2024-25, 11 games) rows=225 elapsed=52895s
+  [5376/6225] pullup 2025-03-27 (2024-25, 8 games) rows=172 elapsed=52973s
+  [5401/6225] drives 2025-04-05 (2024-25, 5 games) rows=103 elapsed=53051s
+  [5426/6225] catchshoot 2025-04-15 (2024-25, 2 games) rows=42 elapsed=53129s
+  [5451/6225] pullup 2025-04-24 (2024-25, 3 games) rows=64 elapsed=53240s
+  [5476/6225] drives 2025-05-03 (2024-25, 1 games) rows=24 elapsed=53347s
+  [5501/6225] catchshoot 2025-05-11 (2024-25, 2 games) rows=47 elapsed=53464s
+    retry 1/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 10s
+    retry 2/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 20s
+    retry 3/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 40s
+    retry 1/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 10s
+    retry 2/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 20s
+    retry 3/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 40s
+  [5526/6225] pullup 2025-05-21 (2024-25, 1 games) rows=19 elapsed=53761s
+  [5551/6225] drives 2025-05-31 (2024-25, 1 games) rows=26 elapsed=53872s
+    retry 1/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 10s
+    retry 2/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 20s
+    retry 3/40 JSONDecodeError: Expecting value: line 1 column 1 (char 0); sleeping 40s
+  [5576/6225] catchshoot 2025-10-21 (2025-26, 2 games) rows=40 elapsed=54093s
+  [5601/6225] pullup 2025-10-29 (2025-26, 10 games) rows=220 elapsed=54187s
+  [5626/6225] drives 2025-11-07 (2025-26, 11 games) rows=253 elapsed=54280s
+  [5651/6225] catchshoot 2025-11-15 (2025-26, 5 games) rows=110 elapsed=54370s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [5676/6225] pullup 2025-11-23 (2025-26, 8 games) rows=171 elapsed=55432s
+  [5701/6225] drives 2025-12-03 (2025-26, 9 games) rows=196 elapsed=55524s
+  [5726/6225] catchshoot 2025-12-11 (2025-26, 4 games) rows=85 elapsed=55616s
+  [5751/6225] pullup 2025-12-20 (2025-26, 10 games) rows=211 elapsed=55708s
+    retry 1/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 10s
+    retry 2/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 20s
+    retry 3/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 40s
+    retry 4/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 80s
+    retry 5/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 160s
+    retry 6/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 7/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 8/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 9/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 10/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 11/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+    retry 12/40 ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); sleeping 300s
+    retry 13/40 ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=60); sleeping 300s
+  [5776/6225] drives 2025-12-30 (2025-26, 4 games) rows=87 elapsed=59175s
+  [5801/6225] catchshoot 2026-01-07 (2025-26, 12 games) rows=260 elapsed=59270s
+  [5826/6225] pullup 2026-01-15 (2025-26, 9 games) rows=201 elapsed=59366s
+  [5851/6225] drives 2026-01-24 (2025-26, 6 games) rows=121 elapsed=59458s
+  [5876/6225] catchshoot 2026-02-01 (2025-26, 10 games) rows=235 elapsed=59549s
+  [5901/6225] pullup 2026-02-09 (2025-26, 10 games) rows=211 elapsed=59647s
+  [5926/6225] drives 2026-02-24 (2025-26, 11 games) rows=242 elapsed=59739s
+  [5951/6225] catchshoot 2026-03-04 (2025-26, 6 games) rows=136 elapsed=59831s
+  [5976/6225] pullup 2026-03-12 (2025-26, 9 games) rows=187 elapsed=59922s
+  [6001/6225] drives 2026-03-21 (2025-26, 10 games) rows=204 elapsed=60020s
+  [6026/6225] catchshoot 2026-03-29 (2025-26, 9 games) rows=205 elapsed=60111s
+  [6051/6225] pullup 2026-04-06 (2025-26, 5 games) rows=102 elapsed=60202s
+  [6076/6225] drives 2026-04-18 (2025-26, 4 games) rows=81 elapsed=60294s
+  [6101/6225] catchshoot 2026-04-26 (2025-26, 4 games) rows=98 elapsed=60386s
+  [6126/6225] pullup 2026-05-04 (2025-26, 2 games) rows=46 elapsed=60480s
+  [6151/6225] drives 2026-05-13 (2025-26, 1 games) rows=19 elapsed=60568s
+  [6176/6225] catchshoot 2026-05-23 (2025-26, 1 games) rows=19 elapsed=60659s
+  [6201/6225] pullup 2026-06-08 (2025-26, 1 games) rows=20 elapsed=60748s
+done
+=== ALLDONE 2026-10-29 01:08:29

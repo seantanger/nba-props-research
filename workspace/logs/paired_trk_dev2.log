@@ -1,0 +1,12 @@
+dev2: paired FanDuel rows n=99,553
+  ALL  n=99,553  d_logloss=+3.77e-4 CI[+1.28,+6.08]  d_miss=+2.74e-3 CI[+1.36,+4.08]  (positive = tracking better)
+  AST  n= 8,669  d_logloss=+21.12e-4 CI[+4.99,+36.67]  d_miss=+6.27e-3 CI[+2.12,+10.32]  (positive = tracking better)
+  BLK  n= 1,850  d_logloss=+22.94e-4 CI[+1.55,+43.07]  d_miss=-0.33e-3 CI[-3.53,+2.82]  (positive = tracking better)
+  FG3M n=11,376  d_logloss=+1.20e-4 CI[-4.50,+7.02]  d_miss=+1.06e-3 CI[+0.01,+2.12]  (positive = tracking better)
+  PA   n= 8,855  d_logloss=+4.03e-4 CI[-1.77,+10.12]  d_miss=+2.67e-3 CI[-2.32,+7.81]  (positive = tracking better)
+  PR   n=15,101  d_logloss=+0.40e-4 CI[-4.21,+5.01]  d_miss=+4.07e-3 CI[+0.28,+7.88]  (positive = tracking better)
+  PRA  n= 8,524  d_logloss=+1.59e-4 CI[-4.66,+7.56]  d_miss=+1.81e-3 CI[-4.33,+7.69]  (positive = tracking better)
+  PTS  n=17,302  d_logloss=-1.86e-4 CI[-6.02,+2.43]  d_miss=+2.34e-3 CI[-0.58,+5.33]  (positive = tracking better)
+  RA   n= 8,325  d_logloss=+1.51e-4 CI[-4.89,+8.28]  d_miss=+1.77e-3 CI[-1.22,+4.84]  (positive = tracking better)
+  REB  n=15,057  d_logloss=+5.47e-4 CI[+0.55,+10.82]  d_miss=+3.67e-3 CI[+2.11,+5.31]  (positive = tracking better)
+  STL  n= 4,494  d_logloss=+4.11e-4 CI[-4.42,+12.73]  d_miss=-0.88e-3 CI[-2.07,+0.29]  (positive = tracking better)

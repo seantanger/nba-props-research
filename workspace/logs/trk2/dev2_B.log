@@ -1,0 +1,9 @@
+  2024-10-01 PTS: train=216,708 cols mean=378 disp=378
+fold 2024-10-01..2024-12-01: keys=41934 elapsed=961s
+  2024-12-01 PTS: train=223,090 cols mean=378 disp=378
+fold 2024-12-01..2025-02-01: keys=66102 elapsed=1943s
+  2025-02-01 PTS: train=232,036 cols mean=378 disp=378
+fold 2025-02-01..2025-04-01: keys=67483 elapsed=2960s
+  2025-04-01 PTS: train=240,803 cols mean=378 disp=378
+fold 2025-04-01..2025-09-01: keys=32249 elapsed=4104s
+saved 196851 results/bp_dist_dev2_t2B.parquet

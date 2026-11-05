@@ -10,6 +10,7 @@ import pandas as pd
 import lightgbm as lgb
 from scipy import stats
 from src.common import feature_cols, MARKETS
+from src.tracking_live import TRK_RE
 
 LGB_PARAMS = dict(objective="poisson", learning_rate=0.03, num_leaves=31, min_data_in_leaf=80, feature_fraction=0.7,
                   bagging_fraction=0.8, bagging_freq=1, lambda_l2=5.0, verbose=-1, num_threads=8, seed=0)
@@ -133,13 +134,18 @@ def clf_lgbm(pg, pairs_train, pairs_test, rounds=400, extra_cols=None):
     return m.predict(Xte[feats]), m, feats
 
 
-def proj_dist(pg, keys, cutoff, markets, rounds=600, params=None):
+def proj_dist(pg, keys, cutoff, markets, rounds=600, params=None, extra=None):
     """Fit one mean+dispersion model per market on logs with GAME_DATE < cutoff; return mu/var for the requested
-    (PLAYER_ID, GAME_ID, market) keys (a DataFrame with those columns)."""
-    cols = feature_cols(pg)
+    (PLAYER_ID, GAME_ID, market) keys (a DataFrame with those columns).
+    extra: {market: [columns]} added to that market's models only (e.g. the tracking columns for AST, src/tracking_live.py);
+    When extra is given, tracking columns (trk_*, opp_trk_*) in pg never enter the other markets' feature set; without it the
+    behaviour is unchanged (P2-10 runs of src/run_bp.py on a tracking feature file relied on feature_cols picking them up)."""
+    base = feature_cols(pg) if extra is None else [c for c in feature_cols(pg) if not TRK_RE.match(c)]
+    extra = extra or {}
     train = pg[(pg.GAME_DATE < cutoff) & (pg.MIN > 0)]
     out = []
     for mk in markets:
+        cols = base + list(extra.get(mk, []))
         k = keys[keys.market == mk][["PLAYER_ID", "GAME_ID"]].drop_duplicates()
         if len(k) == 0:
             continue
